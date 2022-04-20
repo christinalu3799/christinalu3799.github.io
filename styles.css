@@ -12,7 +12,12 @@ html, body {
 #main {
     overflow: auto;
     padding-bottom: 100px;
+    width: 100%;
 }
+
+/* =========================================================*/
+/*                          NAV                             */
+/* =========================================================*/
 .menuBar {
     height: 60px;
 }
@@ -54,33 +59,12 @@ button:hover {
     color: white;
 }
 
-/* SPINNY LETTERS HOMEPAGE TITLE
-.homepageTitle span {
-    position: relative;
-    display: inline-block;
-    font-size: 60px;
-    text-shadow: -5px -4px #CFCBC9;
-    color: #3A3B3C;
-    animation: flip 1.5s;
-    animation-delay: calc(.1s * var(--i));
-}
-*/
-
-
 .animate__animated.animate__backInDown {
     --animate-duration: 2s;
   }
 .animate__animated.animate__backInUp {
     --animate-duration: 2s;
   }
-
-/* Rotation of each letter */
-@keyframes flip {
-    0%,
-    80% {
-        transform: rotateY(360deg);
-    }
-}
 
 h1 {
     text-align: center;
@@ -150,7 +134,6 @@ h1 {
     align-items: center; /* Think of vertical line - items will be centered along vertical axis*/
     justify-content: center;
     margin: 0 auto;
-
 }
 
 .circlePicContainer {
@@ -296,4 +279,21 @@ svg {
 #email {
     text-decoration: none;
     color: white;
+}
+
+/* =========================================================*/
+/*                     RESPONSIVE DESIGN                    */
+/* =========================================================*/
+
+/* For phones */
+@media only screen and (max-width:800px) {
+    #main {
+        display: block; 
+  
+    }
+    .circlePicContainer {
+        margin: 0 auto;
+        
+    }
+
 }
