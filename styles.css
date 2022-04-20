@@ -114,23 +114,33 @@ h1 {
 .content p {
     font-family: 'Josefin Sans', sans-serif;
 }
-
 /* =========================================================*/
 /*                          HOME PAGE                       */
 /* =========================================================*/
 .homepageTitle {
     width: 80vw;
+<<<<<<< HEAD
     margin: 0 auto;
     font-family: 'Cormorant', serif;
+=======
+    height: 20vh;
+    font-family: 'Cormorant', serif;
+    margin: 0 auto;
+>>>>>>> 4426e637018c2719b7d1b54d56f80907dbf5d891
 }
 
 .homepageTitle p {
+    text-align: center;
     font-size: 70px;
     text-shadow: -5px -4px #CFCBC9;
     color: #3A3B3C;
+<<<<<<< HEAD
     text-align: center;
     margin-top: 15px;
     margin-bottom: -10px;
+=======
+    margin: 20px 0 -10px 0;
+>>>>>>> 4426e637018c2719b7d1b54d56f80907dbf5d891
 }
 
 .homepageTitle h2 {
@@ -141,17 +151,21 @@ h1 {
 }
 
 .aboutMeContainer {
+<<<<<<< HEAD
     width: 80vw; 
+=======
+    width: 80vw;
+    height: 500px;
+>>>>>>> 4426e637018c2719b7d1b54d56f80907dbf5d891
     padding-bottom: 30px;
     display: flex;
     align-items: center; /* Think of vertical line - items will be centered along vertical axis*/
-    justify-content: center;
     margin: 0 auto;
     background-color: beige;
 }
 
 .circlePicContainer {
-    display: inline-block;
+
     background-color: black;
     width: 40%;
     border-radius: 50%;
@@ -168,7 +182,6 @@ h1 {
 
 .aboutMeContent {
     padding-left: 40px;
-    display: inline-block;
     width: 60%;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
@@ -278,6 +291,7 @@ svg {
 
 /* For Tablet */
 @media only screen and (max-width:800px) {
+<<<<<<< HEAD
     .aboutMeContainer {
         display: block;
         padding: 40px;
@@ -286,7 +300,18 @@ svg {
         text-align: center;
         width: 100%;
         display: block;
+=======
+
+    .circlePicContainer, .aboutMeContainer {
+        display: block;
+        width: 100%;
+    }
+
+    .circlePicContainer {
+>>>>>>> 4426e637018c2719b7d1b54d56f80907dbf5d891
         margin: 0 auto;
+        margin-top: 10vh;
+        width: 50vw;
     }
     .aboutMeContent {
         margin-top: 15px;
