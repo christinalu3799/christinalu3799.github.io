@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display+SC&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Forum&family=Lobster+Two&family=Poiret+One&display=swap');
+@import "transition-style";
+
+html, body {
+    height: 100%;
+}
+#page-container {
+    position: relative;
+    min-height: 100%;
+}
+#main {
+    overflow: auto;
+    padding-bottom: 100px;
+}
+.menuBar {
+    height: 60px;
+}
+.nav {
+    /*Background color of menu bar*/
+    background-color: #CFCBC9;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;;
+}
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+}
+.nav ul li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+button {
+    width: 100px;
+    color: #3A3B3C;
+    background-color: #CFCBC9;
+    margin: 5px;
+    font-family: 'Cormorant', sans-serif;
+    font-size: 16px;
+    border: none;
+    box-shadow: inset 0 0 0 0 #3A3B3C70;
+    transition: ease-out 0.3s;
+    border-radius: 2px;
+}
+/* Change the link color on hover*/
+button:hover {
+    box-shadow: inset 100px 0 0 0 #3A3B3C70;
+    color: white;
+}
+
+/* SPINNY LETTERS HOMEPAGE TITLE
+.homepageTitle span {
+    position: relative;
+    display: inline-block;
+    font-size: 60px;
+    text-shadow: -5px -4px #CFCBC9;
+    color: #3A3B3C;
+    animation: flip 1.5s;
+    animation-delay: calc(.1s * var(--i));
+}
+*/
+
+
+.animate__animated.animate__backInDown {
+    --animate-duration: 2s;
+  }
+.animate__animated.animate__backInUp {
+    --animate-duration: 2s;
+  }
+
+/* Rotation of each letter */
+@keyframes flip {
+    0%,
+    80% {
+        transform: rotateY(360deg);
+    }
+}
+
+h1 {
+    text-align: center;
+    /*Space above title*/
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-family: 'Cormorant', serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    color: #3A3B3C;
+    /*Color of Titles*/
+}
+
+.subHeading {
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.content {
+    padding: 30px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 75%; /* 75% of the main container*/
+    text-align: center;
+    justify-content: center;
+}
+
+.content p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* =========================================================*/
+/*                          HOME PAGE                       */
+/* =========================================================*/
+.homepageTitle {
+    width: 600px;
+    height: 20vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* Centered in container */
+    align-items: flex-end;
+    font-family: 'Cormorant', serif;
+    font-weight: bold;
+}
+
+.homepageTitle p {
+    font-size: 70px;
+    text-shadow: -5px -4px #CFCBC9;
+    color: #3A3B3C;
+}
+.oneLiner {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    align-items: flex-start;
+}
+
+.aboutMeContainer {
+    width: 1000px;
+    height: 500px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center; /* Think of vertical line - items will be centered along vertical axis*/
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.circlePicContainer {
+    display: inline-block;
+    background-color: black;
+    width: 40%;
+    border-radius: 50%;
+    border: thin solid black;
+}
+.animate__animated.animate__fadeIn {
+    --animate-duration: 5s;
+}
+.circlePicContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.aboutMeContent {
+    padding-left: 40px;
+    display: inline-block;
+    width: 60%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+strong {
+    font-style: bold;
+    font-size: 20px;
+}
+.whiteSpace { width: 100%; height: 80px; }
+
+/* =========================================================*/
+/*                       PROJECTS PAGE                      */
+/* =========================================================*/
+
+.nature1, .nature2, .nature3 {
+    width: 30%;
+    height: 300px;
+    object-fit: cover;
+
+  -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+    transform-origin:center;
+    transform:perspective(800px) rotateY(25deg);
+    transition:0.5s;
+}
+.project-container {
+    padding-top: 20px;
+    max-width:600px;
+    max-height:350px;
+    display:flex;
+    justify-content:center;
+    margin: 0 auto; /* CENTERING A DIV */
+    gap: 20px;
+}
+.project-container:hover img {
+    opacity: 0.3;
+  }
+  .project-container img:hover {
+    transform:perspective(800px)
+    rotateY(00deg);
+    opacity:1;
+  }
+
+/* =========================================================*/
+/*                          BLOG PAGE                       */
+/* =========================================================*/
+.blogcontent {
+    padding: 0 200px 100px 200px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+}
+
+.blogcontent p {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 16px;
+}
+/* Add a card effect for articles */
+.card {
+    background-color: #CFCBC9;
+    border: none;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* =========================================================*/
+/*                          CONTACT PAGE                    */
+/* =========================================================*/
+
+.float-container {
+    height: 400px;
+    width: 800px;
+    margin: 0 auto;
+ ;
+    align-items: center; /*Determines VERTICAL alignment in div*/
+    display: flex;
+    justify-content: center; /*Standard center alignment*/
+}
+.float-child {
+    float: left; /*Child elements align to the left of the container*/
+    width: 50%;
+    padding: 15px;
+}
+.contactInfo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+    line-height: 3;
+}
+
+#contactimage {
+    width: 100%;
+    border-radius: 30px;
+}
+
+svg {
+    transform: scale(1.5);
+}
+
+/* =========================================================*/
+/*                          FOOTER                          */
+/* =========================================================*/
+#footer {
+    background-color: #403D39;
+    /*Black Olive color of footer*/
+    position: relative;
+    height: 120px;
+    margin-top: -120px;
+    clear: both;
+}
+
+#footer p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+#email {
+    text-decoration: none;
+    color: white;
+}
