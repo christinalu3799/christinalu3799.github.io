@@ -1,20 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display+SC&family=Square+Peg&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Forum&family=Lobster+Two&family=Poiret+One&display=swap');
-@import "transition-style";
 
-html, body {
-    height: 100%;
-}
+
 #page-container {
     position: relative;
-    min-height: 100%;
+    min-height: 100vh;
+    background-color: #CFCBC9;
 }
 #main {
-    overflow: auto;
-    padding-bottom: 100px;
-    width: 100%;
+    padding-bottom: 5rem; /* FOOTER HEIGHT */
 }
 
+/* =========================================================*/
+/*                          FOOTER                          */
+/* =========================================================*/
+#footer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #403D39;
+    position:absolute;
+    bottom: 0; 
+    width: 100%;
+    height: 5rem; /* FOOTER HEIGHT */
+}
+
+#footer p {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    align-self: center;
+}
 /* =========================================================*/
 /*                          NAV                             */
 /* =========================================================*/
@@ -103,40 +119,35 @@ h1 {
 /*                          HOME PAGE                       */
 /* =========================================================*/
 .homepageTitle {
-    width: 600px;
-    height: 20vh;
+    width: 80vw;
     margin: 0 auto;
-    display: flex;
-    justify-content: center; /* Centered in container */
-    align-items: flex-end;
     font-family: 'Cormorant', serif;
-    font-weight: bold;
 }
 
 .homepageTitle p {
     font-size: 70px;
     text-shadow: -5px -4px #CFCBC9;
     color: #3A3B3C;
-
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: -10px;
 }
 
-/*TEST*/
 .homepageTitle h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 26px;
     font-weight: bold;
     text-align: center;
-    align-items: flex-start;
 }
 
 .aboutMeContainer {
-    width: 1000px;
-    height: 500px;
+    width: 80vw; 
     padding-bottom: 30px;
     display: flex;
     align-items: center; /* Think of vertical line - items will be centered along vertical axis*/
     justify-content: center;
     margin: 0 auto;
+    background-color: beige;
 }
 
 .circlePicContainer {
@@ -166,7 +177,7 @@ strong {
     font-style: bold;
     font-size: 20px;
 }
-.whiteSpace { width: 100%; height: 80px; }
+.whiteSpace { width: 100%; height: 80px; background-color: aquamarine;}
 
 /* =========================================================*/
 /*                       PROJECTS PAGE                      */
@@ -259,43 +270,37 @@ svg {
     transform: scale(1.5);
 }
 
-/* =========================================================*/
-/*                          FOOTER                          */
-/* =========================================================*/
-#footer {
-    background-color: #403D39;
-    /*Black Olive color of footer*/
-    position: relative;
-    height: 120px;
-    margin-top: -120px;
-    clear: both;
-}
 
-#footer p {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-    padding: 30px;
-    color: white;
-    text-align: center;
-}
-
-#email {
-    text-decoration: none;
-    color: white;
-}
 
 /* =========================================================*/
 /*                     RESPONSIVE DESIGN                    */
 /* =========================================================*/
 
-/* For phones */
+/* For Tablet */
 @media only screen and (max-width:800px) {
-    #main {
-        display: block; 
-  
+    .aboutMeContainer {
+        display: block;
+        padding: 40px;
     }
-    .circlePicContainer {
+    .circlePicContainer, .aboutMeContent{
+        text-align: center;
+        width: 100%;
+        display: block;
         margin: 0 auto;
     }
+    .aboutMeContent {
+        margin-top: 15px;
+        padding: 0;
+    }
+}
 
+/* For iPhone */
+@media only screen and (max-width:600px) {
+    .homepageTitle p {
+        font-size: 50px;
+    }
+    .aboutMeContainer {
+        width: 80vw;
+        display: block;
+    }
 }
