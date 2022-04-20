@@ -98,49 +98,42 @@ h1 {
 .content p {
     font-family: 'Josefin Sans', sans-serif;
 }
-
 /* =========================================================*/
 /*                          HOME PAGE                       */
 /* =========================================================*/
 .homepageTitle {
-    width: 600px;
+    width: 80vw;
     height: 20vh;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center; /* Centered in container */
-    align-items: flex-end;
     font-family: 'Cormorant', serif;
-    font-weight: bold;
+    margin: 0 auto;
 }
 
 .homepageTitle p {
+    text-align: center;
     font-size: 70px;
     text-shadow: -5px -4px #CFCBC9;
     color: #3A3B3C;
-
+    margin: 20px 0 -10px 0;
 }
 
-/*TEST*/
 .homepageTitle h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 26px;
     font-weight: bold;
     text-align: center;
-    align-items: flex-start;
 }
 
 .aboutMeContainer {
-    width: 1000px;
+    width: 80vw;
     height: 500px;
     padding-bottom: 30px;
     display: flex;
     align-items: center; /* Think of vertical line - items will be centered along vertical axis*/
-    justify-content: center;
     margin: 0 auto;
 }
 
 .circlePicContainer {
-    display: inline-block;
+
     background-color: black;
     width: 40%;
     border-radius: 50%;
@@ -157,7 +150,6 @@ h1 {
 
 .aboutMeContent {
     padding-left: 40px;
-    display: inline-block;
     width: 60%;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
@@ -290,12 +282,16 @@ svg {
 
 /* For phones */
 @media only screen and (max-width:800px) {
-    #main {
-        display: block; 
-  
+
+    .circlePicContainer, .aboutMeContainer {
+        display: block;
+        width: 100%;
     }
+
     .circlePicContainer {
         margin: 0 auto;
+        margin-top: 10vh;
+        width: 50vw;
     }
 
 }
