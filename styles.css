@@ -19,38 +19,31 @@
     width: 100%;
     background-color: #403D39;
     font-family: Menlo, monospace;
-
-    padding-top: 10px;
     align-items: center;
     justify-content: center;
     
-    position: absolute;
+    position: absolute; /* Keeps footer at the bottom */
     bottom: 0; 
 }
 
 #footer ul {
- 
     position: absolute;
-    list-style-type: none;
-
     display: flex;
+    padding: 0; /* Setting margin and padding equal to 0 removes indentation*/
+    margin: 0;
 }
+
 #footer li {
     list-style: none;
 }
 
 #footer ul li a {
-    /*color: white;
-    text-decoration: none;
-    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
-    font-size: 14px;*/
-
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     display: block;
     text-align: center;
-    margin: 0 10px;
+    margin: 10px;
     border-radius: 50%;
     padding: 6px;
     box-sizing: border-box;
@@ -58,41 +51,36 @@
     box-shadow: 0 10px 15px rgba(0,0,0,0.3);
     background: linear-gradient(0deg, #ddd, #fff);
     transition: .5s;
+    
 }
 
-#footer ul li a .fab {
+ul li a .fab {
+    justify-content: space-between;
     width: 100%;
     height:100%;
-    display:block;
     background: linear-gradient(0deg, #fff, #ddd);
     border-radius: 50%;
-    line-height: calc(60px - 12px);
-    font-size:24px;
+    font-size: 24px;
     color: #262626;
     transition: .5s;
-}
+  }
+
 #footer a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    text-decoration:none;
+    text-decoration: none;
 }
 #footer ul li:nth-child(1) a:hover .fab {
-    color: #3b5998;
+    color: #1684ec;
   }
   
  #footer ul li:nth-child(2) a:hover .fab {
-    color: #00aced;
+    color: #033b9a;
   }
   
  #footer ul li:nth-child(3) a:hover .fab {
-    color: #dd4b39;
+    color: #4e4e4e;
   }
-  ul li:nth-child(4) a:hover .fab {
-    color: #007bb6;
-  }
-  
-  ul li:nth-child(5) a:hover .fab {
-    color: #e4405f;
-  }
+
 /* =========================================================*/
 /*                          NAV                             */
 /* =========================================================*/
@@ -364,14 +352,19 @@ svg {
     }
     .aboutMeContainer {
         display: block;
+        width: 100%;
+    
     }
     .homepageTitle p {
         font-size: 50px;
     }
     .circlePicContainer {
-        width: 35vw;
+        width: 60vw;
+        
     }
     .aboutMeContent {
-        font-size: 12px;
+        width: 80vw;
+        font-size: 16px;
+
     }
 }
