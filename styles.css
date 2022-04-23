@@ -17,69 +17,51 @@
     height: 20vh; /* FOOTER HEIGHT */
     display: flex;
     width: 100%;
-    background-color: #403D39;
-    font-family: Menlo, monospace;
+    background: #403D39;
     align-items: center;
     justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
     
     position: absolute; /* Keeps footer at the bottom */
     bottom: 0; 
 }
 
-#footer ul {
-    position: absolute;
-    display: flex;
-    padding: 0; /* Setting margin and padding equal to 0 removes indentation*/
-    margin: 0;
-}
-
-#footer li {
-    list-style: none;
-}
-
-#footer ul li a {
-    position: relative;
-    width: 45px;
+.buttonContainer .button {
+    display: inline-block;
     height: 45px;
-    display: block;
+    width: 45px;
+    float: left;
+    margin: 0 15px;
+    background-color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px #193047;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+}
+.buttonContainer .button:hover {
+    box-shadow: 0px 2px 10px 5px #CFCBC9;
+    background-color: #CFCBC9;
+}
+
+ .buttonContainer .button .icons {
+
+    display: inline-block;
+    height: 45px;
+    width: 45px;
     text-align: center;
-    margin: 10px;
-    border-radius: 50%;
-    padding: 6px;
+    border-radius: 50px;
     box-sizing: border-box;
-    text-decoration: none;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-    background: linear-gradient(0deg, #ddd, #fff);
-    transition: .5s;
-    
-}
+    line-height: 45px;
+    transition: all 0.3s ease-out;
+ }
 
-ul li a .fab {
-    justify-content: space-between;
-    width: 100%;
-    height:100%;
-    background: linear-gradient(0deg, #fff, #ddd);
-    border-radius: 50%;
-    font-size: 24px;
-    color: #262626;
-    transition: .5s;
-  }
+ .buttonContainer .button .icons i {
+    font-size: 25px;
+    line-height: 45px;
+    color: #403D39;
+ }
 
-#footer a:hover {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    text-decoration: none;
-}
-#footer ul li:nth-child(1) a:hover .fab {
-    color: #1684ec;
-  }
-  
- #footer ul li:nth-child(2) a:hover .fab {
-    color: #033b9a;
-  }
-  
- #footer ul li:nth-child(3) a:hover .fab {
-    color: #4e4e4e;
-  }
 
 /* =========================================================*/
 /*                          NAV                             */
