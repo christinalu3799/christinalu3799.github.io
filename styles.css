@@ -1,68 +1,68 @@
+/* =========================================================*/
+/*                          FONTS                           */
+/* =========================================================*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display+SC&family=Square+Peg&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Forum&family=Lobster+Two&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Lalezar&family=Water+Brush&display=swap');
+/* =========================================================*/
+/*                     MAIN PAGE SETUP                      */
+/* =========================================================*/
+:root {
+    --clr-primary-200: #84735e;
+    --clr-primary-300: #847c6d;
+    --clr-primary-400: #636453;
 
+    --clr-neutral-100: #e8e5d1;
+    --clr-neutral-900: #444740;
 
+    --ff-primary: 'Lalezar';
+    --ff-body: 'Josefin Sans', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 #page-container {
+    background-color: var(--clr-neutral-100);
     position: relative;
     min-height: 100vh;
 }
+/* Holds all content EXCLUDING the footer */
 #main {
-    padding-bottom: 20vh; /* FOOTER HEIGHT */
+    padding-bottom: 15vh; /* FOOTER HEIGHT */
 }
-
-/* =========================================================*/
-/*                          FOOTER                          */
-/* =========================================================*/
-#footer {
-    height: 20vh; /* FOOTER HEIGHT */
-    display: flex;
-    width: 100%;
-    background: #403D39;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Josefin Sans', sans-serif;
-    
-    position: absolute; /* Keeps footer at the bottom */
-    bottom: 0; 
-}
-
-.buttonContainer .button {
-    display: inline-block;
-    height: 45px;
-    width: 45px;
-    float: left;
-    margin: 0 15px;
-    background-color: white;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px #193047;
-    transition-duration: 0.4s;
-    -webkit-transition-duration: 0.4s; /* Safari */
-}
-.buttonContainer .button:hover {
-    box-shadow: 0px 2px 10px 5px #CFCBC9;
-    background-color: #CFCBC9;
-}
-
- .buttonContainer .button .icons {
-
-    display: inline-block;
-    height: 45px;
-    width: 45px;
-    text-align: center;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 45px;
-    transition: all 0.3s ease-out;
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .container {
+        /* background-color: green; */
+    }
  }
 
- .buttonContainer .button .icons i {
-    font-size: 25px;
-    line-height: 45px;
-    color: #403D39;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .container {
+        /* background-color: purple; */
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .container {
+        /* background-color: red; */
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .container {
+        /* background-color: dodgerblue; */
+    }
  }
-
-
 /* =========================================================*/
 /*                          NAV                             */
 /* =========================================================*/
@@ -71,11 +71,11 @@
 }
 .nav {
     /*Background color of menu bar*/
-    background-color: #CFCBC9;
+    background-color: var(--clr-primary-400);
     position: absolute;
     justify-content: center;
     width: 100%;
-    z-index: 1;;
+    z-index: 1;
 }
 .nav ul {
     margin: 0;
@@ -90,167 +90,81 @@
     display: inline-block;
 }
 button {
-    width: 100px;
-    color: #3A3B3C;
-    background-color: #CFCBC9;
-    margin: 5px;
+    width: 75px;
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-primary-400);
+    margin: 6px;
     font-family: 'Cormorant', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     border: none;
-    box-shadow: inset 0 0 0 0 #3A3B3C70;
     transition: ease-out 0.3s;
     border-radius: 2px;
 }
 /* Change the link color on hover*/
 button:hover {
-    box-shadow: inset 100px 0 0 0 #3A3B3C70;
+    box-shadow: inset 100px 0 0 0 var(--clr-neutral-900);
     color: white;
 }
 
-.animate__animated.animate__backInDown {
-    --animate-duration: 2s;
-  }
-.animate__animated.animate__backInUp {
-    --animate-duration: 2s;
-  }
-
-h1 {
-    text-align: center;
-    /*Space above title*/
-    padding-top: 50px;
-    padding-bottom: 40px;
-    font-family: 'Cormorant', serif;
-    font-weight: bold;
-    font-size: 50px;
-    color: #3A3B3C;
-    /*Color of Titles*/
-}
-
-.subHeading {
-    text-align: center;
-    font-family: 'Cormorant', serif;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.content {
-    padding: 30px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    width: 75%; /* 75% of the main container*/
-    text-align: center;
-    justify-content: center;
-}
-
-.content p {
-    font-family: 'Josefin Sans', sans-serif;
-}
 /* =========================================================*/
 /*                          HOME PAGE                       */
 /* =========================================================*/
-.homepageTitle {
-    width: 80vw;
+header {
+    display: block;
+    padding: 2rem 0; 
+    text-align: center;
     margin: 0 auto;
-    font-family: 'Cormorant', serif;
-}
-
-.homepageTitle p {
-    text-align: center;
-    font-size: 70px;
-    text-shadow: -5px -4px #CFCBC9;
-    color: #3A3B3C;
-    text-align: center;
     margin-top: 15px;
-    margin-bottom: -10px;
+}
+header h1 {
+    font-family: var(--ff-primary);
+    font-style: bold;
+    font-size: 3.2rem;
+    color: var(--clr-neutral-900);
 }
 
-.homepageTitle h2 {
+header h2{
+    font-size: 1.5rem;
+    font-style: bold;
+    color: #3A3B3C;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 26px;
-    font-weight: bold;
+}
+.animate__animated.animate__backInDown {--animate-duration: 2s;}
+.animate__animated.animate__backInUp {--animate-duration: 2s;}
+.animate__animated.animate__fadeIn { --animate-duration: 5s; }
+
+section {
+    padding: 3rem 0;
     text-align: center;
 }
-
-.aboutMeContainer {
-    width: 80vw; 
-    max-width: 1000px;
-    padding-top: 30px;
-    padding-bottom: 60px;
-    display: flex;
-    align-items: center; /* CENTERED ACROSS */ 
-    margin: 0 auto;
-    margin-top: 10px;
+.container {
+    margin-inline: auto; /* left and right margin */
+    width: min(90%, 70.5rem)
 }
-
-.circlePicContainer {
-    background-color: black;
-    width: 40%;
+.container--narrow {
+    max-width: 50rem;
+}
+.profileImage img { 
+    width: 50%;
+    min-width: 300px;
+    margin-top: -4rem;
     border-radius: 50%;
-    border: thin solid black;
-    max-width: 350px;
-    
+    border: solid var(--clr-neutral-900) 3px;
 }
-.animate__animated.animate__fadeIn {
-    --animate-duration: 5s;
-}
-.circlePicContainer img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-
 .aboutMeContent {
-    padding-left: 40px;
-    width: 60%;
+    padding: 2rem 0 0 0;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-    
-}
-strong {
-    font-style: bold;
-    font-size: 20px;
+    font-size: 1.3125rem;
 }
 
 /* =========================================================*/
 /*                       PROJECTS PAGE                      */
 /* =========================================================*/
 
-.nature1, .nature2, .nature3 {
-    width: 30%;
-    height: 300px;
-    object-fit: cover;
-
-  -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
-    transform-origin:center;
-    transform:perspective(800px) rotateY(25deg);
-    transition:0.5s;
-}
-.project-container {
-    padding-top: 20px;
-    max-width:600px;
-    max-height:350px;
-    display:flex;
-    justify-content:center;
-    margin: 0 auto; /* CENTERING A DIV */
-    gap: 20px;
-}
-.project-container:hover img {
-    opacity: 0.3;
-}
-  
-.project-container img:hover {
-    transform:perspective(800px)
-    rotateY(00deg);
-    opacity:1;
-}
 
 /* =========================================================*/
 /*                          BLOG PAGE                       */
 /* =========================================================*/
-
-
-
-
 
 
 /* =========================================================*/
@@ -287,49 +201,55 @@ svg {
     transform: scale(1.5);
 }
 
+
+/* =========================================================*/
+/*                          FOOTER                          */
+/* =========================================================*/
+#footer {
+    height: 15vh; /* FOOTER HEIGHT */
+    display: flex;
+    width: 100%;
+    background: var(--clr-neutral-900);
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute; /* Keeps footer at the bottom */
+    bottom: 0; 
+}
+.buttonContainer .button {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+    background-color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px #193047;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+}
+.buttonContainer .button:hover {
+    box-shadow: 0px 2px 10px 5px #CFCBC9;
+    background-color: #CFCBC9;
+}
+ .buttonContainer .button .icons {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 45px;
+    transition: all 0.3s ease-out;
+ }
+ .buttonContainer .button .icons i {
+    font-size: 25px;
+    line-height: 45px;
+    color: #403D39;
+ }
+
+
 /* =========================================================*/
 /*                     RESPONSIVE DESIGN                    */
 /* =========================================================*/
 
-/* For Tablet */
-@media only screen and (max-width:800px) {
-    .aboutMeContainer {
-        display: block;
-        padding: 20px;
-    }
-    .circlePicContainer, .aboutMeContent{
-        text-align: center;
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-        width: 50vw;
-    }
-    .aboutMeContent {
-        padding: 20px;
-        padding-top: 40px;
-    }
-}
-
-/* For iPhone */
-@media only screen and (max-width:600px) {
-    .homepageTitle h2 {
-        font-size: 18px;
-    }
-    .aboutMeContainer {
-        display: block;
-        width: 100%;
-    
-    }
-    .homepageTitle p {
-        font-size: 50px;
-    }
-    .circlePicContainer {
-        width: 60vw;
-        
-    }
-    .aboutMeContent {
-        width: 80vw;
-        font-size: 16px;
-
-    }
-}
