@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" class="transitions">
+<html lang="en">
 
 <head>
     <!-- Required meta tags -->
@@ -16,12 +16,15 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Custom Style Sheet -->
     <link href="styles.css" rel="stylesheet">
+    <!-- Swup Page Transitions -->
+    <script src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="script.js"></script>
     <title>Home</title>
 </head>
 
 <body>
     <div id="page-container">
-        <div id="main">
+        <div id="main" id="swup" class="transition-fade">
             
             <div class="menuBar">
                 <ul class = "nav">
@@ -31,8 +34,7 @@
                     <li><a href="contact.html"><button>Contact</button></a></li>
                 </ul>
             </div>
-
-            
+        
             <header>
                 <div class="container container--narrow  animate__animated animate__fadeInLeft">
                     <h1>hi, i'm christina.</h1>
@@ -58,13 +60,13 @@
                 </div>          
             </section>
 
-                
+<!--                 
             <section id="section2">
                 <div class="container container--narrow">
 
                 </div>
 
-            </section>
+            </section> -->
 
             
         </div>

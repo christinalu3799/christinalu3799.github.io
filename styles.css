@@ -54,33 +54,16 @@ section {
 .container--narrow {
     max-width: 50rem;
 }
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-    .container {
-        /* background-color: green; */
-    }
- }
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    .container {
-        /* background-color: purple; */
-    }
+/* =========================================================*/
+/*                   PAGE TRANSITIONS                       */
+/* =========================================================*/
+.transition-fade {
+    opacity: 1;
+    transition: 500ms;
 }
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-    .container {
-        /* background-color: red; */
-    }
+html.is-animating .transition-fade {
+    opacity: 0;
 }
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-    .container {
-        /* background-color: dodgerblue; */
-    }
- }
 /* =========================================================*/
 /*                          NAV                             */
 /* =========================================================*/
@@ -153,7 +136,8 @@ header h1 {
 
 .profileImage img { 
     width: 50%;
-    max-width: 275px;
+    max-width: 350px;
+    min-width: 300px;
     margin-top: -4rem;
     border-radius: 50%;
     border: solid var(--clr-primary-400) 4px;
@@ -249,3 +233,30 @@ header h1 {
 /*                     RESPONSIVE DESIGN                    */
 /* =========================================================*/
 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .container {
+        
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .container {
+        /* background-color: purple; */
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .container {
+        /* background-color: red; */
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .container {
+        /* background-color: dodgerblue; */
+    }
+ }
