@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display+SC&family=Square+Peg&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Forum&family=Lobster+Two&family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Lalezar&family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
 :root {
     --clr-primary-200: #e9e5d9;
     --clr-primary-300: #5c5c5c;
@@ -11,7 +12,7 @@
     --clr-neutral-100: #fff;
     --clr-neutral-900: #4e5657;
 
-    --ff-primary: 'Lalezar';
+    --ff-primary: 'Oleo Script Swash Caps', cursive;
     --ff-body: 'Josefin Sans', sans-serif;
 }
 /* =========================================================*/
