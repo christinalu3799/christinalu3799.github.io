@@ -5,11 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Forum&family=Lobster+Two&family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Lalezar&family=Water+Brush&display=swap');
 :root {
-    --clr-primary-200: #Eae2cc;
-    --clr-primary-300: #9C4F26;
-    --clr-primary-400: #244F51;
+    --clr-primary-200: #e9e5d9;
+    --clr-primary-300: #5c5c5c;
+    --clr-primary-400: #a6bbc8;
     --clr-neutral-100: #fff;
-    --clr-neutral-900: #132D31;
+    --clr-neutral-900: #4e5657;
 
     --ff-primary: 'Lalezar';
     --ff-body: 'Josefin Sans', sans-serif;
@@ -92,7 +92,7 @@ html.is-animating .transition-fade {
 }
 button {
     width: 75px;
-    color: var(--clr-primary-200);
+    color: var(--clr-primary-300);
     background-color: var(--clr-primary-400);
     margin: 6px;
     font-family: 'Cormorant', sans-serif;
@@ -103,8 +103,8 @@ button {
 }
 /* Change the link color on hover*/
 button:hover {
-    box-shadow: inset 100px 0 0 0 var(--clr-neutral-900);
-    color: var(--clr-primary-200);
+    box-shadow: inset 100px 0 0 0 var(--clr-primary-200);
+    color: var(--clr-primary-300);
 }
 /* =========================================================*/
 /*                          HOME PAGE                       */
@@ -151,6 +151,8 @@ header h1 {
 /*                       PROJECTS PAGE                      */
 /* =========================================================*/
 .projects {
+    display: flex;
+    flex-direction: column;
     background-color: var(--clr-primary-200);
 }
 /* =========================================================*/
