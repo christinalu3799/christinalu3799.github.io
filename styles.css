@@ -2,9 +2,8 @@
 /*                    COLORS AND FONTS                      */
 /* =========================================================*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display+SC&family=Square+Peg&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Forum&family=Lobster+Two&family=Poiret+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Lalezar&family=Water+Brush&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Nanum+Myeongjo&family=Yesteryear&display=swap');
 :root {
     --clr-primary-200: #e9e5d9;
     --clr-primary-300: #5c5c5c;
@@ -12,8 +11,8 @@
     --clr-neutral-100: rgb(255, 255, 255);
     --clr-neutral-900: #4e5657;
 
-    --ff-primary: 'Oleo Script Swash Caps', cursive;
-    --ff-body: 'Josefin Sans', sans-serif;
+    --ff-primary: 'Yesteryear','cursive';
+    --ff-body: 'Nanum Myeongjo', serif;
 }
 /* =========================================================*/
 /*                    TITLE TRANSITIONS                     */
@@ -54,7 +53,8 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 35px;
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 20px;
     max-width: 750px;
 }
 
@@ -73,43 +73,47 @@ html.is-animating .transition-fade {
 /* =========================================================*/
 .menuBar {
     display: flex;
-    height: 45px;
-}
-.nav {
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
     /*Background color of menu bar*/
     background-color: var(--clr-primary-400);
-    position: absolute;
-    justify-content: center;
-    width: 100%;
-    z-index: 1;
+}
+.nav {
+    display: flex;
+    width: 35%;
+}
+.contact {
+    justify-content: right;
 }
 .nav ul {
-    margin: 0;
-    padding: 0;
     list-style-type: none;
     text-align: center;
     overflow: hidden;
 }
-.nav ul li {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-}
+
 button {
     width: 75px;
     color: var(--clr-primary-300);
     background-color: var(--clr-primary-400);
     margin: 6px;
-    font-family: 'Cormorant', sans-serif;
-    font-size: 1.3125rem;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1rem;
     border: none;
-    transition: ease-out 0.3s;
+    transition: ease-out .75s;
     border-radius: 2px;
+}
+
+#logo {
+    max-width: 75px;
+    margin: 10px 0 10px 0;
+    
 }
 /* Change the link color on hover*/
 button:hover {
     box-shadow: inset 100px 0 0 0 var(--clr-primary-200);
-    color: var(--clr-primary-300);
+    color: var(--clr-primary-400);
 }
 /* =========================================================*/
 /*                          HOME PAGE                       */
@@ -122,31 +126,19 @@ header {
 header h1 {
     font-family: var(--ff-primary);
     font-style: bold;
-    font-size: 4rem;
+    font-size: 6rem;
     color: var(--clr-primary-300);
 }
 h2{
     font-size: 1.75remrem;
     color: var(--clr-primary-300);
-    font-family: 'Josefin Sans', sans-serif;
-    margin-top: 2.5rem;
 }
-.profileImage { 
-    width: 75%;
-    max-width: 350px;
-    min-width: 200px;
 
-    border-radius: 50%;
-    border: solid var(--clr-primary-400) 2px;
-}
 .bodyText {
-    font-family: 'Josefin Sans', sans-serif;
+
     font-size: 1rem;
 }
-#section2 {
-    height: 50rem;
-    background-color: var(--clr-primary-200);
-}
+
 /* =========================================================*/
 /*                       PROJECTS PAGE                      */
 /* =========================================================*/
@@ -158,27 +150,32 @@ h2{
 /* =========================================================*/
 /*                         ABOUT ME PAGE                    */
 /* =========================================================*/
+
+.profileImage { 
+    width: 75%;
+    max-width: 350px;
+    min-width: 200px;
+    border-radius: 50%;
+    border: solid var(--clr-primary-400) 2px;
+    margin-bottom: 25px;
+}
 .aboutMe {
-    align-items: flex-start;
-    
+    align-items: center;
+    justify-content: center;
 }
 
 /* =========================================================*/
 /*                          CONTACT PAGE                    */
 /* =========================================================*/
 
-
-#contactimage {
-    display: flex;
-    margin: 0 auto;
-    height: 300px; 
-    width: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: solid var(--clr-primary-400) 4px;
+a {
+    text-decoration: none;
+    color: var(--clr-neutral-900);
 }
 
-
+a:hover {
+    color: var(--clr-primary-400)
+}
 
 /* =========================================================*/
 /*                          FOOTER                          */
@@ -186,13 +183,20 @@ h2{
 #footer {
     height: 15vh; /* FOOTER HEIGHT */
     display: flex;
+    flex-direction: column;
     width: 100%;
     background: var(--clr-neutral-900);
     align-items: center;
     justify-content: center;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: --ff-body;
     position: absolute; /* Keeps footer at the bottom */
     bottom: 0; 
+    color: var(--clr-primary-200)
+}
+#lastUpdated {
+    margin: 0;
+    padding-top: 20px;
+    font-size: smaller;
 }
 .buttonContainer .button {
     display: inline-block;
