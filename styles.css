@@ -9,7 +9,7 @@
     --clr-primary-200: #e9e5d9;
     --clr-primary-300: #5c5c5c;
     --clr-primary-400: #a6bbc8;
-    --clr-neutral-100: #fff;
+    --clr-neutral-100: rgb(255, 255, 255);
     --clr-neutral-900: #4e5657;
 
     --ff-primary: 'Oleo Script Swash Caps', cursive;
@@ -42,19 +42,22 @@
 }
 /* Holds all content EXCLUDING the footer */
 #main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 15vh; /* FOOTER HEIGHT */
 }
 section {
-    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 35px;
+    max-width: 750px;
 }
-.container {
-    margin-inline: auto; /* left and right margin */
-    width: min(90%, 70.5rem)
-}
-.container--narrow {
-    max-width: 50rem;
-}
+
 /* =========================================================*/
 /*                   PAGE TRANSITIONS                       */
 /* =========================================================*/
@@ -69,7 +72,8 @@ html.is-animating .transition-fade {
 /*                          NAV                             */
 /* =========================================================*/
 .menuBar {
-    height: 50px;
+    display: flex;
+    height: 45px;
 }
 .nav {
     /*Background color of menu bar*/
@@ -111,11 +115,8 @@ button:hover {
 /*                          HOME PAGE                       */
 /* =========================================================*/
 header {
-    display: block;
-    padding: 2rem 0; 
+    margin-top: 45px;
     text-align: center;
-    margin: 0 auto;
-    margin-top: 10px;
     text-shadow: -5px -5px 2px var(--clr-primary-200)
 }
 header h1 {
@@ -124,23 +125,21 @@ header h1 {
     font-size: 4rem;
     color: var(--clr-primary-300);
 }
-.container h2{
-    font-size: 1.5rem;
-    font-style: bold;
+h2{
+    font-size: 1.75remrem;
     color: var(--clr-primary-300);
     font-family: 'Josefin Sans', sans-serif;
     margin-top: 2.5rem;
 }
-.profileImage img { 
-    width: 50%;
+.profileImage { 
+    width: 75%;
     max-width: 350px;
-    min-width: 300px;
-    margin-top: -4rem;
+    min-width: 200px;
+
     border-radius: 50%;
-    border: solid var(--clr-primary-400) 4px;
+    border: solid var(--clr-primary-400) 2px;
 }
-.aboutMeContent {
-    padding: 2rem 0 0 0;
+.bodyText {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
 }
@@ -151,15 +150,18 @@ header h1 {
 /* =========================================================*/
 /*                       PROJECTS PAGE                      */
 /* =========================================================*/
-.projects {
+.projects_constainer {
     display: flex;
     flex-direction: column;
-    background-color: var(--clr-primary-200);
+    padding-top: 0;
 }
 /* =========================================================*/
-/*                          BLOG PAGE                       */
+/*                         ABOUT ME PAGE                    */
 /* =========================================================*/
-
+.aboutMe {
+    align-items: flex-start;
+    
+}
 
 /* =========================================================*/
 /*                          CONTACT PAGE                    */
@@ -225,35 +227,3 @@ header h1 {
     color: var(--clr-neutral-900);
  }
 
-
-/* =========================================================*/
-/*                     RESPONSIVE DESIGN                    */
-/* =========================================================*/
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-    .container {
-        
-    }
- }
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    .container {
-        /* background-color: purple; */
-    }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-    .container {
-        /* background-color: red; */
-    }
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-    .container {
-        /* background-color: dodgerblue; */
-    }
- }

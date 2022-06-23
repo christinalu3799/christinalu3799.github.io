@@ -19,27 +19,43 @@
     <!-- Swup Page Transitions -->
     <script src="node_modules/swup/dist/swup.min.js"></script>
     <script defer src="script.js"></script>
-    <title>Blog</title>
+    <title>About Me</title>
 </head>
 
 <body>
     <div id="page-container">
+       
+
+        <div class="menuBar">
+            <ul class = "nav">
+                <li><a href="index.html"><button>Home</button></a></li>
+                <li><a href="about.html"><button>About</button></a></li>
+                <li><a href="projects.html"><button>Projects</button></a></li>
+                <li><a href="contact.html"><button>Contact</button></a></li>
+            </ul>
+        </div>
+
         <div id="main" id="swup" class="transition-fade">
-
-            <div class="menuBar">
-                <ul class = "nav">
-                    <li><a href="index.html"><button>Home</button></a></li>
-                    <li><a href="projects.html"><button>Projects</button></a></li>
-                    <li><a href="blog.html"><button>Blog</button></a></li>
-                    <li><a href="contact.html"><button>Contact</button></a></li>
-                </ul>
-            </div>
-
             <header>
-                <div class="container container--narrow  animate__animated animate__fadeInLeft">
-                    <h1>Blog</h1>
+                <div class="animate__animated animate__fadeInLeft">
+                    <h1>About Me</h1>
                 </div>
             </header>
+
+            <section class="bodyText aboutMe"> 
+                <h3>Education</h3>
+                    <p> 
+                        Software Engineering Immersive Coding Bootcamp at General Assembly (November 2022)
+                    </p>
+                    <p>
+                        BS in Earth and Atmospher Sciences from the Georgia Institute of Technology (Class of 2020)
+                    </p>
+                <h3>Skills</h3>
+                    <p>
+                        HTML5, CSS3, JavaScript, Python, SQL, Figma
+                    </p>
+                <h3>Work Experience</h3>
+            </section>
 
         </div>
 
