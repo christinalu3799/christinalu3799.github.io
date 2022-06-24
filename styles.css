@@ -55,6 +55,7 @@ section {
     text-align: center;
     font-family: 'Nanum Myeongjo', serif;
     padding: 20px;
+    width: 50%;
     max-width: 750px;
 }
 
@@ -177,6 +178,62 @@ a:hover {
     color: var(--clr-primary-400)
 }
 
+.contactMeForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-primary-200);
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 4px 4px 2px #4e565750;
+}
+
+#myform {
+    width: 100%;
+}
+
+.contactMeForm .input_field {
+    margin-bottom: 5px;
+}
+.contactMeForm .input_field input[type="text"], .contactMeForm textarea {
+    width: 100%;
+    border: 1px solid #4e565750;
+    padding: 10px;
+}
+
+.contactMeForm textarea {
+    height: 80px;
+    resize: none; 
+}
+
+.btn {
+    width: 100%;
+
+    padding: 0;
+}
+.contactMeForm .btn input[type="submit"] {
+    border: 0;
+    margin-top: 15px; 
+    padding: 10px;
+    width: 100%; 
+    background-color: var(--clr-primary-400);
+    color: var(--clr-neutral-100);
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.contactMeForm #error_message {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0px;
+    font-size: 14px;
+    background: var(--clr-neutral-900);
+    color: var(--clr-neutral-100);
+    transition: all 0.5s ease;
+}
 /* =========================================================*/
 /*                          FOOTER                          */
 /* =========================================================*/
