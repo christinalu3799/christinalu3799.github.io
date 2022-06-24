@@ -20,6 +20,8 @@
     
     <!-- JS -->
     <script src="contact.js"></script>
+    <script src="script.js"></script>
+
     <title>Contact</title>
 </head>
 
@@ -33,7 +35,8 @@
                 <li><a href="projects.html"><button>Projects</button></a></li>
              
             </ul>
-            <img src="cl.png" alt="personal logo" id="logo">
+            
+            <a href="index.html"><img src="cl.png" alt="personal logo" id="logo"></a>
     
             <ul class = "nav contact">
                 <li><a href="contact.html"><button>Contact</button></a></li>
@@ -52,7 +55,7 @@
                 <div class="contactMeForm">
                     <div id="error_message"></div>
 
-                    <form id="myform" onsubmit="return validation()" action="mail.php" method="FORM">
+                    <form id="myform" onsubmit="return validation()" action="mail.php" method="POST">
                         <div class="input_field">
                             <input type="text" placeholder="Name" id="name" name="name">
                         </div>

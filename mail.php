@@ -1,20 +1,23 @@
 <?php
 
-$name = $_POST['name'];
-$subject = $_POST['subject'];
-$phone = $_POST['phone'];
-$email = $_POST['email'];
-$message = $_POST['message'];
+echo "<pre>";
+    print_r('$_POST')
+echo '</pre>';
+// $name = $_POST['name'];
+// $subject = $_POST['subject'];
+// $phone = $_POST['phone'];
+// $email = $_POST['email'];
+// $message = $_POST['message'];
 
-$mailheader= "From:".$name."<".$email.">\r\n";
+// $mailheader= "From:".$name."<".$email.">\r\n";
 
-// My email address, all inquiries will be sent to this email address
-$recipient = "christina.lu3799@gmail.com"
+// // My email address, all inquiries will be sent to this email address
+// $recipient = "christina.lu3799@gmail.com"
 
-mail($recipient, $subject, $message, $mailheader);
-or die("Error");
+// mail($recipient, $subject, $message, $mailheader);
+// or die("Error");
 
-echo "Success!"
+// echo "Success!"
 // echo'
 // <!DOCTYPE html>
 
