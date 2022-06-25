@@ -116,11 +116,14 @@ button {
     max-width: 75px;
     margin: 10px 0 10px 0;
 }
+
+
 /* Change the link color on hover*/
 button:hover {
-    box-shadow: inset 100px 0 0 0 var(--clr-primary-200);
-    color: var(--clr-primary-400);
-}
+    text-decoration: underline;
+    /* box-shadow: inset 100px 0 0 0 var(--clr-primary-200);*/
+    color: var(--clr-primary-200);
+} 
 
 .hamburger {
     display: none;
@@ -146,6 +149,8 @@ h2{
 }
 
 .bodyText {
+    display: flex; 
+    flex-direction: column;
     font-size: 1rem;
 }
 .blank {
@@ -178,6 +183,7 @@ h2{
 .aboutMePage {
     display: flex;
     flex-direction: row;
+    justify-content: left;
 }
 .profileImage { 
     width: 80%;
@@ -193,6 +199,13 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.about {
+    align-items: baseline;
+}
+.experiences {
+    text-align: left;
 }
 
 /* =========================================================*/
