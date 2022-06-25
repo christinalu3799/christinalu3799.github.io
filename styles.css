@@ -157,7 +157,7 @@ h2{
 }
 .seeMyWorkBtn {
     padding: 10px;
-    width: 150px;
+    width: 200px;
 }
 .seeMyWorkBtn:hover {
     box-shadow: none;
@@ -175,16 +175,23 @@ h2{
 /*                         ABOUT ME PAGE                    */
 /* =========================================================*/
 
+.aboutMePage {
+    display: flex;
+    flex-direction: row;
+}
 .profileImage { 
-    width: 75%;
+    width: 80%;
     max-width: 350px;
-    min-width: 200px;
+    min-width: 250px;
     border-radius: 50%;
     border: solid var(--clr-primary-400) 2px;
     margin-bottom: 25px;
 }
 .aboutMe {
-    align-items: center;
+    margin-left: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -245,6 +252,13 @@ h2{
     background: var(--clr-neutral-900);
     color: var(--clr-neutral-100);
     transition: all 0.5s ease;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color:var(--clr-primary-400);
 }
 /* =========================================================*/
 /*                          FOOTER                          */
@@ -354,4 +368,24 @@ h2{
         color: white;
     }
     
+
+    /* ABOUT ME PAGE */
+    .aboutMePage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .profileImage { 
+        width: 60%;
+        max-width: 350px;
+        min-width: 200px;
+        border-radius: 50%;
+        border: solid var(--clr-primary-400) 2px;
+        margin-bottom: 25px;
+    }
+    .aboutMe {
+        text-align: center;
+        
+    }
 }
