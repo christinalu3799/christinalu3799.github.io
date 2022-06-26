@@ -103,7 +103,7 @@ html.is-animating .transition-fade {
 }
 
 a.navitem:hover, a.navitem:focus, a.navitem:active {
-    color: var(--clr-neutral-900);
+    color: var(--clr-primary-300);
     text-decoration: none;
 }
 a.navitem {
