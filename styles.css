@@ -91,32 +91,63 @@ html.is-animating .transition-fade {
     display: flex;
     width: 35%;
 }
+
 .contact {
     justify-content: right;
 }
+
 .nav ul {
     list-style-type: none;
     text-align: center;
     overflow: hidden;
 }
 
-button {
-    width: 75px;
-    color: var(--clr-primary-300);
-    background-color: var(--clr-primary-400);
-    margin: 6px;
-    font-family: 'Nanum Myeongjo', serif;
-    font-size: 1rem;
-    border: none;
-    transition: ease-out .4s;
-    border-radius: 2px;
+a.navitem:hover, a.navitem:focus, a.navitem:active {
+    color: var(--clr-neutral-900);
+    text-decoration: none;
 }
-
+a.navitem {
+    font-family: 'Nanum Myeongjo', serif;
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+}
+a.navitem {
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+    color: #000;
+}
+a.navitem::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: var(--clr-primary-300);
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+a.navitem:active::before {
+    background-color: var(--clr-primary-300);
+}
+a.navitem:hover::before, a.navitem:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
 #logo {
     max-width: 75px;
     margin: 10px 0 10px 0;
 }
-
 
 /* Change the link color on hover*/
 button:hover {
@@ -124,10 +155,6 @@ button:hover {
     /* box-shadow: inset 100px 0 0 0 var(--clr-primary-200);*/
     color: var(--clr-primary-200);
 } 
-
-.hamburger {
-    display: none;
-}
 
 /* =========================================================*/
 /*                          HOME PAGE                       */
@@ -165,6 +192,7 @@ h2{
     width: 200px;
 }
 .seeMyWorkBtn:hover {
+    text-decoration: none;
     box-shadow: none;
     color: white;
 }
@@ -242,7 +270,6 @@ h2{
 
 .btn {
     width: 100%;
-
     padding: 0;
 }
 .contactMeForm .btn input[type="submit"] {
@@ -254,7 +281,6 @@ h2{
     color: var(--clr-neutral-100);
     text-transform: uppercase;
     cursor: pointer;
-
 }
 
 .contactMeForm #error_message {
@@ -266,11 +292,10 @@ h2{
     color: var(--clr-neutral-100);
     transition: all 0.5s ease;
 }
-a {
-    text-decoration: none;
-    color: white;
-}
+
+
 a:hover {
+    text-decoration: none;
     color:var(--clr-primary-400);
 }
 /* =========================================================*/
@@ -289,10 +314,17 @@ a:hover {
     bottom: 0; 
     color: var(--clr-primary-200);
 }
-#lastUpdated {
-    margin: 0;
-    padding-top: 20px;
-    font-size: smaller;
+
+button {
+    width: 75px;
+    color: var(--clr-primary-300);
+    background-color: var(--clr-primary-400);
+    margin: 6px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1rem;
+    border: none;
+    transition: ease-out .4s;
+    border-radius: 2px;
 }
 .buttonContainer .button {
     display: inline-block;
@@ -340,6 +372,10 @@ a:hover {
     .home, .projects {
         display: none;
     }
+
+    /* .contact {
+        justify-content: right;
+    } */
     header {
         display: flex;
         flex-direction: column;
@@ -356,11 +392,7 @@ a:hover {
     section {
         width: 80%;
     }
-    .seeMyWorkBtn {
-        padding: 10px;
-        width: 150px;
-        margin-bottom: 20px;
-    }
+
     .flowers {
         /* position:absolute;
         bottom: 15vh; */
