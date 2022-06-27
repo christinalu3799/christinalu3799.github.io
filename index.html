@@ -16,59 +16,69 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Custom Style Sheet -->
     <link href="styles.css" rel="stylesheet">
-    <link href="transitions.css" rel="stylesheet">
+    <!-- <link href="transitions.css" rel="stylesheet"> -->
     
     <!-- JS -->
-    <script src="script.js"></script>
+    
 
     <title>Home</title>
 </head>
-
+<!-- ------------------------------------------------------------------------------------------ -->
 <body>
-    <div class="transition transition-1 is-active"></div>
+    <!-- <div class="transition transition-1 is-active"></div> -->
+<!-- ------------------------------------------------------------------------------------------ -->
     <div id="page-container">
-        
+
+<!-- ------------------------------------------------------------------------------------------ -->
         <div class="menuBar">
+            <a href="index.html"><img src="cl.png" alt="personal logo" id="logo"></a>
+
+            <div class="menu-btn">
+                <div class="menu-btn__lines"></div>
+            </div>
+            
             <ul class = "nav">
                 <li class="home"><a class="navitem" href="index.html" >Home</a></li>
                 <li class="about"><a class="navitem" href="about.html">About</a></li>
                 <li class="projects"><a class="navitem"href="projects.html">Projects</a></li>
-            </ul>
-
-            <a href="index.html"><img src="cl.png" alt="personal logo" id="logo"></a>
-    
-            <ul class = "nav contact">
-              <li><a class="navitem" href="contact.html">Contact</a></li>
+                <li class="contact"><a class="navitem" href="contact.html">Contact</a></li>
             </ul>
         </div>
-
+   
+<!-- ------------------------------------------------------------------------------------------ -->
+<!-- EVERYTHING BETWEEN THE NAVIGATION BAR AND FOOTER -->
         <div id="main" class="transition-fade">
-
-            <header class="animate__animated animate__fadeInLeft">
+     
+            <header class="animate__animated animate__fadeInUp">
                 <div>
-                    <h1>hi, i'm christina.</h1>
+                    <h1>christina lu</h1>
                 </div>
             </header>
      
             <section> 
-                <h2 class = "animate__animated animate__fadeInLeft">
-                    aspiring software engineer
+                <h2 class = "animate__animated animate__fadeInUp">
+                    <p>software engineer</p>
                 </h2>
 
-                <div class = "bodyText animate__animated animate__fadeInLeft">
+                <div class = "bodyText animate__animated animate__fadeInUp">
                     <p>
-                        I am currently a coding bootcamp student with General Assembly and on track to graduate at the end of November of this year. In the meantime, I am excited to explore the industry and leverage my problem-solving skills and creativity to a lifetime of learning with other like-minded individuals.
+                        Currently a coding bootcamp student with General Assembly, I am excited to explore the industry and leverage my problem-solving skills and creativity to a lifetime of learning with other like-minded individuals.
                     </p>
                     <p>
-                        As I continue honing my technical skills, I look forward to working with other developers on creative and innovative projects.
+                        I like to create engaging and functional products that get the job done. 
+                    </p>
+                    <p> 
+                        This website is still a work in progress. But in the meantime, feel free to browse around!
                     </p>
 
                     <a href="projects.html"><button class="seeMyWorkBtn" >View My Work</button></a>
                 </div>
+
                 <img src="flowers.jpg" class="flowers">
+                
             </section>  
         </div>
-
+<!-- ------------------------------------------------------------------------------------------ -->
         <footer id = "footer">
             <div class="buttonContainer">
                 <div class="button">        
@@ -83,8 +93,9 @@
             </div>
             
         </footer>
+<!-- ------------------------------------------------------------------------------------------ -->
     </div>
-
+    <script src="script.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
     crossorigin="anonymous"></script>
@@ -96,5 +107,6 @@
     crossorigin="anonymous"></script>
     <!-- Font Awesome JS -->
     <script src="https://kit.fontawesome.com/0e5dbf1dd6.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

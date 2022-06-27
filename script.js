@@ -1,10 +1,27 @@
-window.onload = () => {
-    const transition_el = document.querySelector(".transition")
-    const anchors = document.querySelectorAll('a') 
-    setTimeout(() => {
-        transition_el.classList.remove('is-active')
+// HAMBURGER MENU 
 
-    }, 500)
+const menuBtn = document.querySelector('.menu-btn');
+const nav = document.querySelector('.nav');
+// main toggle 
+menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('open');
+    nav.classList.toggle('open')
+})
+
+
+
+
+
+
+// PAGE TRANSITION
+
+// window.onload = () => {
+//     const transition_el = document.querySelector(".transition")
+//     const anchors = document.querySelectorAll('a') 
+//     setTimeout(() => {
+//         transition_el.classList.remove('is-active')
+
+//     }, 500)
 
     // for(let i = 0; i < anchors.length; i++) {
     //     const anchor = anchors[i];
@@ -21,7 +38,7 @@ window.onload = () => {
     //     });
 
     // }
-}
+// }
 
 
 // const hamburger = document.querySelector('.hamburger')

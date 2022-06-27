@@ -16,33 +16,36 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Custom Style Sheet -->
     <link href="styles.css" rel="stylesheet">
-    <link href="transitions.css" rel="stylesheet">
+    <!-- <link href="transitions.css" rel="stylesheet"> -->
     <!-- JS -->
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <title>About Me</title>
 </head>
-
+<!-- ------------------------------------------------------------------------------------------ -->
 <body>
     <div class="transition transition-1 is-active"></div>
+<!-- ------------------------------------------------------------------------------------------ -->
     <div id="page-container">
+<!-- ------------------------------------------------------------------------------------------ -->
+    <div class="menuBar">
+        <a href="index.html"><img src="cl.png" alt="personal logo" id="logo"></a>
 
-        <div class="menuBar">
-            <ul class = "nav">
-                <li class="home"><a class="navitem" href="index.html" >Home</a></li>
-                <li class="about"><a class="navitem" href="about.html">About</a></li>
-                <li class="projects"><a class="navitem"href="projects.html">Projects</a></li>
-            </ul>
-
-            <a href="index.html"><img src="cl.png" alt="personal logo" id="logo"></a>
-    
-            <ul class = "nav contact">
-              <li><a class="navitem" href="contact.html">Contact</a></li>
-            </ul>
+        <div class="menu-btn">
+            <div class="menu-btn__lines"></div>
         </div>
-
+        
+        <ul class = "nav">
+            <li class="home"><a class="navitem" href="index.html" >Home</a></li>
+            <li class="about"><a class="navitem" href="about.html">About</a></li>
+            <li class="projects"><a class="navitem"href="projects.html">Projects</a></li>
+            <li class="contact"><a class="navitem" href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+<!-- ------------------------------------------------------------------------------------------ -->
         <div id="main" class="transition-fade">
+
             <header>
-                <div class="animate__animated animate__fadeInLeft">
+                <div class="animate__animated animate__fadeInUp">
                     <h1>About Me</h1>
                 </div>
             </header>
@@ -50,29 +53,53 @@
             <section class="bodyText about"> 
                 <div class="aboutMePage">
 
-                    <img src="headshot.jpg" class="profileImage animate__animated animate__fadeInRight">
-                     <div class="aboutMe animate__animated animate__fadeInRight">
+                    <img src="headshot.jpg" class="profileImage animate__animated animate__fadeInUp">
+                     <div class="aboutMe animate__animated animate__fadeInUp">
                         <h3>Education</h3>
                             <p> 
-                                Software Engineering Immersive Coding Bootcamp at General Assembly (November 2022)
+                                Software Engineering Immersive Coding Bootcamp at General Assembly (Anticipated Graduation date of November 2022)
                             </p>
                             <p>
                                 BS in Earth and Atmospher Sciences from the Georgia Institute of Technology (Class of 2020)
                             </p>
                         <h3>Skills</h3>
-                            <p>
-                                HTML5, CSS3, JavaScript, Python, SQL, Figma
-                            </p>
+                            <p class="mono">Design</p>
+                                <p>
+                                    Responsive Web Design, Prototyping, Figma, Canva
+                                </p>
+                            <p class="mono">Development</p>
+                                <p>HTML5, CSS3, JavaScript, Python, Git, SQL, GitHub, VSCode</p>
                     </div>
                 
                 </div>
 
-                <h2 class="animate__animated animate__fadeInLeft">
+                <h2 class="animate__animated animate__fadeInUp">
                     Experiences
                 </h2>
                 <br>
-                <p  class="animate__animated animate__fadeInLeft">Legal Assistant - Evans Warncke Robinson LLC | Atlanta, GA | December 2021 - May 2022</p>
-                <ul class="experiences animate__animated animate__fadeInLeft"> 
+<!-- FREELANCE WRITING -->
+                <p  class="animate__animated animate__fadeInUp">Freelance Writer | Atlanta, GA | October 2021 - Present</p>
+                <ul class="experiences animate__animated animate__fadeInUp"> 
+                    <li> 
+                        Assist hundreds of students edit and revise their college application essays 
+                    </li>
+                    <li>
+                        Provide individualized attention to each client in addressing unique questions and concerns 
+                    </li>
+                    <li>
+                        Maintain open communication throughout editing process to maintain high customer satisfaction 
+                    </li>
+                    <li>
+                        Provided extensive administrative support for attorneys' day-to-day tasks in an office environment
+                    </li>
+                    <li>
+                        Deliver deep editing of documents including punctuation and spelling corrections with extensive feedback for improvement on tone, structure, and flow of ideas
+                    </li>
+                </ul>
+                <br>
+<!-- EVANS WARNCKE ROBINSON -->
+                <p  class="animate__animated animate__fadeInUp">Legal Assistant - Evans Warncke Robinson LLC | Atlanta, GA | December 2021 - May 2022</p>
+                <ul class="experiences animate__animated animate__fadeInUp"> 
                     <li> 
                         Implemented knowledge of web development in revitalizing and updating firm's website to secure server
                     </li>
@@ -93,16 +120,37 @@
                     </li>
                     <li>
                         Prepared medical record chronologies and summaries in timely manner for attorney review
-                        
+                    </li>
+                </ul>
+                <br>
+<!-- SERVER -->
+                <p  class="animate__animated animate__fadeInUp">Server | Atlanta, GA | June 2020 - July 2021</p>
+                <ul class="experiences animate__animated animate__fadeInUp"> 
+                    <li> 
+                        Welcomed customers into the restaurant while firmly enforcing COVID-19 safety protocols and health standards
+                    </li>
+                    <li>
+                        Communicated with guests on assortment of menu items and drink options 
+                    </li>
+                    <li>
+                        Promptly took orders and delivered meals to tables while ensuring high customer satisfaction
+                    </li>
+                    <li>
+                        Bussed tables after each guest had finished to ensure efficient turnaround of guests
+                    </li>
+                    <li>
+                        Maintained clean and sanitary kitchen, bar, and dining room area in a fast-paced environment
                     </li>
                 </ul>
             </section>
+
             <form method="get" action="resume.docx">
                 <button type="submit" class="seeMyWorkBtn">Download My Resume</button>
             </form>     
             <br>
-        </div>
 
+        </div>
+<!-- ------------------------------------------------------------------------------------------ -->
         <footer id = "footer">
             <div class="buttonContainer">
                 <div class="button">        
@@ -115,9 +163,8 @@
                     <div class="icons"><a href="https://www.linkedin.com/in/christinalu3799/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
                 </div>
             </div>
-            
         </footer>
-        
+<!-- ------------------------------------------------------------------------------------------ -->        
      </div>
      <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
