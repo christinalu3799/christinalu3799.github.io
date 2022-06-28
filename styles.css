@@ -6,7 +6,7 @@
 :root {
     --clr-primary-200: #e9e5d9;
     --clr-primary-300: #5c5c5c;
-    --clr-primary-400: #99bac5;
+    --clr-primary-400: #b2cdd5;
     --clr-neutral-100: rgb(255, 255, 255);
     --clr-neutral-900: #4e5657;
 
@@ -38,7 +38,6 @@
     flex-direction: column;
     position: relative;
     background-color: var(--clr-neutral-100);
-    position: relative;
     min-height: 100vh;
 }
 /* Holds all content EXCLUDING the footer */
@@ -56,12 +55,14 @@ section {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     font-family: 'Nanum Myeongjo', serif;
-    width: 65%;
+    width: 100%; 
+    /* prevents from going to far to left and right of window */
     max-width: 750px;
+    height: 75vh;
 }
 
 /* =========================================================*/
@@ -86,7 +87,7 @@ html.is-animating .transition-fade {
     justify-content: space-between;
     padding: 0 30px 0 30px;
     /*Background color of menu bar*/
-    background-color: var(--clr-primary-400);
+    background-color: var(--clr-primary-400) ;
     width: 100%;
     /* Make menuBar on top of everything */
     z-index: 1;
@@ -423,7 +424,7 @@ button {
     }
     .nav {
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         position: absolute;
         top: 0;
         right: 0;
@@ -484,6 +485,9 @@ button {
     }
     .aboutMe {
         margin-left: 0;
+    }
+    p {
+        text-align: left;
     }
 }
 
