@@ -62,7 +62,7 @@ section {
     width: 100%; 
     /* prevents from going to far to left and right of window */
     max-width: 750px;
-    height: 75vh;
+   
 }
 
 /* =========================================================*/
