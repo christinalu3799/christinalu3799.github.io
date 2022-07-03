@@ -1,49 +1,41 @@
+const sections = document.querySelectorAll('section');
+const navLi = document.querySelectorAll('nav .container ul li');
+
+// Keeping track of scroll using an event listener 
+window.addEventListener('scroll', () => {
+    // Grab the current section
+    let current = ''
+    // To see active scrolling in the console log: 
+    // console.log(pageYOffset);
+    // Loop through all the sections 
+    sections.forEach(section => {
+        // Calculate distance to the page top
+        const sectionTop = section.offsetTop;
+
+        // Get the section height 
+        const sectionHeight = section.clientHeight;
+
+        // Need to know how much we have scrolled until the page is highlighted in menu
+        // Change item highlighted on menu once you scroll 1/3 of page
+        if(pageYOffset >= (sectionTop - sectionHeight/3)) {
+            current = section.getAttribute('id');
+        }
+    })
+    navLi.forEach(li => {
+        li.classList.remove('active');
+        if(li.classList.contains(current)) {
+        li.classList.add('active')
+        }
+    })
+})
+
+
 // HAMBURGER MENU 
 
 const menuBtn = document.querySelector('.menu-btn');
-const nav = document.querySelector('.nav');
+const nav = document.querySelector('nav ul');
 // main toggle 
 menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle('open');
     nav.classList.toggle('open')
 })
-
-
-
-
-
-
-// PAGE TRANSITION
-
-// window.onload = () => {
-//     const transition_el = document.querySelector(".transition")
-//     const anchors = document.querySelectorAll('a') 
-//     setTimeout(() => {
-//         transition_el.classList.remove('is-active')
-
-//     }, 500)
-
-    // for(let i = 0; i < anchors.length; i++) {
-    //     const anchor = anchors[i];
-
-    //     anchor.addEventListener('click', e => {
-    //         e.preventDefault();
-    //         let target = e.target.href;
-
-    //         transition_el.classList.add('is-active');
-            
-    //         setTimeout(() => {
-    //             window.location.href = target;
-    //         }, 500);
-    //     });
-
-    // }
-// }
-
-
-// const hamburger = document.querySelector('.hamburger')
-// const nav = document.querySelector('.nav')
-
-// hamburger.addEventListener('click', () => {
-//     nav.classList.toggle('show')
-// }); 

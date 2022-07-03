@@ -6,8 +6,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Font Awesome Style Sheet -->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <!-- Animate -->
@@ -16,96 +14,118 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Custom Style Sheet -->
     <link href="styles.css" rel="stylesheet">
+    <!-- Browser Icon -->
     <link rel="icon" href="cl.png">
     <!-- <link href="transitions.css" rel="stylesheet"> -->
     <title>Home</title>
 </head>
-<!-- ------------------------------------------------------------------------------------------ -->
+
 <body>
-    <!-- <div class="transition transition-1 is-active"></div> -->
-<!-- ------------------------------------------------------------------------------------------ -->
-    <div id="page-container">
-
-<!-- ------------------------------------------------------------------------------------------ -->
-        <div class="menuBar">
-            <a href="index.html"><img src="cl.png" alt="personal logo" id="logo"></a>
-
-            <div class="menu-btn">
-                <div class="menu-btn__lines"></div>
+    <!-- NAVIGATION MENU -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="cl.png">
             </div>
+
             
-            <ul class = "nav">
-                <li class="home"><a class="navitem" href="index.html" >Home</a></li>
-                <li class="about"><a class="navitem" href="about.html">About</a></li>
-                <li class="projects"><a class="navitem"href="projects.html">Projects</a></li>
-                <li class="contact"><a class="navitem" href="contact.html">Contact</a></li>
+
+            <ul>
+                <!-- Set home page to dafult active -->
+                <li class="home active"><a href="#home">home</a></li>
+                <li class="about"><a href="#about">about</a></li>
+                <li class="projects"><a href="#projects">projects</a></li>
+                <li class="contact"><a href="#contact">contact</a></li>
+                
             </ul>
         </div>
-   
-<!-- ------------------------------------------------------------------------------------------ -->
-<!-- EVERYTHING BETWEEN THE NAVIGATION BAR AND FOOTER -->
-        <div id="main" class="transition-fade">
-        
-            <section> 
-                <header class="animate__animated animate__fadeInUp">
-                    <div>
-                        <h1>christina lu</h1>
-                    </div>
-                </header>
-        
-                
-                <h2 class = "animate__animated animate__fadeInUp">
-                    software engineer
-                </h2>
-                <div class = "bodyText animate__animated animate__fadeInUp">
-                    <p>
-                        Currently a coding bootcamp student with General Assembly, I am excited to explore the industry and leverage my problem-solving skills and creativity to a lifetime of learning with other like-minded individuals.
-                    </p>
-                    <p>
-                        I like to create engaging and functional products that get the job done. 
-                    </p>
-                    <p> 
-                        This website is still a work in progress. But in the meantime, feel free to browse around!
-                    </p>
-
-                    <a href="projects.html"><button class="seeMyWorkBtn" >View My Work</button></a>
-                </div>
-            <!-- <img src="flowers.jpg" class="flowers"> -->
-            </section>  
-
-
-
-            <!-- INSERT OTHER PAGES HERE -->
+        <div class="menu-btn">
+            <div class="menu-btn__lines"></div>
         </div>
-<!-- ------------------------------------------------------------------------------------------ -->
-        <footer id = "footer">
-            <div class="buttonContainer">
-                <div class="button">        
-                    <div class="icons"><a href="mailto:christina.lu3799@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></div>
-                </div>
-                <div class="button">
-                    <div class="icons"><a href="https://github.com/christinalu3799" target="_blank"><i class="fab fa-github"></i></a></div>     
-                </div>
-                <div class="button">
-                    <div class="icons"><a href="https://www.linkedin.com/in/christinalu3799/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
-                </div>
+        
+    </nav> 
+
+    <!-- MAIN PAGE CONTENT -->
+    <section id="home"> 
+        <div class="hero">
+            <div class="container1">
+                <img class="headshot" src="headshot.jpg" alt="headshot">
+            </div>
+            <div class="container2">
+                <p>i am:</p>
+                <h1>christina lu</h1>
+                <p class="subheading">software engineer</p>
+                <p class="subheading">ux/ui designer</p>
+            </div>
+        </div>
+       
+         
+    </section>
+
+    <section id="about"> 
+        <h1>about me</h1>
+        <div class="aboutMeContent">
+            <div class="left">
+                <h2>Education</h2>
+                    <h3>General Assembly | Software Engineering Immersive Coding Bootcamp</h3> 
+                        <p>Anticipated Graduation: November 2022</p>
+                    <h3>Georgia Institute of Technology</h3>
+                    <p>BS in Earth and Atmospheric Sciences (Class of 2020)</p>
+                <h2>Skills</h2>
+                    <h3>Design</h3>
+                        <p>Responsive Web Design, Prototyping, Figma, Canva</p>
+                    <h3>Development</h3>
+                        <p>HTML5, CSS3, JavaScript, DOM Manipulation, Python, Git, SQL, GitHub, VSCode</p>
+                         
+            </div>
+            <div class="right">
+                    <h2>Experiences</h2>
+                    <!-- FREELANCE WRITING -->
+                    <h3>Freelance Writer</h3><p>Atlanta, GA | October 2021 - Present</p>
+                    <!-- EVANS WARNCKE ROBINSON -->
+                    <h3>Legal Assistant</h3><p>Evans Warncke Robinson LLC | Atlanta, GA | December 2021 - May 2022</p>
+                    <!-- SERVER -->
+                    <h3>Server</h3><p>Kin No Tori | Atlanta, GA | June 2020 - July 2021</p>       
             </div>
             
-        </footer>
-<!-- ------------------------------------------------------------------------------------------ -->
-    </div>
+        </div>
+        <form method="get" action="resume.docx">
+            <button type="submit" class="seeMyWorkBtn">download full resume</button>
+        </form> 
+        
+
+        <div class="atl">
+            <img src="atlskyline.png">
+        </div>
+    </section>
+    
+    <section id="projects"> 
+        <h1>projects</h1>
+        <h3>please come back soon to see what projects i've been working on!</h3>
+    </section>
+    
+    <section id="contact"> 
+        <h1>send me a message!</h1>
+        <a href="mailto:christina.lu3799@gmail.com" target="_blank">get in touch.</a>
+       
+        
+    </section>
+
+
+    <footer> 
+        <div class="footer-container">
+            <div class="social">
+                <ul>
+                    <li><a href="mailto:christina.lu3799@gmail.com" target="_blank">Mail</a></li>
+                    <li><a href="https://github.com/christinalu3799" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/christinalu3799/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
     <script src="script.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
-    crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" 
-    crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" 
-    crossorigin="anonymous"></script>
-    <!-- Font Awesome JS -->
-    <script src="https://kit.fontawesome.com/0e5dbf1dd6.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>

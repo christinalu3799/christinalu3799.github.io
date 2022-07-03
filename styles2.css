@@ -1,0 +1,510 @@
+/* =========================================================*/
+/*                    COLORS AND FONTS                      */
+/* =========================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Nanum+Myeongjo&family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');
+/* Gluten font */
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Gluten', cursive; */
+:root {
+    --clr-primary-200: #e9e5d9;
+    --clr-primary-300: #5c5c5c;
+    --clr-primary-400: #b2cdd5;
+    --clr-neutral-100: rgb(255, 255, 255);
+    --clr-neutral-900: #494949;
+
+    --ff-primary: 'Noto Sans Mono', monospace;   /*'Yesteryear','cursive'; */
+    --ff-body: 'Nanum Myeongjo', serif;
+}
+/* =========================================================*/
+/*                    TITLE TRANSITIONS                     */
+/* =========================================================*/
+.animate__animated.animate__backInDown {--animate-duration: 2s;}
+.animate__animated.animate__backInUp {--animate-duration: 2s;}
+.animate__animated.animate__fadeInLeft { --animate-duration: 2s; }
+.animate__animated.animate__fadeInRight { --animate-duration: 2s; }
+
+/* =========================================================*/
+/*                     MAIN PAGE SETUP                      */
+/* =========================================================*/
+* {
+    margin: 0;
+    padding: 0;
+}
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+#page-container {
+    display: flex;  
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+}
+/* Holds all content EXCLUDING the footer */
+#main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* NAV HEIGHT */
+    /* padding-top: 10vh; */
+    /* FOOTER HEIGHT */
+    padding-bottom: 15vh; 
+}
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    width: 100%; 
+    /* prevents from going to far to left and right of window */
+    max-width: 750px;
+    padding-bottom: 30px;
+   
+}
+
+/* =========================================================*/
+/*                   PAGE TRANSITIONS                       */
+/* =========================================================*/
+.transition-fade {
+    opacity: 1;
+    transition: 500ms;
+}
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+/* =========================================================*/
+/*                          NAV                             */
+/* =========================================================*/
+.menuBar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 10vh;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    /*Background color of menu bar*/
+    /* background-color: var(--clr-primary-400) ; */
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    /* Make menuBar on top of everything */
+    z-index: 1;
+}
+.nav {
+    display: flex;
+}
+
+.nav ul {
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+}
+
+a.navitem:hover, a.navitem:focus, a.navitem:active {
+    color: var(--clr-primary-300);
+    text-decoration: none;
+}
+a.navitem {
+    font-family: 'Nanum Myeongjo', serif;
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+}
+a.navitem {
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    font-size: .9rem;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+    color: #000;
+}
+a.navitem::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: var(--clr-primary-300);
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+a.navitem:active::before {
+    background-color: var(--clr-primary-300);
+
+}
+a.navitem:hover::before, a.navitem:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+#logo {
+    max-width: 75px;
+    margin: 10px 0 10px 0;
+}
+
+/* Change the link color on hover*/
+button:hover {
+    text-decoration: underline;
+    /* box-shadow: inset 100px 0 0 0 var(--clr-primary-200);*/
+    color: var(--clr-primary-200);
+} 
+
+.menu-btn {
+    position: relative; 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer; 
+    z-index: 1;
+}
+
+.menu-btn__lines, 
+.menu-btn__lines::before, 
+.menu-btn__lines::after {
+    width: 1.5rem; 
+    height: 0.1rem; 
+    background-color: #111111;
+    transition: all 0.5s ease-in-out;
+}
+.menu-btn__lines::before, 
+.menu-btn__lines::after {
+    content: '';
+    position: absolute; 
+}
+
+.menu-btn__lines::before {
+    transform: translateY(-0.5rem);
+}
+.menu-btn__lines::after {
+    transform: translateY(0.5rem);
+}
+/* Middle line will move 2 rem to the right and become transparent (will disappear*/
+.menu-btn.open .menu-btn__lines{
+    transform: translateX(2rem);
+    background-color: transparent;
+}
+
+.menu-btn.open .menu-btn__lines::before {
+    transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+}
+.menu-btn.open .menu-btn__lines::after {
+    transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+}
+/* =========================================================*/
+/*                          HOME PAGE                       */
+/* =========================================================*/
+header {
+    margin-top: 45px;
+    text-align: center;
+    /* text-shadow: -5px -5px 2px var(--clr-primary-200) */
+}
+header h1 {
+    font-family: var(--ff-primary);
+    font-style: bold;
+    font-size: 3.5rem;
+    color: var(--clr-primary-300);
+}
+h2{
+    font-size: 1.75remrem;
+    color: var(--clr-primary-300);
+}
+
+.bodyText {
+    display: flex; 
+    flex-direction: column;
+    font-size: 1rem;
+}
+.blank {
+    height:80px;
+}
+
+.flowers {
+    width: 100vw;
+}
+.seeMyWorkBtn {
+    padding: 10px;
+    width: 200px;
+}
+.seeMyWorkBtn:hover {
+    text-decoration: none;
+    box-shadow: none;
+    color: white;
+}
+/* =========================================================*/
+/*                       PROJECTS PAGE                      */
+/* =========================================================*/
+.projects_constainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+}
+/* =========================================================*/
+/*                         ABOUT ME PAGE                    */
+/* =========================================================*/
+
+.aboutMePage {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-top: 30px;
+}
+.profileImage { 
+    width:100%;
+    height: 50%;
+    object-fit: cover;
+    max-width: 350px;
+    min-width: 250px;
+    border-radius: 50%;
+    /* border: solid var(--clr-primary-400) 2px; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.aboutMe {
+    margin-left: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about {
+    align-items: baseline;
+}
+.experiences {
+    text-align: left;
+}
+
+.mono {
+    font-family: var(--ff-primary);
+}
+/* =========================================================*/
+/*                          CONTACT PAGE                    */
+/* =========================================================*/
+
+
+.contactMeForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+#myform {
+    width: 100%;
+}
+
+.contactMeForm .input_field {
+    margin-bottom: 5px;
+}
+.contactMeForm .input_field input[type="text"], .contactMeForm textarea {
+    width: 100%;
+    border: 1px solid #4e565750;
+    padding: 10px;
+}
+
+.contactMeForm textarea {
+    height: 80px;
+    resize: none; 
+}
+
+.btn {
+    width: 100%;
+    padding: 0;
+}
+.contactMeForm .btn input[type="submit"] {
+    border: 0;
+    margin-top: 15px; 
+    padding: 10px;
+    width: 100%; 
+    background-color: var(--clr-primary-400);
+    color: var(--clr-neutral-100);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contactMeForm #error_message {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0px;
+    font-size: 14px;
+    background: var(--clr-neutral-900);
+    color: var(--clr-neutral-100);
+    transition: all 0.5s ease;
+}
+
+
+a:hover {
+    text-decoration: none;
+    color:var(--clr-primary-400);
+}
+/* =========================================================*/
+/*                          FOOTER                          */
+/* =========================================================*/
+#footer {
+    height: 15vh; /* FOOTER HEIGHT */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: var(--clr-neutral-900);
+    align-items: center;
+    justify-content: center;
+    font-family: --ff-body;
+    position: absolute; /* Keeps footer at the bottom */
+    bottom: 0; 
+    color: var(--clr-primary-200);
+}
+
+button {
+    width: 75px;
+    color: var(--clr-primary-300);
+    background-color: var(--clr-primary-400);
+    margin: 6px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1rem;
+    border: none;
+    transition: ease-out .4s;
+    border-radius: 2px;
+}
+.buttonContainer .button {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+    background-color: var(--clr-neutral-100);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px black;
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s; /* Safari */
+}
+.buttonContainer .button:hover {
+    box-shadow: 0px 2px 10px 5px var(--clr-primary-200);
+    background-color: var(--clr-neutral-100);
+}
+ .buttonContainer .button .icons {
+    transition: all .4s ease-out;
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 45px;
+    
+ }
+ .buttonContainer .button .icons i {
+    font-size: 25px;
+    line-height: 45px;
+    color: var(--clr-neutral-900);
+ }
+
+/* =========================================================*/
+/*                     MEDIA QUERIES                        */
+/* =========================================================*/
+
+@media screen and (max-width:825px) {
+
+    /* MENU BTN */
+    .menu-btn {
+        display: flex;
+    }
+    .nav {
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        background-color: white;
+        transform: translateX(100vw);
+        transition: transform 0.3s ease-in-out;
+        align-items: center;
+    }
+    a.navitem {
+        font-size: 2rem;
+    }
+    .nav.open {
+        transform: translateX(0);
+        
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        flex: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .bodyText {
+        width: 80%;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    section {
+        width: 80%;
+    }
+
+    .flowers {
+        /* position:absolute;
+        bottom: 15vh; */
+        width: 100vw;
+        object-fit: contain;
+    }
+
+
+    /* ABOUT ME PAGE */
+    .aboutMePage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .profileImage { 
+        width: 60%;
+        max-width: 350px;
+        min-width: 200px;
+        border-radius: 50%;
+        border: solid var(--clr-primary-400) 2px;
+        margin-bottom: 25px;
+    }
+    .aboutMe {
+        margin-left: 0;
+    }
+    p {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .aboutMePage {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .aboutMe {
+        margin-left: 0;
+    }
+}

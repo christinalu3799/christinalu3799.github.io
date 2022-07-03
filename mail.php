@@ -1,8 +1,6 @@
 <?php
 
-echo "<pre>";
-    print_r('$_POST')
-echo '</pre>';
+
 // $name = $_POST['name'];
 // $subject = $_POST['subject'];
 // $phone = $_POST['phone'];
