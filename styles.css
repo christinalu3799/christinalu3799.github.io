@@ -441,6 +441,7 @@ footer .icon img {
 
     #about {
         height: auto;
+        padding: 100px 10vw 0 10vw;
     }
     #about h1 {
         font-size: 2rem;
@@ -459,5 +460,10 @@ footer .icon img {
     }
     #contact h1 {
         font-size: 1.75rem;
+    }
+
+    #projects {
+        height: auto;
+        padding: 100px 10vw 100px 10vw;
     }
 }
