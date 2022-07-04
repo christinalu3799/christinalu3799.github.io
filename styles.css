@@ -182,7 +182,6 @@ h1 {
 }
 
 #home .hero .container1, #home .hero .container2 {
-    object-fit: contain;
     width: 50%;
    
 }
@@ -313,11 +312,10 @@ button:hover {
 /*                          CONTACT                         */
 /* =========================================================*/
 #contact {
-    flex-direction: column;
     background-color: var(--clr-primary-300);
     justify-content: center;
-    align-items: flex-start;
-    height: 60vh;
+    align-items: center;
+    height: 65vh;
 }
 
 #contact h1 {
@@ -326,6 +324,7 @@ button:hover {
 
 #contact a {
     background-color: var(--clr-primary-400);
+    width: 150px;
     transition: background-color 0.5s ease, filter 0.2s ease-in-out;
     margin-top: 15px;
     padding: 10px;
@@ -337,6 +336,26 @@ button:hover {
     background-color: white;
     filter: drop-shadow(-1px 1px 3px var(--clr-primary-400));
     color: var(--clr-primary-900);
+}
+#contact .left, 
+#contact .right {
+    display: flex;
+    justify-content: center;
+}
+
+#contact .left {
+    width: 50%;
+    flex-direction: column;
+}
+#contact .right {
+    width: 50%;
+    height: 50vh;
+}
+#contact .right img {
+    width: 60%;
+    object-fit: cover;
+    filter: drop-shadow(-10px 10px 0px #ffffff);
+    border-radius: 5px;
 }
 /* =========================================================*/
 /*                            FOOTER                        */
@@ -429,6 +448,9 @@ footer .icons .icon a:hover {
     }
     #contact h1 {
         font-size: 2rem;
+    }
+    #contact .right img {
+        display: none;
     }
 }
 /* iPhone */
@@ -535,4 +557,12 @@ footer .icons .icon a:hover {
         height: 100%;
         margin: 10px;
     }
+
+    #contact .right img {
+        display: none;
+    }
+}
+
+
+
 }

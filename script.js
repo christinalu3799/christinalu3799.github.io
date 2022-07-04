@@ -17,7 +17,7 @@ window.addEventListener('scroll', () => {
 
         // Need to know how much we have scrolled until the page is highlighted in menu
         // Change item highlighted on menu once you scroll 1/3 of page
-        if(pageYOffset >= (sectionTop - sectionHeight/3)) {
+        if(pageYOffset >= (sectionTop - sectionHeight/2)) {
             current = section.getAttribute('id');
         }
     })
@@ -29,7 +29,17 @@ window.addEventListener('scroll', () => {
     })
 })
 
-
+// Nav bar disappear on scroll
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector("nav").style.top = "0";
+  } else {
+    document.querySelector("nav").style.top = "-15vh";
+  }
+  prevScrollpos = currentScrollPos;
+}
 // HAMBURGER MENU 
 
 const menuBtn = document.querySelector('.menu-btn');
