@@ -71,24 +71,32 @@ nav .container ul {
 }
 nav .container ul li {
     display: inline-block;
+    transition: background-color 0.2s ease-in-out;
 }
-
+nav .container ul li:hover {
+    background-color: var(--clr-primary-400);
+    border-radius: 5px;
+}
 nav .container ul li a {
     display: inline-block;
     padding: 10px 20px;
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
-
+nav .container ul li a:hover {
+    color: white;
+}
 nav .container ul li.active {
     /* Hover button */
-    background-color: var(--clr-primary-200);
+    background-color: var(--clr-primary-400);
+    
+    border-radius: 5px;
     /* Whenever the background-color changes, it will have this transition */
     /* transition: 0.3 ease background-color; */
 }
 nav .container ul li.active a {
     /* Hover button text color */
-    color: var(--clr-primary-400);
+    color: white;
 }
 
 /* .menu-btn {
@@ -189,7 +197,8 @@ h1 {
 
 .headshot {
     width: 100%;
-    filter: drop-shadow(-10px 10px 0px var(--clr-primary-200));
+    filter: drop-shadow(-10px 10px 0px #a8b6b9);
+    border-radius: 5px;
 }
 
 /* =========================================================*/
@@ -250,11 +259,14 @@ button {
     font: var(--ff-body);
     /* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]; */
 
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease, filter 0.2s ease-in-out;
     background-color: var(--clr-primary-400);
+    border-radius: 5px;
 }
 button:hover {
-    background-color: var(--clr-primary-300);
+    color: var(--clr-primary-900);
+    background-color: white;
+    filter: drop-shadow(-1px 1px 3px var(--clr-primary-400));
 }
 /* =========================================================*/
 /*                          PROJECTS                        */
@@ -280,7 +292,7 @@ button:hover {
     background-color: var(--clr-primary-300);
     justify-content: center;
     align-items: flex-start;
-    height: 40vh;
+    height: 60vh;
 }
 
 #contact h1 {
@@ -289,14 +301,16 @@ button:hover {
 
 #contact a {
     background-color: var(--clr-primary-400);
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease, filter 0.2s ease-in-out;
     margin-top: 15px;
     padding: 10px;
     color: white;
     text-decoration: none;
+    border-radius: 5px;
 }
 #contact a:hover {
-    background-color: var(--clr-primary-200);
+    background-color: white;
+    filter: drop-shadow(-1px 1px 3px var(--clr-primary-400));
     color: var(--clr-primary-900);
 }
 /* =========================================================*/
@@ -305,25 +319,28 @@ button:hover {
 
 footer { 
     display: flex; 
-    align-items: center;
     justify-content: center;
     height: 20vh;
+    align-items: center;
     background-color: var(--clr-primary-400);
 }
 footer .icons {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 200px;
 }
 
-footer .icon {
+footer .icons .icon a img {
     width: 40px;
     height: 40px;
 }
-footer .icon img {
-    width: 100%;
+footer .icons .icon a {
+    transition: filter 0.2s ease-in-out;
 }
-
+footer .icons .icon a:hover {
+    filter: drop-shadow(-1px 1px 3px #ffffff);
+}
 /* =========================================================*/
 /*                        MEDIA QUERIES                     */
 /* =========================================================*/
