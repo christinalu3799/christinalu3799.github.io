@@ -221,8 +221,12 @@ h1 {
     color: white;
     padding: 10px 0 10px 0;
 }
+#about .left h2 {
+    color: var(--clr-primary-400);
+}
 #about .aboutMeContent{
     display: flex; 
+    width: 100%;
     margin-top: 30px;
     line-height: 24px;
     color: black;
@@ -276,7 +280,8 @@ button:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 125px;
+    padding: 125px 0;
+    height: auto;
 }
 
 #projects h1 {
@@ -285,12 +290,13 @@ button:hover {
 
 .projectContainer {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 1200px;
     width: 100%;
     height: 100%;
-    margin: 50px 0 100px 0;
-
+    margin: 50px 0 0 0;
 }
 
 .projectCard { 
@@ -299,20 +305,20 @@ button:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 30%; 
-    height: 100%;
-    background-color: var(--clr-primary-200);
-    filter: drop-shadow(1px 1px 4px var(--clr-primary-300));
-    border-radius: 5px;
-    transition: background-color .2s ease-in-out;
-    text-decoration: none;
+    width: 80%; 
+    height: 300px;
     color: var(--clr-primary-400);
+    background-color: rgb(240, 240, 240);
+    margin: 10px;
+    border-radius: 5px;
+    transition: filter .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    text-decoration: none;
 }
 
-.project1:hover, 
-.project2:hover, 
-.project3:hover {
-    background-color: white;
+.projectCard:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(1px 1px 4px #b2b2b2);
 }
 
 .projectCard p {
@@ -336,7 +342,7 @@ button:hover {
 #contact a {
     background-color: var(--clr-primary-400);
     width: 150px;
-    transition: background-color 0.5s ease, filter 0.2s ease-in-out;
+    transition: background-color 0.2s ease, filter 0.2s ease-in-out;
     margin-top: 15px;
     padding: 10px;
     color: white;
@@ -348,6 +354,11 @@ button:hover {
     filter: drop-shadow(-1px 1px 3px var(--clr-primary-400));
     color: var(--clr-primary-900);
 }
+
+#contact a:active {
+    background-color: var(--clr-primary-400);
+}
+
 #contact .left, 
 #contact .right {
     display: flex;
@@ -375,10 +386,20 @@ button:hover {
 
 footer { 
     display: flex; 
+    position: relative;
     justify-content: center;
     height: 20vh;
     align-items: center;
     background-color: var(--clr-primary-400);
+}
+
+footer #legal {
+    position: absolute;
+    bottom: 12px; 
+    
+    color: white;
+    font-size: .8rem;
+
 }
 footer .icons {
     display: flex;
@@ -449,10 +470,8 @@ footer .icons .icon a:hover {
         align-items: center;
         justify-content: center;
     }
-    #projects .projectContainer .project1,
-    #projects .projectContainer .project2,
-    #projects .projectContainer .project3 {
-        width: 100%;
+    .projectCard {
+        width: 90%;
         margin: 10px;
     }
     #contact {
@@ -525,10 +544,6 @@ footer .icons .icon a:hover {
         transform: translateX(0);
     } */
 
-
-
-
-
     #about {
         height: auto;
         padding: 100px 10vw 0 10vw;
@@ -544,7 +559,6 @@ footer .icons .icon a:hover {
         margin: 20px 0 20px 0;
     }
 
-
     #contact {
         padding: 0 10vw 0 10vw;
     }
@@ -553,21 +567,20 @@ footer .icons .icon a:hover {
     }
 
     #projects {
-        height: 100vh;
-        padding: 50px 10vw 50px 10vw;
+        align-items: center;
+        height: auto;
     }
     #projects .projectContainer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 25px 0 15px 0;
+       
     }
-    #projects .projectContainer .project1,
-    #projects .projectContainer .project2,
-    #projects .projectContainer .project3 {
-        width: 100%;
-        height: 100%;
+    .projectCard {
+        width: 90%;
+        height: auto;
         margin: 10px;
+        padding: 10px;
     }
 
     #contact .right img {
