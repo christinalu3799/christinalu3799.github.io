@@ -196,7 +196,7 @@ h1 {
 
 .headshot {
     width: 100%;
-    filter: drop-shadow(-10px 10px 0px #a8b6b9);
+    filter: drop-shadow(-10px 10px 0px #ececec);
     border-radius: 5px;
 }
 
@@ -208,7 +208,7 @@ h1 {
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
-    background-color: var(--clr-primary-200);
+    background-color: #ececec;
     padding-top:175px;
     height: auto;
 }
@@ -218,28 +218,34 @@ h1 {
 }
 #about h2 {
     font-family: var(--ff-headings);
-    color: white;
+    color: var(--clr-primary-300);
     padding: 10px 0 10px 0;
 }
 #about .left h2 {
-    color: var(--clr-primary-400);
+    color: var(--clr-primary-300);
 }
 #about .aboutMeContent{
     display: flex; 
     width: 100%;
     margin-top: 30px;
     line-height: 24px;
+    
     color: black;
 }
 #about .aboutMeContent p {
     color: var(--clr-primary-900);
+    font-size: 1.125rem;
 }
 #about .aboutMeContent .left,
 #about .aboutMeContent .right {
     width: 50%;
 }
 .aboutMeContent .left {
-    margin-right: 1.5rem;
+    padding-right: 5rem;
+}
+
+.aboutMeContent .left h2 {
+    font-size: 2rem;
 }
 #about p {
     font-size: 1rem;
@@ -308,7 +314,7 @@ button:hover {
     height: 300px;
 
     color: var(--clr-primary-400);
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(248, 247, 247);
 
     padding: 45px;
     margin: 10px;
@@ -357,6 +363,8 @@ button:hover {
 }
 .project2 img {
     width: 100%;
+    filter: contrast(60%);
+    border-radius: 5px;
 }
 
 /* =========================================================*/
@@ -487,10 +495,12 @@ footer .icons .icon a:hover {
     }
     #about .aboutMeContent {
         flex-direction: column;
+        
     }
     #about .aboutMeContent .left, 
     #about .aboutMeContent .right {
         width: 100%; 
+        padding: 0;
     } 
     #about form {
         margin: 20px 0 20px 0;
