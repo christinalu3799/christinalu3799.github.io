@@ -282,7 +282,7 @@ button {
     font: var(--ff-body);
     /* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]; */
 
-    transition: background-color 0.5s ease, filter 0.2s ease-in-out;
+    transition: background-color 0.5s ease, filter 0.2s ease-in-out, transform 0.2s;
     background-color: var(--clr-primary-400);
     border-radius: 5px;
 }
@@ -290,6 +290,7 @@ button:hover {
     color: var(--clr-primary-900);
     background-color: white;
     filter: drop-shadow(-1px 1px 3px var(--clr-primary-400));
+    transform: translateY(-5px);
 }
 /* =========================================================*/
 /*                          PROJECTS                        */
