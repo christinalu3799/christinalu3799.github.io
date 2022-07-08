@@ -307,8 +307,11 @@ button:hover {
     text-align: center;
     width: 80%; 
     height: 300px;
+
     color: var(--clr-primary-400);
     background-color: rgb(240, 240, 240);
+
+    padding: 45px;
     margin: 10px;
     border-radius: 5px;
     transition: filter .2s ease-in-out;
@@ -323,6 +326,14 @@ button:hover {
 
 .projectCard p {
     font-size: 1.25rem;
+}
+
+.projectCard a {
+    padding: 10px; 
+    margin-top: 25px;
+    background-color: var(--clr-primary-300);
+    text-decoration: none;
+    color: white;
 }
 
 /* =========================================================*/
