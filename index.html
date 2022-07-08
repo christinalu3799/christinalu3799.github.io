@@ -149,14 +149,29 @@
     </section>
     
     <section id="contact"> 
-       <div class="wide">
+        <h1>Send me a message!</h1>
+        <div class="wide">
         <div class="left">
-            <h1>Send me a message!</h1>
-            <a href="mailto:christina.lu3799@gmail.com" target="_blank">Email Me</a>
-        </div>
-        <div class="right">
             <!-- <img src='atl-b&w.jpg'> -->
             <img class="headshot" src="headshot.jpg" alt="headshot">
+            
+            </form>
+        </div>
+        <div class="right">
+            
+            <!-- <a href="mailto:christina.lu3799@gmail.com" target="_blank">Email Me</a> -->
+            <form action="https://formspree.io/f/moqrolzg" method="POST">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
+
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder='name@gmail.com' required="">
+                
+                <label>Message</label>
+                <textarea name="message" placeholder="Type message here." required=""></textarea>
+              
+                <!-- your other form fields go here -->
+                <button type="submit">Submit</button>
         </div>
        </div>
             
