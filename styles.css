@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @font-face {
-    src: url(SouthamDemo.otf) format('truetype');
+    src: url(SouthamDemo.otf) format('opentype');
     font-family: 'Southam Demo';
     src: url(Unique.ttf);
     font-family: 'Unique';
