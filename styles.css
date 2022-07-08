@@ -5,9 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --clr-primary-200: #cddcdc;
-    --clr-primary-300: #9CB8C2;
-    --clr-primary-400: #617881;
+    --clr-primary-200: #ebebeb;
+    --clr-primary-300: #bdbdbd;
+    --clr-primary-400: #5e5e5e;
     --clr-primary-900: #2b2b2b;
 
     --ff-primary: 'Cutive Mono', monospace;
@@ -19,7 +19,6 @@
 * {
     margin: 0;
     padding: 0;
-    
 }
 *, 
 *::before,
@@ -32,11 +31,17 @@ html {
     font-size: 1rem;
     color: var(--clr-primary-400);
     scroll-behavior: smooth;
-    cursor: url('cursor.png'), pointer;
+    cursor: url('cursor-filled.png'), pointer;
 }
-
+body {
+    position: relative;
+}
 a, button {
-    cursor: url('pointer.png'), auto;
+    cursor: url('pointer-filled.png'), auto;
+}
+.wide {
+    display: flex;
+    flex-direction: column;
 }
 /* =========================================================*/
 /*                             NAV                          */
@@ -48,7 +53,8 @@ a, button {
     top: 0;
     height: 15vh;
     z-index: 1;  
-    transition: all 0.3s ease-in-out 0s;
+    transition: all .5s ease-in-out 0s;
+    background-color: var(--clr-primary-200);
 }
 
 nav .container {
@@ -173,6 +179,7 @@ section {
 /* =========================================================*/
 #home {
     height: 85vh;
+    /* position: fixed; */
 }
 p {
     font-size: 2rem;
@@ -191,20 +198,21 @@ h1 {
 #home .hero {
     display: flex;
     width: 75%;
-    max-width: 800px;
+    max-width: 1200px;
 }
 
-#home .hero .container1, #home .hero .container2 {
-    width: 50%;
-   
+#home .hero .container1, 
+#home .hero .container2 {
+    width: 50%; 
 }
 
-#home .hero .container1 .headshot {
+/* #home .hero .container1 .headshot {
     width: 100%;
     max-width: 350px;
-    filter: drop-shadow(-10px 10px 0px #ececec);
+    filter: drop-shadow(-10px 10px 0px var(--clr-primary-200));
+    filter: contrast(85%);
     border-radius: 5px;
-}
+} */
 #home .hero .container2 {
     display: flex;
     flex-direction: column;
@@ -224,7 +232,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    background-color: #ececec;
+    background-color: var(--clr-primary-200);
     padding-top:175px;
     height: auto;
 
@@ -398,11 +406,14 @@ button:hover {
     background-color: var(--clr-primary-200);
     justify-content: center;
     align-items: center;
-    height: 65vh;
+    height: 60vh;
 }
-
+#contact .wide {
+    flex-direction: row;
+}
 #contact h1 {
     color: var(--clr-primary-400);
+    font-size: 2.5rem;
 }
 
 #contact a {
@@ -434,17 +445,18 @@ button:hover {
 }
 
 #contact .left {
-    width: 50%;
+    width: 70%;
     flex-direction: column;
 }
 #contact .right {
-    width: 50%;
-    height: 50vh;
+    width: 35%;
+    height: auto;
+    filter: drop-shadow(-3px -3px 0px var(--clr-primary-300));
+    
 }
-#contact .right img {
+#contact .right .headshot {
     width: 100%;
-    object-fit: cover;
-    filter: drop-shadow(-10px 10px 0px #ffffff);
+    object-fit: contain;
     border-radius: 5px;
 }
 /* =========================================================*/
@@ -497,8 +509,8 @@ footer .icons .icon a:hover {
 /* Wide Screen */
 @media screen and (min-width:1400px) {
     .wide {
-        max-width: 900px;
-    }
+        max-width: 1200px;
+    } 
 }
 
 /* Tablet */
@@ -563,13 +575,11 @@ footer .icons .icon a:hover {
         width: 100%;
     }
     #contact {
-        height: 25vh;
+        height: auto;
+        padding: 3rem;
     }
     #contact h1 {
         font-size: 2rem;
-    }
-    #contact .right img {
-        display: none;
     }
 }
 /* iPhone */
@@ -686,8 +696,24 @@ footer .icons .icon a:hover {
         text-align: center;
         font-size: .875rem;
     }
-    #contact .right img {
-        display: none;
+    #contact {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 3rem;
+    }
+    #contact h1 {
+        font-size: 1.5rem;
+    }
+    #contact .left {
+        width: 100%;
+        order: 2;
+    }
+    #contact .right { 
+        width: 75%;
+        padding: 0 0 2rem 0;
+    }
+    #contact .wide{
+        flex-direction: column;
     }
 }
 
