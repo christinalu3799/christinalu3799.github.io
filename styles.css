@@ -83,6 +83,7 @@ nav .container ul li a {
     padding: 10px 20px;
     color: var(--clr-primary-900);
     text-decoration: none;
+    text-transform: uppercase;
 }
 nav .container ul li a:hover {
     color: white;
@@ -182,7 +183,7 @@ p.subheading {
 
 h1 {
     font-family: var(--ff-headings);
-    font-size: 3rem;
+    font-size: 2.75rem;
     color: var(--clr-primary-400);
 }
 
@@ -397,8 +398,8 @@ button:hover {
 
 #contact a {
     background-color: var(--clr-primary-400);
-    width: 150px;
-    transition: background-color 0.2s ease, filter 0.2s ease-in-out;
+    width: fit-content;
+    transition: background-color 0.2s ease, filter 0.2s ease-in-out, transform 0.2s;
     margin-top: 15px;
     padding: 10px;
     color: white;
@@ -409,6 +410,7 @@ button:hover {
     background-color: white;
     filter: drop-shadow(-1px 1px 3px var(--clr-primary-400));
     color: var(--clr-primary-900);
+    transform: translateY(-5px);
 }
 
 #contact a:active {
@@ -446,7 +448,7 @@ footer {
     justify-content: center;
     height: 20vh;
     align-items: center;
-    background-color: var(--clr-primary-400);
+    background-color: var(--clr-primary-900);
 }
 
 footer #legal {
@@ -467,12 +469,17 @@ footer .icons {
 footer .icons .icon a img {
     width: 40px;
     height: 40px;
+    transition: transform 0.2s;
+}
+footer .icons .icon a img:hover {
+    transform: translateY(-5px);
 }
 footer .icons .icon a {
     transition: filter 0.2s ease-in-out;
 }
 footer .icons .icon a:hover {
     filter: drop-shadow(-1px 1px 3px #ffffff);
+    
 }
 /* =========================================================*/
 /*                        MEDIA QUERIES                     */
