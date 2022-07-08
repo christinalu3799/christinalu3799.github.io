@@ -5,6 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @font-face {
     src: url(SouthamDemo.otf) format('opentype');
+    /* Adding all src` */
+    src: url('SouthamDemo.eot'); /* IE9 Compat Modes */
+    src: url('SouthamDemo.woff2') format('woff2'), /* Super Modern Browsers */
+         url('SouthamDemo.woff') format('woff'), /* Pretty Modern Browsers */
+         url('SouthamDemo.ttf')  format('truetype'); /* Safari, Android, iOS */
+      
+
+
     font-family: 'Southam Demo';
     src: url(Unique.ttf);
     font-family: 'Unique';
