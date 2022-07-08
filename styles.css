@@ -665,9 +665,11 @@ footer .icons .icon a:hover {
     }
     
     #home h1 {
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
-
+    #home .subheading {
+        font-size: 1.125rem;
+    }
     #about {
         height: auto;
         padding: 100px 10vw 0 10vw;
