@@ -616,9 +616,13 @@ footer .icons .icon a:hover {
     #about h1 {
         font-size: 2rem;
     }
+
     #about .aboutMeContent .left,
     #about .aboutMeContent .right {
         font-size: .8rem;
+    }
+    #about .left h3 {
+        font-size: 1.25rem;
     }
     #about form {
         margin: 20px 0 20px 0;
