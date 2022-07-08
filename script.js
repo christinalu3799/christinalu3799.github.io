@@ -30,22 +30,25 @@ window.addEventListener('scroll', () => {
 })
 
 // Nav bar disappear on scroll
+
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
+  // Scrolling up 
   if (prevScrollpos > currentScrollPos) {
     document.querySelector("nav").style.top = "0";
+    // document.querySelector('nav').addClass('.appear')
   } else {
     document.querySelector("nav").style.top = "-15vh";
   }
   prevScrollpos = currentScrollPos;
 }
-// HAMBURGER MENU 
 
-const menuBtn = document.querySelector('.menu-btn');
-const nav = document.querySelector('nav ul');
-// main toggle 
-menuBtn.addEventListener('click', () => {
-    menuBtn.classList.toggle('open');
-    nav.classList.toggle('open')
-})
+// HAMBURGER MENU 
+// const menuBtn = document.querySelector('.menu-btn');
+// const nav = document.querySelector('nav ul');
+// // main toggle 
+// menuBtn.addEventListener('click', () => {
+//     menuBtn.classList.toggle('open');
+//     nav.classList.toggle('open')
+// })

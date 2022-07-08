@@ -48,6 +48,7 @@ a, button {
     top: 0;
     height: 15vh;
     z-index: 1;  
+    transition: all 0.3s ease-in-out 0s;
 }
 
 nav .container {
@@ -98,6 +99,15 @@ nav .container ul li.active a {
     /* Hover button text color */
     color: white;
 }
+
+/* .fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in .appear {
+    opacity: 1;
+} */
 
 /* .menu-btn {
     position: relative; 
