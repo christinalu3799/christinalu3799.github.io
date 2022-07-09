@@ -125,58 +125,6 @@ nav .container ul li.active a {
     color: white;
 }
 
-/* .fade-in {
-    opacity: 0;
-    transition: opacity 250ms ease-in;
-}
-
-.fade-in .appear {
-    opacity: 1;
-} */
-
-/* .menu-btn {
-    position: relative; 
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 1.5rem;
-    height: 1.5rem;
-    cursor: pointer; 
-    z-index: 1;
-}
-.menu-btn__lines, 
-.menu-btn__lines::before, 
-.menu-btn__lines::after {
-    width: 1.5rem; 
-    height: 0.1rem; 
-    background-color: #111111;
-    transition: all 0.5s ease-in-out;
-}
-.menu-btn__lines::before, 
-.menu-btn__lines::after {
-    content: '';
-    position: absolute; 
-}
-
-.menu-btn__lines::before {
-    transform: translateY(-0.5rem);
-}
-.menu-btn__lines::after {
-    transform: translateY(0.5rem);
-}
-Middle line will move 2 rem to the right and become transparent (will disappear
-.menu-btn.open .menu-btn__lines{
-    transform: translateX(2rem);
-    background-color: transparent;
-}
-
-.menu-btn.open .menu-btn__lines::before {
-    transform: rotate(45deg) translate(-1.5rem, 1.5rem);
-}
-.menu-btn.open .menu-btn__lines::after {
-    transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
-} */
-
 
 /* =========================================================*/
 /*                          SECTIONS                        */
@@ -235,16 +183,6 @@ p.subheading {
     justify-content:end;
 }
 
-/* #home .hero .container1 .headshot {
-    width: 100%;
-    max-width: 350px;
-    filter: drop-shadow(-10px 10px 0px var(--clr-primary-200));
-    filter: contrast(85%);
-    border-radius: 5px;
-} */
-
-
-
 /* =========================================================*/
 /*                          ABOUT                           */
 /* =========================================================*/
@@ -265,9 +203,12 @@ p.subheading {
     color: var(--clr-primary-400);
 }
 
-
 #about .left h3 {
     font-size: 1.5rem;
+}
+
+#about .wide .aboutMeContent .right h3 {
+    font-family: var(--ff-headings);
 }
 #about .aboutMeContent{
     display: flex; 
@@ -333,12 +274,12 @@ button:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 125px 0;
+    padding: 3rem 0;
     height: auto;
 }
 
 #projects h1 {
-    padding-bottom: 60px;
+    padding-bottom: 2rem;
     text-align: left;
 }
 
@@ -668,38 +609,38 @@ footer .icons .icon a:hover {
         font-size: 4rem;
     }
     #home .subheading {
-        font-size: 1.25rem;
+        font-size: 1rem;
+        margin-top: .75rem;
     }
     #about {
         height: auto;
-        padding: 100px 10vw 0 10vw;
+        padding: 4rem 8vw 0 8vw;
     }
     #about h1 {
         font-size: 2rem;
     }
-
-    #about .aboutMeContent .left,
-    #about .aboutMeContent .right {
-        font-size: .8rem;
+    #about .aboutMeContent .left p,
+    #about .aboutMeContent .right p{
+        font-size: 1rem;
     }
     #about .left h3 {
         font-size: 1.25rem;
     }
+    #about .right h3 {
+        font-size: 1.125rem;
+    }
     #about form {
         margin: 20px 0 20px 0;
     }
-
-    #contact {
-        padding: 0 10vw 0 10vw;
-    }
-    #contact h1 {
-        font-size: 1.75rem;
-    }
-
+    
     #projects {
         align-items: center;
         height: auto;
-        padding: 75px 0;
+        padding: 3rem 0;
+    }
+    #projects h1 {
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
     }
     #projects .projectContainer {
         flex-direction: column;
@@ -710,8 +651,7 @@ footer .icons .icon a:hover {
     .projectCard {
         width: 90%;
         height: auto;
-        margin: 10px;
-        padding: 10px;
+        padding: 1rem;
     }
     .projectCard h2 {
         text-align: center;
@@ -730,8 +670,11 @@ footer .icons .icon a:hover {
         align-items: center;
         padding: 3rem;
     }
+    #contact {
+        padding: 8vh 6vw;
+    }
     #contact h1 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
     #contact .wide{
         flex-direction: column;
