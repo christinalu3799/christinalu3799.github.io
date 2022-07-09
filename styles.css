@@ -147,7 +147,7 @@ section h1 {
 section h2 {
     font-family: var(--ff-headings);
     font-size: 2rem;
-    padding: 10px 0;
+    padding: 1.25rem 0;
     color: var(--clr-primary-300);
    
 }
@@ -538,17 +538,21 @@ footer .icons .icon a:hover {
     }
     #about {
         height: auto;
-        padding-top: 100px;
+        padding: 6vh 10vw 0 10vw;
     }
     #about .aboutMeContent {
         flex-direction: column;
-        
+
     }
     #about .aboutMeContent .left, 
     #about .aboutMeContent .right {
         width: 100%; 
         padding: 0;
     } 
+    
+    #about .right h3 {
+        font-size: 1.25rem;
+    }
     #about form {
         margin: 20px 0 20px 0;
     }
