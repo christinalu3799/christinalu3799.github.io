@@ -43,7 +43,12 @@
 *::after {
     box-sizing: border-box;
 }
-
+.wrapper {
+    /* height: 100vh; */
+    /* overflow-y: auto; */
+    /* overflow-x: hidden; */
+    perspective: 10px;
+}
 html {
     font-family: var(--ff-primary);
     font-size: 1rem;
@@ -147,7 +152,7 @@ section h2 {
     font-family: var(--ff-headings);
     font-size: 2rem;
     padding: 1.25rem 0;
-    color: var(--clr-primary-300);
+    /* color: var(--clr-primary-300); */
 }
 
 /* =========================================================*/
@@ -366,6 +371,13 @@ button:hover {
     filter: contrast(60%) grayscale(0%);
 }
 
+.illustration { 
+    width: 30%;
+    margin: 2rem;
+}
+.illustration img {
+    width: 100%;
+}
 /* =========================================================*/
 /*                          CONTACT                         */
 /* =========================================================*/
@@ -375,6 +387,8 @@ button:hover {
     justify-content: center;
     align-items: center;
     height: 65vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 #contact .wide {
     flex-direction: row;
@@ -675,11 +689,10 @@ footer .icons .icon a:hover {
         align-items: center;
         padding: 3rem;
     }
-    #contact {
-        padding: 8vh 6vw;
-    }
+    
     #contact h1 {
         font-size: 4rem;
+        margin-bottom: 2rem;
     }
     #contact .wide{
         flex-direction: column;
