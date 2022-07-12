@@ -66,6 +66,10 @@ a, button {
     display: flex;
     flex-direction: column;
 }
+
+.animate__animated.animate__fadeInDown {
+    --animate-duration: 4s;
+}
 /* =========================================================*/
 /*                             NAV                          */
 /* =========================================================*/
@@ -200,32 +204,36 @@ p.subheading {
     height: auto;
 
 }
-#about .aboutContainer {
-    max-width: 800px;
-}
+
 #about h1 {
     font-family: 'Southam Demo';
     font-size: 5rem;
     font-weight: lighter;
     color: var(--clr-primary-400);
 }
+#about .aboutMeContent{
+    display: flex; 
+    width: 100%;
 
+    margin-top: 30px;
+    line-height: 24px;
+    
+    color: var(--clr-primary-900);
+}
 #about .left h3 {
     font-size: 1.5rem;
 }
 
+#about .wide .aboutMeContent .right h2 {
+    font-family: 'Southam Demo';
+    font-size: 3rem;
+    font-weight: lighter;
+    padding: 2rem 0;
+}
 #about .wide .aboutMeContent .right h3 {
     font-family: var(--ff-headings);
 }
-#about .aboutMeContent{
-    display: flex; 
-    width: 100%;
-    
-    margin-top: 30px;
-    line-height: 24px;
-    
-    color: black;
-}
+
 #about .aboutMeContent p {
     color: var(--clr-primary-900);
     font-size: 1.125rem;
@@ -630,7 +638,10 @@ footer .icons .icon a:hover {
     }
     
     #home h1 {
-        font-size: 4rem;
+        font-size: 4.5rem;
+    }
+    #home p {
+        font-size: 1.5rem;
     }
     #home .subheading {
         font-size: 1rem;
