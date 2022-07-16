@@ -14,12 +14,16 @@
     
 }
 @font-face {
-    src: url(fonts/Unique.ttf) format('truetype');
+    src: url(../fonts/Unique.ttf) format('truetype');
     font-family: 'Unique';
 }
 @font-face {
-    src: url(fonts/Belleza-Regular.ttf) format('truetype');
+    src: url(../fonts/Belleza-Regular.ttf) format('truetype');
     font-family: 'Belleza';
+}
+@font-face {
+    src: url(../fonts/NotoSans-Regular.ttf) format('truetype');
+    font-family: 'Noto Sans';
 }
 :root {
     --clr-primary-200: #ebebeb;
@@ -27,9 +31,9 @@
     --clr-primary-400: #5e5e5e;
     --clr-primary-900: #2b2b2b;
 
-    --ff-primary: 'Cutive Mono', monospace;
+    --ff-primary: 'Noto Sans';
+    /* --ff-primary: 'Cutive Mono', monospace; */
     --ff-headings: 'Belleza';
-    /* --ff-headings: 'Gluten', cursive; */
 }
 /* =========================================================*/
 /*                     MAIN PAGE SETUP                      */
@@ -638,7 +642,7 @@ footer .icons .icon a:hover {
     }
     
     #home h1 {
-        font-size: 4.5rem;
+        font-size: 4.75rem;
         font-weight: 400;
     }
     #home p {
