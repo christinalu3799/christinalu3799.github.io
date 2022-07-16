@@ -5,20 +5,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @font-face {
     font-family: 'Southam Demo';
-    src: url('fonts/SouthamDemo.otf') format('opentype');
+    src: url(../fonts/SouthamDemo.otf) format('opentype');
     /* Adding all src` */
-    src: url('fonts/SouthamDemo.eot'); /* IE9 Compat Modes */
-    src: url('fonts/SouthamDemo.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/SouthamDemo.woff') format('woff'), /* Pretty Modern Browsers */
-         url('fonts/SouthamDemo.ttf')  format('truetype'); /* Safari, Android, iOS */
+    src: url(../fonts/SouthamDemo.eot); /* IE9 Compat Modes */
+    src: url(../fonts/SouthamDemo.woff2) format('woff2'), /* Super Modern Browsers */
+         url(../fonts/SouthamDemo.woff) format('woff'), /* Pretty Modern Browsers */
+         url(../fonts/SouthamDemo.ttf)  format('truetype'); /* Safari, Android, iOS */
     
 }
 @font-face {
-    src: url('fonts/Unique.ttf') format('truetype');
+    src: url(fonts/Unique.ttf) format('truetype');
     font-family: 'Unique';
 }
 @font-face {
-    src: url('fonts/Belleza-Regular.ttf') format('truetype');
+    src: url(fonts/Belleza-Regular.ttf) format('truetype');
     font-family: 'Belleza';
 }
 :root {
