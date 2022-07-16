@@ -639,6 +639,7 @@ footer .icons .icon a:hover {
     
     #home h1 {
         font-size: 4.5rem;
+        font-weight: 400;
     }
     #home p {
         font-size: 1.5rem;
