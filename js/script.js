@@ -44,11 +44,3 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
-// HAMBURGER MENU 
-// const menuBtn = document.querySelector('.menu-btn');
-// const nav = document.querySelector('nav ul');
-// // main toggle 
-// menuBtn.addEventListener('click', () => {
-//     menuBtn.classList.toggle('open');
-//     nav.classList.toggle('open')
-// })

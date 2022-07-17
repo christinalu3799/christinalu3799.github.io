@@ -2,11 +2,10 @@
 /*                    COLORS AND FONTS                      */
 /* =========================================================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @font-face {
     font-family: 'Southam Demo';
     src: url(../fonts/SouthamDemo.otf) format('opentype');
-    /* Adding all src` */
+    /* Adding all src */
     src: url(../fonts/SouthamDemo.eot); /* IE9 Compat Modes */
     src: url(../fonts/SouthamDemo.woff2) format('woff2'), /* Super Modern Browsers */
          url(../fonts/SouthamDemo.woff) format('woff'), /* Pretty Modern Browsers */
@@ -31,8 +30,8 @@
     --clr-primary-400: #5e5e5e;
     --clr-primary-900: #2b2b2b;
 
-    --ff-primary: 'Noto Sans';
-    /* --ff-primary: 'Cutive Mono', monospace; */
+    /* --ff-primary: 'Noto Sans'; */
+    --ff-primary: 'Cutive Mono', monospace;
     --ff-headings: 'Belleza';
 }
 /* =========================================================*/
@@ -58,13 +57,13 @@ html {
     font-size: 1rem;
     color: var(--clr-primary-400);
     scroll-behavior: smooth;
-    cursor: url('cursor-filled.png'), pointer;
+    cursor: url('../cursor-filled.png'), pointer;
 }
 body {
     position: relative;
 }
 a, button {
-    cursor: url('pointer-filled.png'), auto;
+    cursor: url('../pointer-filled.png'), auto;
 }
 .wide {
     display: flex;
@@ -206,7 +205,6 @@ p.subheading {
     background-color: var(--clr-primary-200);
     padding-top:175px;
     height: auto;
-
 }
 
 #about h1 {
@@ -218,16 +216,19 @@ p.subheading {
 #about .aboutMeContent{
     display: flex; 
     width: 100%;
-
     margin-top: 30px;
     line-height: 24px;
-    
     color: var(--clr-primary-900);
 }
 #about .left h3 {
     font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 2rem;
 }
-
+#about .left p,
+#about .right {
+    line-height: 2rem;
+}
 #about .wide .aboutMeContent .right h2 {
     font-family: 'Southam Demo';
     font-size: 3rem;
@@ -236,6 +237,7 @@ p.subheading {
 }
 #about .wide .aboutMeContent .right h3 {
     font-family: var(--ff-headings);
+    font-size: 1.5rem;
 }
 
 #about .aboutMeContent p {
@@ -253,9 +255,7 @@ p.subheading {
 .aboutMeContent .left h2 {
     font-size: 2rem;
 }
-#about p {
-    font-size: 1rem;
-}
+
 #about .atl {
     width: 100%;
     margin-bottom: -10px;
@@ -302,7 +302,6 @@ button:hover {
     font-size: 5rem;
     font-weight: lighter;
     padding-bottom: 2rem;
-    
 }
 
 .projectContainer {
@@ -320,17 +319,13 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
     height: auto;
-
     color: var(--clr-primary-400);
     background-color: var(--clr-primary-200);
-
     padding: 45px;
     margin: 1rem 3rem;
     border-radius: 5px;
 }
-
 
 .projectCard p {
     font-size: 1rem;
@@ -494,8 +489,6 @@ button:hover {
     margin: 1rem 0 0 0;
 }
 
-
-
 /* =========================================================*/
 /*                            FOOTER                        */
 /* =========================================================*/
@@ -512,7 +505,6 @@ footer {
 footer #legal {
     position: absolute;
     bottom: 12px; 
-    
     color: white;
     font-size: .8rem;
 
@@ -550,13 +542,11 @@ footer .icons .icon a:hover {
     } 
     #contact .wide .left img {
         width: 80%;
-    }
-    
+    } 
 }
 
 /* Tablet */
 @media screen and (max-width:820px) {
-    
     nav {
         background-color: white;
     }
@@ -575,21 +565,18 @@ footer .icons .icon a:hover {
     }
     #about .aboutMeContent {
         flex-direction: column;
-
     }
     #about .aboutMeContent .left, 
     #about .aboutMeContent .right {
         width: 100%; 
         padding: 0;
     } 
-    
     #about .right h3 {
         font-size: 1.25rem;
     }
     #about form {
         margin: 20px 0 20px 0;
     }
-
     #projects {
         padding-top: 100px;
     }
@@ -609,8 +596,6 @@ footer .icons .icon a:hover {
         align-items: center;
         width: 100%;
     }
-    
-    
     #contact {
         height: auto;
         padding: 4rem;
@@ -618,14 +603,12 @@ footer .icons .icon a:hover {
     #contact h1 {
         margin-bottom: 1rem;
     }
-   
     #contact .wide .left {
         width: 40%;
     }
     #contact .wide .right {
         width: 60%;
     }
-
     #contact form input,
     #contact form textarea {
         margin: .625rem 0;
@@ -640,7 +623,6 @@ footer .icons .icon a:hover {
     nav ul {
         display: none;
     }
-    
     #home h1 {
         font-size: 4.75rem;
         font-weight: 400;
@@ -654,9 +636,8 @@ footer .icons .icon a:hover {
     }
     #about {
         height: auto;
-        padding: 4rem 8vw 0 8vw;
+        padding: 4rem 6vw 0 6vw;
     }
-  
     #about .aboutMeContent .left p,
     #about .aboutMeContent .right p{
         font-size: 1rem;
@@ -664,29 +645,28 @@ footer .icons .icon a:hover {
     #about .left h3 {
         font-size: 1.25rem;
     }
-    #about .right h3 {
-        font-size: 1.125rem;
+    
+    #about .wide .aboutMeContent .right h3 {
+        font-size: 1.3rem;
     }
     #about form {
         margin: 20px 0 20px 0;
     }
-    
     #projects {
         align-items: center;
         height: auto;
         padding: 3rem 0;
     }
-  
     #projects .projectContainer {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        
+        justify-content: center;  
     }
     .projectCard {
         width: 90%;
         height: auto;
         padding: 1rem;
+        line-height: 1.5rem;
     }
     .projectCard h2 {
         text-align: center;
@@ -705,7 +685,6 @@ footer .icons .icon a:hover {
         align-items: center;
         padding: 3rem;
     }
-    
     #contact h1 {
         font-size: 4rem;
         margin-bottom: 2rem;
@@ -720,7 +699,6 @@ footer .icons .icon a:hover {
     #contact .wide .left  img {
         width: 80%;
     }
-    
     #contact .wide .right { 
         width: 100%;
         margin: 2rem 0 0 0;
