@@ -230,7 +230,9 @@ p.subheading {
 }
 #about .aboutMeContent h3 {
     font-family: var(--ff-headings);
-    
+}
+#about button:active {
+    transform: translateY(4px);
 }
 #about .atl {
     width: 100%;
@@ -256,12 +258,11 @@ button:hover {
     color: var(--clr-primary-900);
     background-color: white;
     filter: drop-shadow(-1px 1px 3px var(--clr-primary-400));
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
 /* =========================================================*/
 /*                          PROJECTS                        */
 /* =========================================================*/
-
 #projects {
     flex-direction: column;
     justify-content: flex-start;
@@ -317,9 +318,12 @@ button:hover {
 }
 .projectCard a:hover{
     background-color: white;
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     filter: drop-shadow(1px 2px 4px #c3c3c3);
     color: var(--clr-primary-900);
+}
+.projectCard a:active {
+    transform: translateY(4px);
 }
 .projectContainer img {
     width: 100%;
@@ -336,8 +340,6 @@ button:hover {
 .projectContainer img.portfolio-mockup:hover {
     filter: contrast(100%);
 }
-
-
 /* =========================================================*/
 /*                          CONTACT                         */
 /* =========================================================*/
@@ -362,7 +364,6 @@ button:hover {
     font-weight: lighter;
     color: var(--clr-primary-400);
 }
-
 #contact a {
     background-color: var(--clr-primary-400);
     width: fit-content;
@@ -377,9 +378,8 @@ button:hover {
     background-color: white;
     filter: drop-shadow(-1px 1px 3px var(--clr-primary-400));
     color: var(--clr-primary-900);
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
-
 #contact a:active {
     background-color: var(--clr-primary-400);
 }
@@ -411,7 +411,9 @@ button:hover {
 #contact .right {
     width: 60%;
 }
-
+/* =========================================================*/
+/*                      CONTACT FORM                        */
+/* =========================================================*/
 #contact form {
     display: flex; 
     position: relative;
@@ -419,7 +421,6 @@ button:hover {
     flex-direction: column;
     margin: .75rem 0;
 }
-
 #contact form p,
 #contact form input,
 #contact form textarea {
@@ -442,11 +443,12 @@ button:hover {
     width: fit-content;
     margin: 1rem 0 0 0;
 }
-
+#contact form button:active {
+    transform: translateY(4px);
+}
 /* =========================================================*/
 /*                            FOOTER                        */
 /* =========================================================*/
-
 footer { 
     display: flex; 
     position: relative;
@@ -476,15 +478,14 @@ footer .icons .icon a img {
     transition: transform 0.2s;
 }
 footer .icons .icon a img:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
 footer .icons .icon a {
     transition: filter 0.2s ease-in-out;
 }
-footer .icons .icon a:hover {
-    filter: drop-shadow(-1px 1px 3px #ffffff);
-    
-}
+/* footer .icons .icon a:hover {
+    filter: drop-shadow(-1px 1px 3px #ffffff); 
+} */
 /* =========================================================*/
 /*                        MEDIA QUERIES                     */
 /* =========================================================*/
