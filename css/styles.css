@@ -1,7 +1,12 @@
 /* =========================================================*/
 /*                    COLORS AND FONTS                      */
 /* =========================================================*/
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+
+@font-face {
     font-family: 'Southam Demo';
     src: url(../fonts/SouthamDemo.otf) format('opentype');
     /* Adding all src */
@@ -29,8 +34,11 @@
     --clr-primary-400: #5e5e5e;
     --clr-primary-900: #242424;
 
-    --ff-primary: 'Cutive Mono', monospace;
-    --ff-headings: 'Belleza';
+    --ff-primary: 'Raleway', sans-serif;
+    /* --ff-primary: 'Mate', serif; */
+    /* --ff-primary: 'Cutive Mono', monospace; */
+    --ff-headings: 'Della Respira', serif;
+    /* --ff-headings: 'Belleza'; */
 }
 /* =========================================================*/
 /*                     MAIN PAGE SETUP                      */
@@ -109,6 +117,7 @@ nav .container ul li:hover {
     border-radius: 5px;
 }
 nav .container ul li a {
+    font-family: var(--ff-headings);
     display: inline-block;
     padding: 10px 20px;
     color: var(--clr-primary-900);
@@ -165,10 +174,10 @@ section h2 {
     height: 85vh;
     /* position: fixed; */
 }
-p {
-    font-size: 2rem;
+#home p {
+    font-size: 1.75rem;
 }
-p.subheading {
+#home p.subheading {
     margin-top: 1.5rem;
     font-size: 1.5rem;
 }
@@ -230,7 +239,7 @@ p.subheading {
 }
 #about .aboutMeContent h3 {
     font-family: var(--ff-headings);
-    margin: .25rem 0;
+    margin: .5rem 0;
 }
 #about button:active {
     transform: translateY(4px);
@@ -293,16 +302,23 @@ button:hover {
     display: flex; 
     width: 50%;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: flex-start;
-    height: 700px;
+    position: relative;
     color: var(--clr-primary-400);
     background-color: var(--clr-primary-200);
     padding: 45px;
     margin: 2rem;
 }
+.projectCard h2 {
+    font-size: 1.75rem;
+}
+.projectCard .project-description {
+    height: 250px;
+}
 .projectCard p {
     font-size: 1rem;
+    line-height: 1.5rem;
 }
 .projectCard a {
     /* Make button as wide as text inside it */
@@ -330,6 +346,7 @@ button:hover {
     filter: contrast(60%) grayscale(100%);
     border-radius: 5px;
     transition: filter 0.5s;
+    margin: 1rem 0;
 }
 .projectContainer img:hover {
     filter: contrast(60%) grayscale(0%);
@@ -339,6 +356,12 @@ button:hover {
 }
 .projectContainer img.portfolio-mockup:hover {
     filter: contrast(100%);
+}
+.projectCard .project-btns {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 /* =========================================================*/
 /*                          CONTACT                         */
