@@ -568,14 +568,24 @@ footer .icons .icon a {
         height: auto;
     }
     #projects .projectContainer .projectCard img {
-        width: 40%;
+        width: 50%;
+        height: fit-content;
         margin-bottom: 1rem;
     }
     #projects .projectContainer .projectCard p,
     #projects .projectContainer .projectCard a {
         margin-bottom: 1rem;
     }
-
+    #projects .projectContainer .projectCard .tablet-project {
+        display: flex;
+        height: 225px;
+    }
+    #projects .projectContainer .projectCard .project-description {
+         margin-left: 2rem;
+    }
+    #projects .projectContainer .projectCard .project-btns {
+        width: 45%;
+    }
     #contact {
         height: auto;
         padding: 4rem;
@@ -610,8 +620,8 @@ footer .icons .icon a {
     #home p {
         font-size: 1.5rem;
     }
-    #home .subheading {
-        font-size: 1rem;
+    #home p.subheading {
+        font-size: 1.25rem;
         margin-top: .75rem;
     }
     #about {
@@ -637,14 +647,25 @@ footer .icons .icon a {
         align-items: center;
         justify-content: center;  
     }
+    #projects .projectContainer .projectCard .tablet-project {
+        flex-direction: column;
+        height: auto;
+        margin: 0 0 1rem 0;
+    }
+    #projects .projectContainer .projectCard .tablet-project .project-description {
+        margin: 0;
+    }
     #projects .projectContainer .projectCard img {
         width: 100%;
         margin: 1.25rem 0;
     }
-    .projectCard a {
+    #projects .projectCard a {
         width: fit-content;
         text-align: center;
-        font-size: .875rem;
+        font-size: 1rem;
+    }
+    #projects .projectContainer .projectCard .project-btns {
+        width: 100%;
     }
     #contact {
         flex-direction: column;

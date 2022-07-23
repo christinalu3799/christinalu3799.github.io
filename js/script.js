@@ -64,3 +64,7 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
+// Toggle project card styling on screen sizing
+window.on('load resize', function() {
+  
+})
