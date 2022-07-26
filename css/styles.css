@@ -584,7 +584,8 @@ footer .icons .icon a {
          margin-left: 2rem;
     }
     #projects .projectContainer .projectCard .project-btns {
-        width: 45%;
+        width: 50%;
+        justify-content: space-around;
     }
     #contact {
         height: auto;
