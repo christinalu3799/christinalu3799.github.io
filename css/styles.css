@@ -228,8 +228,8 @@ section h2 {
 }
 
 #about .aboutMeContent p {
-    color: var(--clr-primary-900);
     font-size: 1.125rem;
+    line-height: 1.5rem;
 }
 #about .aboutMeContent h2 {
     font-family: 'Southam Demo';
@@ -618,6 +618,9 @@ footer .icons .icon a {
     }
     #about .aboutMeContent h3 {
         line-height: 2rem;
+    }
+    #about .aboutMeContent h3.tagline {
+        font-size: 1.25rem;
     }
     #about form {
         margin: 20px 0 20px 0;
