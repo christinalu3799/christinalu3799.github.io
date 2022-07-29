@@ -29,8 +29,7 @@
     font-family: 'Noto Sans';
 }
 :root {
-    --clr-primary-200: #ebebeb;
-    --clr-primary-300: #bdbdbd;
+    --clr-primary-200: #f2f2f2;
     --clr-primary-400: #5e5e5e;
     --clr-primary-900: #242424;
 
@@ -72,7 +71,7 @@ a, button {
     flex-direction: column;
 }
 
-.animate__animated.animate__fadeInDown {
+.animate__animated.animate__fadeInUp {
     --animate-duration: 4s;
 }
 /* =========================================================*/
@@ -155,7 +154,6 @@ section h2 {
     font-family: var(--ff-headings);
     font-size: 2rem;
     padding: 1.25rem 0;
-    /* color: var(--clr-primary-300); */
 }
 .reveal {
     position: relative; 
@@ -172,7 +170,6 @@ section h2 {
 /* =========================================================*/
 #home {
     height: 85vh;
-    /* position: fixed; */
 }
 #home p {
     font-size: 1.75rem;
@@ -189,11 +186,18 @@ section h2 {
 }
 #home .hero {
     display: flex;
+    position: relative;
     width: 75%;
     max-width: 1200px;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content:end;
+    align-items: center;
+    /* padding: 0 0 0 6rem; */
+}
+#blob {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: -1;
 }
 /* =========================================================*/
 /*                          ABOUT                           */
@@ -407,32 +411,12 @@ button:hover {
     background-color: var(--clr-primary-400);
 }
 
-#contact .left, 
+
 #contact .right {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-}
-#contact .left {
-    width: 40%;
-    height: auto;
-    filter: drop-shadow(-3px -3px 0px var(--clr-primary-300));  
-    margin-right: 1rem;
-    align-items: center;
-}
-#contact .left .headshot {
-    width: 90%;
-    object-fit: contain;
-    border-radius: 5px;
-    filter: grayscale(100%);
-    transition: filter 0.2s;
-}
-#contact .left .headshot:hover {
-    filter: grayscale(0%);
-}
-#contact .right {
-    width: 60%;
+    width: 50%;
 }
 /* =========================================================*/
 /*                      CONTACT FORM                        */
