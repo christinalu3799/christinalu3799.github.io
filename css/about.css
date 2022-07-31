@@ -1,0 +1,51 @@
+/* =========================================================*/
+/*                          ABOUT                           */
+/* =========================================================*/
+#about {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /* background-color: var(--clr-primary-200); */
+    padding-top:175px;
+    height: auto;
+}
+
+#about h1 {
+    font-family: 'Southam Demo';
+    font-size: 5rem;
+    font-weight: lighter;
+    color: var(--clr-primary-400);
+}
+#about .aboutMeContent{
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+    line-height: 24px;
+    color: var(--clr-primary-900);
+}
+#about img {
+    width: 16rem;
+    margin: 2rem 0;
+}
+button {
+    border: none; 
+    margin: 20px 0 20px 0;
+    padding: 10px;
+    color: white;
+    font: var(--ff-body);
+    width: fit-content;
+    transition: background-color 0.5s ease, filter 0.2s ease-in-out, transform 0.2s;
+    background-color: var(--clr-primary-400);
+    border-radius: 5px;
+}
+button:hover {
+    color: var(--clr-primary-900);
+    background-color: white;
+    filter: drop-shadow(-1px 1px 3px var(--clr-primary-400));
+    transform: translateY(-4px);
+}
+#about button:active {
+    transform: translateY(4px);
+}

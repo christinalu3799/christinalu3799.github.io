@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+
+@font-face {
+    font-family: 'Southam Demo';
+    src: url(../fonts/SouthamDemo.otf) format('opentype');
+    /* Adding all src */
+    src: url(../fonts/SouthamDemo.eot); /* IE9 Compat Modes */
+    src: url(../fonts/SouthamDemo.woff2) format('woff2'), /* Super Modern Browsers */
+         url(../fonts/SouthamDemo.woff) format('woff'), /* Pretty Modern Browsers */
+         url(../fonts/SouthamDemo.ttf)  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: "Abril Fatface";
+    src: url(../fonts/AbrilFatface-Regular.otf) format('opentype');
+}
+/* =========================================================*/
+/*                         TYPE SCALE                       */
+/* =========================================================*/
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Abril Fatface';
+}
+h1.hero-name {
+    font-size: 8rem;
+    font-family: 'Southam Demo';
+    font-weight: lighter;
+}
+h1.cursive-heading {
+    font-size: 6.25rem;
+    font-family: 'Southam Demo';
+    font-weight: lighter;
+}
+h1 {
+  margin-top: 0;
+  font-size: 4.209rem;
+}
+
+h2 {font-size: 3.157rem;}
+
+h3 {font-size: 2.369rem;}
+
+h4 {font-size: 1.777rem;}

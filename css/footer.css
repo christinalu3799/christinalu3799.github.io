@@ -1,0 +1,37 @@
+/* =========================================================*/
+/*                            FOOTER                        */
+/* =========================================================*/
+footer { 
+    display: flex; 
+    position: relative;
+    justify-content: center;
+    height: 20vh;
+    align-items: center;
+    background-color: var(--clr-primary-900);
+}
+
+footer #legal {
+    position: absolute;
+    bottom: 12px; 
+    color: white;
+    font-size: .8rem;
+
+}
+footer .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 175px;
+}
+
+footer .icons .icon a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+footer .icons .icon a img:hover {
+    transform: translateY(-4px);
+}
+footer .icons .icon a {
+    transition: filter 0.2s ease-in-out;
+}

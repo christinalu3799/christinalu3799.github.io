@@ -1,0 +1,92 @@
+/* =========================================================*/
+/*                          PROJECTS                        */
+/* =========================================================*/
+#projects {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem 0;
+    height: auto;
+}
+
+#projects h1 {
+    font-family: 'Southam Demo';
+    font-size: 5rem;
+    font-weight: lighter;
+    padding-bottom: 2rem;
+}
+
+.projectContainer {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+}
+.projectCard { 
+    display: flex; 
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    color: var(--clr-primary-400);
+    background-color: var(--clr-primary-200);
+    padding: 45px;
+    margin: 2rem;
+}
+.projectCard h2 {
+    font-size: 1.75rem;
+}
+.projectCard .project-description {
+    height: 250px;
+}
+.projectCard p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.projectCard a {
+    /* Make button as wide as text inside it */
+    width: fit-content;
+    padding: 10px; 
+    margin: 0;
+    background-color: var(--clr-primary-400);
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: background-color .2s ease-in-out,
+                transform .2s ease-in-out;
+}
+.projectCard a:hover{
+    background-color: white;
+    transform: translateY(-4px);
+    filter: drop-shadow(1px 2px 4px #c3c3c3);
+    color: var(--clr-primary-900);
+}
+.projectCard a:active {
+    transform: translateY(4px);
+}
+.projectContainer img {
+    width: 100%;
+    filter: contrast(60%) grayscale(100%);
+    border-radius: 5px;
+    transition: filter 0.5s;
+    margin: 1rem 0;
+}
+.projectContainer img:hover {
+    filter: contrast(60%) grayscale(0%);
+}
+.projectContainer img.portfolio-mockup {
+    filter: contrast(70%);  
+}
+.projectContainer img.portfolio-mockup:hover {
+    filter: contrast(100%);
+}
+.projectCard .project-btns {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}

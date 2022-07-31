@@ -13,6 +13,13 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Custom Style Sheet -->
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/hero.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
+    <link href="css/projects.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
     <!-- Browser Icon -->
     <link rel="icon" href="/images/cl2.png">
     <!-- <link href="transitions.css" rel="stylesheet"> -->
@@ -20,61 +27,57 @@
 </head>
 
 <body>
-    <div class="wrapper">
         <!-- NAVIGATION MENU -->
         <nav>
-        <div class="container">
-            <div class="logo">
-                <img src="/images/cl2.png">
+            <div class="container">
+                <ul>
+                    <!-- Set home page to dafult active -->
+                    <li class="home active"><a href="#home">home</a></li>
+                    <li class="about"><a href="#about">about</a></li>
+                    <li class="projects"><a href="#projects">projects</a></li>
+                    <li class="contact"><a href="#contact">contact</a></li>
+                    
+                </ul>
+                <div class="logo">
+                    <img src="/images/cl2.png">
+                </div>
             </div>
 
-            <ul>
-                <!-- Set home page to dafult active -->
-                <li class="home active"><a href="#home">home</a></li>
-                <li class="about"><a href="#about">about</a></li>
-                <li class="projects"><a href="#projects">projects</a></li>
-                <li class="contact"><a href="#contact">contact</a></li>
-                
-            </ul>
-        </div>
-        <div class="menu-btn">
-            <div class="menu-btn__lines"></div>
-        </div>
-        
+            
+
+            <!-- <div class="menu-btn">
+                <div class="menu-btn__lines"></div>
+            </div> -->
+    
         </nav> 
         <!-- HOME -->
         <section id="home"> 
             <!-- animate__animated animate__fadeInDown -->
             <div class="hero animate__animated animate__fadeInUp">
                 <!-- <img src="/images/blob.png" alt="blob" id="blob"> -->
-                <p>Hello! I'm</p>
-                <h1 >Christina Lu</h1>
-                <p class="subheading">Software Engineer</p>
+                
+                <h1 class="hero-name">Christina</h1>
+                <h2>is a frontend developer and designer based in Atlanta, GA</h2>
             </div>  
         </section>
         <!-- ABOUT -->
         <section id="about"> 
             <div class="wide">
-
-                <h1 class="reveal">About Me</h1>
+                <h1 class="reveal cursive-heading">About Me</h1>
                 <div class="aboutMeContent reveal">
-                    <h3 class="tagline">Hi there! I'm Christina, a curious and resourceful software developer based in Atlanta, GA.</h3>
-                    <br>
+
                     <p>I enjoy working with all aspects of the design and development process. Watching the ideas in my mind come to life in the browser is like magic to me - I never get sick of it. Follow along as I continue to explore the latest technologies used to create beautiful, functional, and intuitive experiences.</p>
-                    <br>
                     
                     <p>During my spare time, I enjoy working on my personal portfolio and mini-projects to constantly improve upon my coding and problem-solving skills. This portfolio is still a work in progress but feedback is always welcome!</p>
-                    <br>
+            
                     <h2>Education</h2>
-                        <h3>General Assembly | Software Engineering Immersive Coding Bootcamp | Remote</h3> 
-                            <p>Anticipated Graduation: November 2022</p>
-                        <h3>Georgia Institute of Technology | BS in Earth and Atmospheric Sciences | Atlanta, GA</h3>
-                            <p>Class of 2020</p>
-                    <br>
+                        <img src="/images/ga-logo.png" alt="logo of General Assembly">
+                        <img src="/images/gt-logo.png" alt="logo of Georgia Tech">
+             
                     <h2>Skills</h2>
-                        <h3>Development</h3>
+                        <h4>Development</h4>
                             <p>JavaScript, Python, HTML5, CSS3, DOM Manipulation, Git/GitHub, SQL</p>
-                        <h3>Design</h3>
+                        <h4>Design</h4>
                             <p>Responsive Web Design, Wireframing, Prototyping, Figma, Canva</p>
                 </div>
 
@@ -83,9 +86,9 @@
                 </form> 
             </div>
 
-            <div class="atl">
+            <!-- <div class="atl">
                 <img src="/images/atlskyline.png" alt="outline of atl skyline" class="reveal">
-            </div>
+            </div> -->
         </section>     
         <!-- PROJECTS -->
         <section id="projects"> 
@@ -145,27 +148,21 @@
         </section>      
         <!-- CONTACTS   -->
         <section id="contact"> 
-            <h1>Send me a message!</h1>
+            <h1 class="cursive-heading">Send me a message!</h1>
             <div class="wide">
-            <!-- <div class="left">
-                <img class="headshot" src="headshot.jpg" alt="headshot">
-            </div> -->
-            <div class="right">
-
                 <form action="https://formspree.io/f/moqrolzg" method="POST">
-                    <label for="full-name">Full Name</label>
-                    <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
 
-                    <label>Email Address</label>
-                    <input type="email" name="email" placeholder='name@myemail.com' required="">
-                    
-                    <label>Message</label>
-                    <textarea name="message" placeholder="Type message here!" required=""></textarea>
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder='name@myemail.com' required="">
                 
-                    <!-- your other form fields go here -->
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
+                <label>Message</label>
+                <textarea name="message" placeholder="Type message here!" required=""></textarea>
+            
+                <!-- your other form fields go here -->
+                <button type="submit">Submit</button>
+            </form>
         </div>       
         </section>
         <!-- FOOTER -->
@@ -181,10 +178,9 @@
                     <a href="https://www.linkedin.com/in/christinalu3799/" target="_blank"><img src='/images/linkedin-simple.png' alt='linkedin logo'></a>
                 </div>
             </div>      
-            <p id="legal">© Christina Lu | All Rights Reserved</p>  
+            <p id="legal">© Christina Lu 2022 | All Rights Reserved</p>  
         </footer>
 
-    </div>
     <script src="js/script.js"></script>
 </body>
 
