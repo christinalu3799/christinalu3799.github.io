@@ -33,9 +33,6 @@
     align-items: flex-start;
     position: relative;
     color: var(--clr-primary-400);
-    background-color: var(--clr-primary-200);
-    padding: 45px;
-    margin: 2rem;
 }
 .projectCard h2 {
     font-size: 1.75rem;

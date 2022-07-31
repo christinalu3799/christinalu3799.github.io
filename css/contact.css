@@ -67,3 +67,27 @@
 #contact form button:active {
     transform: translateY(4px);
 }
+
+@media screen and (max-width:820px) {
+    #contact {
+        height: auto;
+        padding: 4rem;
+    }
+    #contact form input,
+    #contact form textarea {
+        margin: .625rem 0;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #contact {
+        padding: 2rem;
+    }
+    #contact h1 {
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+    #contact form {
+        width: 100%;
+    }
+}
