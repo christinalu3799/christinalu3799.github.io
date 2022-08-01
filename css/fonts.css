@@ -38,6 +38,7 @@ h1.cursive-heading {
     font-size: 6.25rem;
     font-family: 'Southam Demo';
     font-weight: lighter;
+    color: var(--clr-primary-400);
 }
 h1 {
   margin-top: 0;
