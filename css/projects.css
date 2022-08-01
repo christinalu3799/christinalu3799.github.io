@@ -5,44 +5,27 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 3rem 0;
     height: auto;
-}
-
-#projects h1 {
-    font-family: 'Southam Demo';
-    font-size: 5rem;
-    font-weight: lighter;
-    padding-bottom: 2rem;
 }
 
 .projectContainer {
     display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
     max-width: 1200px;
     width: 100%;
-    height: auto;
+    height: fit-content;
 }
 .projectCard { 
-    display: flex; 
-    width: 50%;
+    display: flex;
+    width: 350px;
+    height: 575px;
+    padding: 1rem;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     position: relative;
-    color: var(--clr-primary-400);
-}
-.projectCard h2 {
-    font-size: 1.75rem;
-}
-.projectCard .project-description {
-    height: 250px;
-}
-.projectCard p {
-    font-size: 1rem;
-    line-height: 1.5rem;
 }
 .projectCard a {
     /* Make button as wide as text inside it */
@@ -84,6 +67,16 @@
 .projectCard .project-btns {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+@media screen and (max-width:820px) {
+    #home .hero {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+
 }
