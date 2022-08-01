@@ -53,12 +53,55 @@ a, button {
     --animate-duration: 4s;
 }
 
+.spacer {
+    aspect-ratio: 960/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 11;
+    /* position: absolute; 
+    /* bottom: 0; */ 
+}
+.wave-line {
+    aspect-ratio: 960/100;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../wave-line.svg');
+}
+.wave-nav {
+    aspect-ratio: 960/250;
+    width: 100vw;
+    position: absolute; 
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -10;
+    background-image: url('../wave-nav.svg');
+}
 
+.wave-top {
+    background-image: url('../wave-top.svg');
+}
+.wave-bottom {
+    aspect-ratio: 960/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 20;
+ 
+    background-image: url('../wave-bottom.svg');
+}
 /* =========================================================*/
 /*                          SECTIONS                        */
 /* =========================================================*/
 section {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     height: 100vh;

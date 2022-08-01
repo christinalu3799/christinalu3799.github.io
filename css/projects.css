@@ -2,6 +2,7 @@
 /*                          PROJECTS                        */
 /* =========================================================*/
 #projects {
+    background-color: var(--clr-primary-200);
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -72,9 +73,6 @@
 }
 
 @media screen and (max-width:820px) {
-    #home .hero {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width:480px) {
