@@ -62,8 +62,9 @@
     margin: 1rem 0;
 }
 #contact form button {
+    margin: 0;
     width: fit-content;
-    margin: 1rem 0 0 0;
+    z-index: 10;
 }
 #contact form button:active {
     transform: translateY(4px);
@@ -82,11 +83,11 @@
 
 @media screen and (max-width:480px) {
     #contact {
+        height: 60vh;
         padding: 2rem;
     }
     #contact h1 {
         font-size: 4rem;
-        margin-bottom: 0;
     }
     #contact form {
         width: 100%;

@@ -59,10 +59,10 @@ nav .container ul li.active a {
 
 
 @media screen and (max-width:480px) {
-    nav .container {
-        width: 100vw;
-    }
     nav ul {
         display: none;
+    }
+    .wave-nav {
+        height: 45vh;
     }
 }

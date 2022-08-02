@@ -60,8 +60,6 @@ a, button {
     background-position: center;
     background-size: cover;
     z-index: 11;
-    /* position: absolute; 
-    /* bottom: 0; */ 
 }
 .wave-line {
     aspect-ratio: 900/100;
