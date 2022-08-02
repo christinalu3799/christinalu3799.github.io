@@ -52,31 +52,6 @@ a, button {
 .animate__animated.animate__fadeInUp {
     --animate-duration: 4s;
 }
-
-.spacer {
-    aspect-ratio: 960/100;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 11;
-}
-.wave-line {
-    aspect-ratio: 900/100;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url('../wave-line.svg');
-}
-.wave-line2 {
-    aspect-ratio: 900/50;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url('../wave-line2.svg');
-}
 .wave-nav {
     aspect-ratio: 900/250;
     width: 100vw;
@@ -88,19 +63,39 @@ a, button {
     z-index: -10;
     background-image: url('../wave-nav.svg');
 }
-
+.wave-line {
+    aspect-ratio: 900/100;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../wave-line.svg');
+}
 .wave-top {
+    aspect-ratio: 900/115;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 11;
     background-image: url('../wave-top.svg');
 }
 .wave-bottom {
-    aspect-ratio: 900/100;
-    width: 100%;
+    aspect-ratio: 900/115;
+    width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     z-index: 20;
- 
     background-image: url('../wave-bottom.svg');
+}
+.wave-line2 {
+    aspect-ratio: 900/60;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../wave-line2.svg');
 }
 .wave-footer {
     aspect-ratio: 900/200;

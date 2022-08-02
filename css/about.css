@@ -9,8 +9,8 @@
     position: relative;
     height: auto;
     background-color: #556d68;
+    width: 100vw;
 }
-
 #about .aboutMeContent{
     display: flex; 
     flex-direction: column;
