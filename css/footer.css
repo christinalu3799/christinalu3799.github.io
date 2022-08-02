@@ -7,7 +7,6 @@ footer {
     justify-content: center;
     height: 20vh;
     align-items: center;
-    background-color: var(--clr-primary-900);
 }
 
 footer #legal {
@@ -15,13 +14,14 @@ footer #legal {
     bottom: 12px; 
     color: white;
     font-size: .8rem;
-
+    z-index: 10;
 }
 footer .icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 175px;
+    z-index: 10;
 }
 
 footer .icons .icon a img {

@@ -64,15 +64,23 @@ a, button {
     /* bottom: 0; */ 
 }
 .wave-line {
-    aspect-ratio: 960/100;
+    aspect-ratio: 900/100;
     width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url('../wave-line.svg');
 }
+.wave-line2 {
+    aspect-ratio: 900/50;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../wave-line2.svg');
+}
 .wave-nav {
-    aspect-ratio: 960/250;
+    aspect-ratio: 900/250;
     width: 100vw;
     position: absolute; 
     top: 0;
@@ -87,7 +95,7 @@ a, button {
     background-image: url('../wave-top.svg');
 }
 .wave-bottom {
-    aspect-ratio: 960/100;
+    aspect-ratio: 900/100;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -95,6 +103,17 @@ a, button {
     z-index: 20;
  
     background-image: url('../wave-bottom.svg');
+}
+.wave-footer {
+    aspect-ratio: 900/200;
+    width: 100vw;
+    position: absolute; 
+    bottom: 0;
+    z-index: 8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../wave-footer.svg');
 }
 /* =========================================================*/
 /*                          SECTIONS                        */

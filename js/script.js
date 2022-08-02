@@ -59,7 +59,7 @@ window.onscroll = function() {
     document.querySelector("nav").style.top = "0";
     // document.querySelector('nav').addClass('.appear')
   } else {
-    document.querySelector("nav").style.top = "-15vh";
+    document.querySelector("nav").style.top = "-18vh";
   }
   prevScrollpos = currentScrollPos;
 }
