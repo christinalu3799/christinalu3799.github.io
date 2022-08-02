@@ -4,8 +4,10 @@
 
 :root {
     --clr-primary-200: #f2f2f2;
+    --clr-primary-300: #BDC6C1;
     --clr-primary-400: #5e5e5e;
-    --clr-primary-900: #242424;
+
+    --clr-primary-900: #453226;
 
     --ff-primary: 'Palatino';
     /* --ff-primary: 'Mate', serif; */
@@ -32,6 +34,7 @@ html {
     font-weight: lighter;
     color: var(--clr-primary-400);
     scroll-behavior: smooth;
+    overflow-x: hidden;
     /* cursor: url('../cursor-filled.png'), pointer; */
 }
 body {
@@ -43,6 +46,26 @@ body {
 }
 a, button {
     cursor: url('../images/pointer-filled.png'), auto;
+}
+button {
+    border: none; 
+    margin: 20px 0 20px 0;
+    padding: 10px;
+    color: var(--clr-primary-200);
+    font: var(--ff-body);
+    width: fit-content;
+    transition: background-color 0.5s ease, filter 0.2s ease-in-out, transform 0.2s;
+    background-color: var(--clr-primary-400);
+    border-radius: 5px;
+}
+button:hover {
+    color: var(--clr-primary-900);
+    background-color: white;
+    filter: drop-shadow(-1px 1px 3px var(--clr-primary-400));
+    transform: translateY(-4px);
+}
+button:active {
+    transform: translateY(4px);
 }
 .wide {
     display: flex;
@@ -72,25 +95,25 @@ a, button {
     background-image: url('../wave-line.svg');
 }
 .wave-top {
-    aspect-ratio: 900/115;
+    aspect-ratio: 900/110;
     width: 100vw;
+    height: auto;
+    margin: 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    z-index: 11;
     background-image: url('../wave-top.svg');
 }
 .wave-bottom {
-    aspect-ratio: 900/115;
+    aspect-ratio: 900/110;
     width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    z-index: 20;
     background-image: url('../wave-bottom.svg');
 }
 .wave-line2 {
-    aspect-ratio: 900/60;
+    aspect-ratio: 900/50;
     width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
@@ -107,6 +130,18 @@ a, button {
     background-position: center;
     background-size: cover;
     background-image: url('../wave-footer.svg');
+}
+.blob {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 900/675;
+    width: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../blob.svg');
 }
 /* =========================================================*/
 /*                          SECTIONS                        */

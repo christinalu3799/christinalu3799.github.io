@@ -8,7 +8,7 @@
     align-items: center;
     position: relative;
     height: auto;
-    background-color: #556d68;
+    background-color: var(--clr-primary-300);
     width: 100vw;
 }
 #about .aboutMeContent{
@@ -18,32 +18,13 @@
     color: var(--clr-primary-900);
 }
 #about img {
-    width: 16rem;
-    margin: 2rem 0;
+    width: 50%;
+    margin: 1rem 0;
 }
 #about h4 {
     margin-bottom: .75rem;
 }
-button {
-    border: none; 
-    margin: 20px 0 20px 0;
-    padding: 10px;
-    color: var(--clr-primary-900);
-    font: var(--ff-body);
-    width: fit-content;
-    transition: background-color 0.5s ease, filter 0.2s ease-in-out, transform 0.2s;
-    background-color: #e3dea4;
-    border-radius: 5px;
-}
-button:hover {
-    color: var(--clr-primary-900);
-    background-color: white;
-    filter: drop-shadow(-1px 1px 3px var(--clr-primary-400));
-    transform: translateY(-4px);
-}
-#about button:active {
-    transform: translateY(4px);
-}
+
 
 @media screen and (max-width:820px) {
     #about h1.cursive-heading {
@@ -52,7 +33,6 @@ button:hover {
 }
 
 @media screen and (max-width:480px) {
-
     #about h3 {
         margin: 1rem 0;
     }
