@@ -3,11 +3,11 @@
 /* =========================================================*/
 
 :root {
-    --clr-primary-200: #f2f2f2;
+    --clr-primary-200: #f4f0f0;
     --clr-primary-300: #BDC6C1;
     --clr-primary-400: #5e5e5e;
 
-    --clr-primary-900: #453226;
+    --clr-primary-900: #524a45;
 
     --ff-primary: 'Palatino';
     /* --ff-primary: 'Mate', serif; */
@@ -38,6 +38,8 @@ html {
     /* cursor: url('../cursor-filled.png'), pointer; */
 }
 body {
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-color: var(--clr-primary-200);
     background-size: 100%;
@@ -55,7 +57,7 @@ button {
     font: var(--ff-body);
     width: fit-content;
     transition: background-color 0.5s ease, filter 0.2s ease-in-out, transform 0.2s;
-    background-color: var(--clr-primary-400);
+    background-color: var(--clr-primary-300);
     border-radius: 5px;
 }
 button:hover {
@@ -75,51 +77,8 @@ button:active {
 .animate__animated.animate__fadeInUp {
     --animate-duration: 4s;
 }
-.wave-nav {
-    aspect-ratio: 900/250;
-    width: 100vw;
-    position: absolute; 
-    top: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: -10;
-    background-image: url('../wave-nav.svg');
-}
-.wave-line {
-    aspect-ratio: 900/100;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url('../wave-line.svg');
-}
-.wave-top {
-    aspect-ratio: 900/110;
-    width: 100vw;
-    height: auto;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url('../wave-top.svg');
-}
-.wave-bottom {
-    aspect-ratio: 900/110;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url('../wave-bottom.svg');
-}
-.wave-line2 {
-    aspect-ratio: 900/50;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url('../wave-line2.svg');
-}
+
+
 .wave-footer {
     aspect-ratio: 900/200;
     width: 100vw;

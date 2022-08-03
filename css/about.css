@@ -4,12 +4,13 @@
 
 #about {
     flex-direction: column;
+    background-color: var(--clr-primary-200);
     justify-content: space-between;
     align-items: center;
     position: relative;
     height: auto;
-    background-color: var(--clr-primary-300);
     width: 100vw;
+    
 }
 #about .aboutMeContent{
     display: flex; 
@@ -35,4 +36,5 @@
     #about h3 {
         margin: 1rem 0;
     }
+    
 }

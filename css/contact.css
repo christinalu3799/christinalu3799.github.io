@@ -1,11 +1,19 @@
 /* =========================================================*/
 /*                          CONTACT                         */
 /* =========================================================*/
+.wave-line2 {
+    aspect-ratio: 900/50;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../wave-line2.svg');
+}
 #contact {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 70vh;
+    height: 75vh;
     background-color: var(--clr-primary-200);
 }
 #contact .wide {
@@ -62,7 +70,7 @@
     margin: 1rem 0;
 }
 #contact form button {
-    margin: 0;
+    margin: 1rem 0 0 0;
     width: fit-content;
     z-index: 10;
 }
@@ -79,7 +87,7 @@
 }
 @media screen and (max-width:480px) {
     #contact {
-        height: 75vh;
+        height: 62vh;
         padding: 2rem;
     }
     #contact h1 {
