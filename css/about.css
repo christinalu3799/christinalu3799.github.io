@@ -25,8 +25,12 @@
 #about h4 {
     margin-bottom: .75rem;
 }
+#about ul {
+    padding: 0 0 0 1rem;
+}
 #about li {
     list-style-type:circle;
+    
 }
 @media screen and (max-width:820px) {
     #about h1.cursive-heading {
