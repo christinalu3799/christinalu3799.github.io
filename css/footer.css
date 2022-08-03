@@ -1,6 +1,17 @@
 /* =========================================================*/
 /*                            FOOTER                        */
 /* =========================================================*/
+.wave-footer {
+    aspect-ratio: 900/200;
+    width: 100vw;
+    position: absolute; 
+    bottom: 0;
+    z-index: 8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../wave-footer.svg');
+}
 footer { 
     display: flex; 
     position: relative;

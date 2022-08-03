@@ -13,13 +13,28 @@
 #home h2 {
     text-align: center;
 }
-.down-arrow {   
+.down-arrow { 
+    
     width: 50px;
     position: fixed;
     align-self: center;
     top: 75vh;
     z-index: -15;
+    animation: MoveUpDown 1s ease infinite;
 }
+@keyframes MoveUpDown {
+    0% {
+        transform: translateY(-20%);
+      }
+    
+      50% {
+        transform: translateY(20%);
+      }
+    
+      100% {
+        transform: translateY(-20%);
+      }
+  }
 #home .hero {
     display: flex;
     position: fixed;

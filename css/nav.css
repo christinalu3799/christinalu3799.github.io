@@ -16,7 +16,7 @@ nav .container {
     width: 100%;
     max-width: 1200px;
     text-align: center;
-    margin: 0 2rem;
+    margin: 0 4rem;
 }
 nav .logo {
     width: 90px;
@@ -37,12 +37,12 @@ nav .container ul li:hover {
     border-radius: 5px;
 }
 nav .container ul li a {
-    font-family: var(--ff-primary);
+    letter-spacing: 2px;
     display: inline-block;
     padding: 10px 20px;
     color: var(--clr-primary-900);
     text-decoration: none;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
 }
 nav .container ul li a:hover {
     color: white;

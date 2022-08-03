@@ -64,7 +64,12 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
-// Toggle project card styling on screen sizing
-window.on('load resize', function() {
-  
-})
+
+
+const arrow = () => {
+  setTimeout(()=> {
+    console.log('arrow heheh')
+    document.querySelector('.down-arrow').style.display.remove;
+  },1000)
+}
+window.onload = arrow

@@ -4,16 +4,10 @@
 
 :root {
     --clr-primary-200: #f4f0f0;
-    --clr-primary-300: #BDC6C1;
+    --clr-primary-300: #879294;
     --clr-primary-400: #5e5e5e;
-
-    --clr-primary-900: #524a45;
-
-    --ff-primary: 'Palatino';
-    /* --ff-primary: 'Mate', serif; */
-    /* --ff-primary: 'Cutive Mono', monospace; */
-    --ff-headings: 'Abril Fatface':
-    /* --ff-headings: 'Belleza'; */
+    --clr-primary-900: #343536;
+    
 }
 /* =========================================================*/
 /*                     MAIN PAGE SETUP                      */
@@ -53,17 +47,18 @@ button {
     border: none; 
     margin: 20px 0 20px 0;
     padding: 10px;
-    color: var(--clr-primary-200);
+    border: solid 1px var(--clr-primary-900);
+    color: var(--clr-primary-900);
     font: var(--ff-body);
     width: fit-content;
     transition: background-color 0.5s ease, filter 0.2s ease-in-out, transform 0.2s;
-    background-color: var(--clr-primary-300);
+    background-color: transparent;
     border-radius: 5px;
 }
 button:hover {
     color: var(--clr-primary-900);
     background-color: white;
-    filter: drop-shadow(-1px 1px 3px var(--clr-primary-400));
+    filter: drop-shadow(-1px 1px 3px var(--clr-primary-300));
     transform: translateY(-4px);
 }
 button:active {
@@ -75,21 +70,9 @@ button:active {
 }
 
 .animate__animated.animate__fadeInUp {
-    --animate-duration: 4s;
+    --animate-duration: 2s;
 }
 
-
-.wave-footer {
-    aspect-ratio: 900/200;
-    width: 100vw;
-    position: absolute; 
-    bottom: 0;
-    z-index: 8;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url('../wave-footer.svg');
-}
 .blob {
     display: flex;
     flex-direction: column;
@@ -151,7 +134,6 @@ section {
     section {
         padding: 0 12vw;
     }
-    
 
     
 }
