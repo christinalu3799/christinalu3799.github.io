@@ -91,6 +91,6 @@
         font-size: 4rem;
     }
     #contact form {
-        width: 100%;
+        max-width: 100%;
     }
 }

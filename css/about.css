@@ -61,5 +61,12 @@
     #about h3 {
         margin: 1rem 0;
     }
+    #about .skills {
+        align-items: center;
+        justify-content: center;
+    }
+    #about .skills svg {
+        width: 45px;align-self: center;
+    }
     
 }
