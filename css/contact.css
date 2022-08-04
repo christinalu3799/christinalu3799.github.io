@@ -2,7 +2,7 @@
 /*                          CONTACT                         */
 /* =========================================================*/
 .wave-line2 {
-    aspect-ratio: 905/50;
+    aspect-ratio: 920/50;
     width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
@@ -16,11 +16,7 @@
     height: 75vh;
     background-color: var(--clr-primary-200);
 }
-#contact .wide {
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
+
 #contact a {
     background-color: var(--clr-primary-400);
     width: fit-content;
@@ -47,7 +43,8 @@
 #contact form {
     display: flex; 
     position: relative;
-    width: 50%;
+    width: 100%;
+    max-width: 40vw;
     justify-content: flex-start;
     flex-direction: column;
 }

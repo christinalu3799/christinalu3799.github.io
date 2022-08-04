@@ -6,17 +6,15 @@
     flex-direction: column;
     background-color: var(--clr-primary-200);
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
     height: auto;
-    width: 100vw;
-    padding: 1rem 2rem;
+    padding: 1rem 15rem;
     
 }
 #about .aboutMeContent{
     display: flex; 
     flex-direction: column;
-    width: 100%;
     color: var(--clr-primary-900);
 }
 #about img {
@@ -33,13 +31,33 @@
     list-style-type:circle;
     
 }
+
+#about .skills {
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+#about .skills svg {
+    width: 36px;
+    margin: 1rem;
+}
+#about .skill-icon {
+    fill: var(--clr-primary-300);
+}
 @media screen and (max-width:820px) {
+    #about {
+        padding: 1rem 5rem;
+    }
     #about h1.cursive-heading {
         font-size: 4.209rem;
     }
 }
 
 @media screen and (max-width:480px) {
+    #about {
+        padding: 1rem 2rem;
+    }
     #about h3 {
         margin: 1rem 0;
     }

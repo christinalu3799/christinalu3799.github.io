@@ -64,10 +64,6 @@ button:hover {
 button:active {
     transform: translateY(4px);
 }
-.wide {
-    display: flex;
-    flex-direction: column;
-}
 
 .animate__animated.animate__fadeInUp {
     --animate-duration: 2s;
