@@ -79,14 +79,13 @@
     margin-right: 1rem;
 }
 
-img.wave-top,
+/* img.wave-top,
 img.wave-bottom {
-    filter: drop-shadow(0 -1px 15px var(--clr-primary-300));    
-}
-/* .wave-top {
+    filter: drop-shadow(0 -1px 15px var(--clr-primary-300));
+    width: 100%;    
+} */
+.wave-top {
     aspect-ratio: 905/105;
-    position: absolute;
-    top: -200px;
     filter: drop-shadow(0 -1px 15px var(--clr-primary-300));    
     width: 100%;
     margin: 0;
@@ -95,7 +94,7 @@ img.wave-bottom {
     background-size: cover;
     background-image: url('../wave-top.svg');
     z-index: 15;
-} */
+}
 .wave-line {
     aspect-ratio: 900/100;
     width: 100vw;
@@ -104,9 +103,10 @@ img.wave-bottom {
     background-size: cover;
     background-image: url('../wave-line.svg');
 }
+
 .white-bg {
     background-color: var(--clr-primary-200);
-    padding-bottom: 1rem;
+    width: 100vw;
 }
 .wave-bottom {
     aspect-ratio: 905/105;
