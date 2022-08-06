@@ -12,6 +12,7 @@
     background-size: cover;
     background-image: url('../wave-footer.svg');
 }
+
 footer { 
     display: flex; 
     position: relative;
