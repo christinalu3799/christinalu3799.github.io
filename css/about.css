@@ -8,9 +8,7 @@
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
-    height: auto;
-    padding: 1rem 15rem;
-    
+    height: auto;  
 }
 #about .aboutMeContent{
     display: flex; 
@@ -45,6 +43,7 @@
 #about .skill-icon {
     fill: var(--clr-primary-300);
 }
+/* ===================================================== */
 @media screen and (max-width:820px) {
     #about {
         padding: 1rem 5rem;

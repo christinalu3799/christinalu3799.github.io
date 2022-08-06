@@ -11,43 +11,46 @@
          url(../fonts/SouthamDemo.ttf)  format('truetype'); /* Safari, Android, iOS */
 }
 @font-face {
-    font-family: "Abril Fatface";
-    src: url(../fonts/AbrilFatface-Regular.otf) format('opentype');
+    font-family: 'Mungo Italic';
+    src: url(../fonts/MungoItalic.otf) format('opentype');
+    src: url(../fonts/MungoItalic.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Mungo';
+    src: url(../fonts/Mungo.otf) format('opentype');
+    src: url(../fonts/Mungo.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Mono';
+    src: url(../fonts/Minimal-Mono-Regular.otf) format('opentype');
+   
 }
 /* =========================================================*/
 /*                         TYPE SCALE                       */
 /* =========================================================*/
 
-a {
-    font-family: 'Palatino';
-}
 p {
     margin-bottom: 1rem;
     line-height: 1.5;
     color: var(--clr-primary-400);
+    font-family: 'Mono';
 }
 li {
     line-height: 1.5;
 }
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, a, button, form {
     font-weight: 400;
     line-height: 1.5;
-    font-family: 'Palatino';
+    font-family: 'Mono';
     color: var(--clr-primary-400);
 }
-h1.hero-name {
-    font-size: 9rem;
-    font-family: 'Southam Demo';
-    font-weight: lighter;
-}
-h1.cursive-heading {
-    font-size: 4.5rem;
-    margin-bottom: 1rem;
-    font-family: 'Southam Demo';
+
+.subheading {
+    font-family: 'Mungo';
     font-weight: lighter;
     color: var(--clr-primary-400);
 }
-h1.cursive-heading.white {
+.subheading.white {
     color: var(--clr-primary-200);
 }
 .white {
