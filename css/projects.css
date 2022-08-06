@@ -92,7 +92,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url('../wave-top.svg');
+    background-image: url('../svg/wave-top.svg');
     z-index: 15;
 }
 .wave-line {
@@ -101,7 +101,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url('../wave-line.svg');
+    background-image: url('../svg/wave-line.svg');
 }
 
 .white-bg {
@@ -115,7 +115,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url('../wave-bottom.svg');
+    background-image: url('../svg/wave-bottom.svg');
     z-index: 10;
 }
 /* ===================================================== */

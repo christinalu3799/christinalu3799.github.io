@@ -67,7 +67,7 @@ nav .container ul li.active a {
     background-position: center;
     background-size: cover;
     z-index: -10;
-    background-image: url('../wave-nav.svg');
+    background-image: url('../svg/wave-nav.svg');
 }
 /* ===================================================== */
 
