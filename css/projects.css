@@ -37,9 +37,10 @@
 }
 .projectCard a {
     /* Make button as wide as text inside it */
-    width: fit-content;
-    padding: 10px;
+    width: 100px;
+    padding: 8px;
     margin: 0;
+    text-align: center;
     /* background-color: var(--clr-primary-400); */
     border: var(--clr-primary-200) 1px solid;
     text-decoration: none;
