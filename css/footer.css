@@ -23,7 +23,7 @@ footer {
 
 footer #legal {
     position: absolute;
-    bottom: 12px; 
+    bottom: .5rem; 
     color: white;
     font-size: .8rem;
     z-index: 10;
@@ -56,5 +56,9 @@ footer .icons .icon a {
 @media screen and (max-width:480px) {
     .wave-footer {
         height: 175%;
+    }
+    footer #legal {
+        font-size: x-small;
+        bottom: 1.5rem;
     }
 }

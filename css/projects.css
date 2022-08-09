@@ -61,20 +61,12 @@
 }
 .projectContainer img {
     width: 100%;
-    filter: contrast(60%) grayscale(100%);
     border-radius: 5px;
     transition: filter 0.5s;
     margin: 1rem 0;
+    filter: contrast(50%) drop-shadow(1px 2px 4px #474747);
 }
-.projectContainer img:hover {
-    filter: contrast(60%) grayscale(0%);
-}
-.projectContainer img.portfolio-mockup {
-    filter: contrast(70%);  
-}
-.projectContainer img.portfolio-mockup:hover {
-    filter: contrast(100%);
-}
+
 .projectCard .project-btns {
     display: flex;
     width: 100%;
