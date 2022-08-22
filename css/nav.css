@@ -1,5 +1,5 @@
 nav {
-    aspect-ratio: 900/250;
+    /* aspect-ratio: 900/250; */
     display: flex;
     position: sticky; 
     width: 100%;
@@ -57,8 +57,8 @@ nav .container ul li.active a {
     /* Hover button text color */
     color: white;
 }
-.wave-nav {
-    aspect-ratio: 900/100;
+/* .wave-nav {
+    aspect-ratio: 900/300;
     filter: drop-shadow(0 -1px 15px var(--clr-primary-300));    
     width: 100vw;
     position: absolute; 
@@ -68,8 +68,15 @@ nav .container ul li.active a {
     background-size: cover;
     z-index: -10;
     background-image: url('../svg/wave-nav.svg');
-}
+} */
 /* ===================================================== */
+/* Wide Screen */
+@media screen and (min-width:1920px) {
+    .wave-nav {
+        aspect-ratio: 900/300;
+    }
+
+}
 
 @media screen and (max-width:820px) {
     .wave-nav {
