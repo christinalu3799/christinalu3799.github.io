@@ -127,7 +127,6 @@
         margin: 1rem 0;
     }
 }
-
 @media screen and (max-width:480px) {
     .projectCard {
         padding: 1rem;
