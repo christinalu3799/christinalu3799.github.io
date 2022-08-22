@@ -80,7 +80,7 @@
 /* ===================================================== */
 @media screen and (max-width:820px) {
     #contact {
-        height: auto;
+        height: 50vh;
     }
     #contact form {
         max-width: 70%;
