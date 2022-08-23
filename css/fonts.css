@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Source+Code+Pro:wght@300&display=swap');
 
 @font-face {
     font-family: 'Southam Demo';
@@ -33,15 +34,15 @@ p {
     margin-bottom: 1rem;
     line-height: 1.5;
     color: var(--clr-primary-400);
-    font-family: 'Mono';
+    font-family: 'Source Code Pro', monospace;
 }
 li {
     line-height: 1.5;
 }
 h1, h2, h3, h4, h5, a, button, form {
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5;
-    font-family: 'Mono';
+    font-family: 'Source Code Pro', monospace;
     color: var(--clr-primary-400);
 }
 
