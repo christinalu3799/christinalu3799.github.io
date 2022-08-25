@@ -4,7 +4,6 @@ const navLi = document.querySelectorAll('nav .container ul li');
 // Content appear on scroll 
 window.addEventListener('scroll', reveal);
 
-
 function reveal(){
   let reveals = document.querySelectorAll('.reveal');
   for(let i = 0; i < reveals.length; i++){
@@ -66,7 +65,6 @@ window.onscroll = function() {
 
 const arrow = () => {
   setTimeout(()=> {
-    console.log('arrow heheh')
     document.querySelector('.down-arrow').style.display.remove;
   },1000)
 }
