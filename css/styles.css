@@ -38,9 +38,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-a, button {
-    cursor: url('../images/pointer-filled.png'), auto;
+a {
+    text-decoration: none;
 }
+/* a, button {
+    cursor: url('../images/pointer-filled.png'), auto;
+} */
 button {
     border: none; 
     margin: 20px 0 20px 0;
@@ -66,7 +69,6 @@ button:active {
 .animate__animated.animate__fadeInUp {
     --animate-duration: 2s;
 }
-
 /* =========================================================*/
 /*                          SECTIONS                        */
 /* =========================================================*/
