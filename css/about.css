@@ -19,6 +19,13 @@
     width: 50%;
     margin: 1rem 0;
 }
+#about h1.subheading {
+    align-self: center;
+}
+#about h2,
+#about h1 {
+    margin: 1rem 0;
+}
 #about h4 {
     margin-bottom: .75rem;
 }

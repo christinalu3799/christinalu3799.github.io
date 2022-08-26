@@ -62,10 +62,6 @@ button:hover {
     filter: drop-shadow(-1px 1px 3px var(--clr-primary-300));
     transform: translateY(-4px);
 }
-button:active {
-    transform: translateY(4px);
-}
-
 .animate__animated.animate__fadeInUp {
     --animate-duration: 2s;
 }
