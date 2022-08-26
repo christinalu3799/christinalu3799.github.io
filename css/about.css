@@ -60,6 +60,14 @@
 .skill-icon {
     fill: var(--clr-primary-300);
 }
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills-list h5 {
+    font-style:oblique;
+}
 /* ===================================================== */
 /* Wide Screen */
 @media screen and (min-width:1920px) {
@@ -76,8 +84,14 @@
     #about h1.cursive-heading {
         font-size: 4.209rem;
     }
+    #about .subheading {
+        margin: 0 0 1rem 0;
+    }
     .skills-container {
         width: 100vw;
+    }
+    .skills-list div {
+        width: 30%;
     }
 }
 @media screen and (max-width:480px) {
@@ -87,14 +101,7 @@
     #about h3 {
         margin: 1rem 0;
     }
-    
-    /* .skills {
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+    .skills-list div {
+        width: auto;
     }
-    .skills svg {
-        align-self: center;
-    }
-     */
 }

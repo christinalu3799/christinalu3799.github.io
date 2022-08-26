@@ -33,19 +33,19 @@ main {
 .projectCard {
     display: flex;
     width: 350px;
-    height: fit-content;
+    height: 650px;
     padding: 2rem;
     margin: 0.5rem;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     position: relative;
-    background-color: rgba(255, 255, 255, .25);
+    border: 0.5px solid var(--clr-primary-300);
     backdrop-filter: blur(5px);
     border-radius: 3px;
 }
 
-.projectCard a {
+.projectCard a, main a {
     /* Make button as wide as text inside it */
     width: 100px;
     padding: 8px;
@@ -60,15 +60,15 @@ main {
         transform .2s ease-in-out;
 }
 
-.projectCard a:hover {
+.projectCard a {
+    position: absolute;
+    bottom: 2rem;
+}
+.projectCard a:hover, main a:hover {
     /* background-color: white; */
     transform: translateY(-4px);
     filter: drop-shadow(1px 2px 4px var(--clr-primary-400));
     color: var(--clr-primary-900);
-}
-
-.projectCard a:active {
-    transform: translateY(4px);
 }
 
 .projectContainer img {
@@ -76,16 +76,16 @@ main {
     border-radius: 5px;
     transition: filter 0.5s;
     margin: 1rem 0 2rem 0;
-    filter: contrast(50%) drop-shadow(1px 2px 4px #474747);
+    filter: contrast(80%) drop-shadow(1px 2px 4px #474747) grayscale(100%);
 }
 
-.projectCard .project-btns {
+.project-btns {
     display: flex;
     width: 100%;
     justify-content: flex-start;
 }
 
-.projectCard .project-btns a {
+.project-btns a {
     margin-right: 1rem;
 }
 
@@ -130,12 +130,20 @@ main {
 @media screen and (max-width:820px) {
     .projectCard {
         width: 500px;
-        height: auto;
+        height: fit-content;
         margin: 1rem 1.5rem;
         padding: 1.5rem;
     }
+    .projectCard a {
+        position: relative;
+        bottom: 0;
+    }
 }
 @media screen and (max-width:480px) {
+    main h1 {
+        line-height: 1;
+        margin: 0 0 2rem 0;
+    }
     .projectCard {
         height: fit-content;
     }
