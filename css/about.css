@@ -19,7 +19,7 @@
     width: 50%;
     margin: 1rem 0;
 }
-#about h1.subheading {
+#about h2.subheading {
     align-self: center;
 }
 #about h2,
@@ -27,7 +27,7 @@
     margin: 1rem 0;
 }
 #about h4 {
-    margin-bottom: .75rem;
+    margin: 1.5rem 0;
 }
 #about ul {
     padding: 0 0 0 1rem;
@@ -105,7 +105,7 @@
     #about {
         padding: 1rem 2rem;
     }
-    #about h3 {
+    #about h2.subheading {
         margin: 1rem 0;
     }
     .skills-list div {

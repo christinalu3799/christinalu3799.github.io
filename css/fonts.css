@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Source+Code+Pro:wght@300&display=swap');
 
 @font-face {
@@ -39,21 +39,24 @@ p {
 li {
     line-height: 1.5;
 }
-h1, h2, h3, h4, h5, a, button, form {
+h1, h2, h3, h4, h5, a, button, form, li {
     font-weight: 300;
     line-height: 1.5;
     font-family: 'Source Code Pro', monospace;
     color: var(--clr-primary-400);
 }
 
+li {
+    list-style: circle;
+}
 .subheading {
-    font-family: 'Mungo';
+    font-family: 'Aboreto', cursive;
     font-weight: lighter;
     color: var(--clr-primary-400);
-    line-height: 1;
+    line-height: 1.25;
+    margin: 0 0 1rem 0;
 }
 h1 {
-  margin-top: 0;
   font-size: 4.209rem;
 }
 
