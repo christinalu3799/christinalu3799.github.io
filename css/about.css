@@ -88,8 +88,8 @@
     #about {
         padding: 1rem 5rem;
     }
-    #about h1.cursive-heading {
-        font-size: 4.209rem;
+    #about h4.subheading {
+        margin: 1rem 0;
     }
     #about .subheading {
         margin: 0 0 1rem 0;
@@ -105,8 +105,10 @@
     #about {
         padding: 1rem 2rem;
     }
+
     #about h2.subheading {
         margin: 1rem 0;
+        align-self: flex-start;
     }
     .skills-list div {
         width: auto;
