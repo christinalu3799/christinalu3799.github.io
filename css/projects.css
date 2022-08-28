@@ -22,12 +22,11 @@ main .screenshots {
     width: 100%; 
     justify-content: space-between;
 }
-main img  {
+main .screenshots img  {
     width: 25%; 
     margin: 0.5rem;
     object-fit: contain;
     height: 160px;
-    border-radius: 3px;
 }
 #projects {
     flex-direction: column;
@@ -158,12 +157,24 @@ main a {
     .projectContainer img {
         height: auto;
     }
+    main .screenshots {
+        flex-direction: column;
+    }
+    main .screenshots img {
+        width: 100%;
+        margin: 1rem 0;
+    }
 }
 @media screen and (max-width:480px) {
     main h1 {
+        font-size: 3rem;
         line-height: 1;
         margin: 0 0 2rem 0;
     }
+    main h4 {
+        font-size: 1.5rem;
+    }
+    
     .projectCard {
         height: fit-content;
     }
