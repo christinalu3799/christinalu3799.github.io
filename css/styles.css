@@ -31,6 +31,7 @@ html {
 }
 body {
     display: flex;
+    align-items: center;
     flex-direction: column;
     position: relative;
     background-color: var(--clr-primary-200);

@@ -6,6 +6,7 @@ main {
     flex-direction: column;
     min-height: 80vh;
     height: auto;
+    max-width: 1200px;
     padding: 0 10vw 20vh 10vw;
 }
 main .project-page {
@@ -19,14 +20,15 @@ main h4 {
 }
 main .screenshots {
     display: flex;
+    flex-wrap: wrap;
     width: 100%; 
     justify-content: space-between;
 }
 main .screenshots img  {
-    width: 25%; 
+    width: 45%; 
     margin: 0.5rem;
     object-fit: contain;
-    height: 160px;
+    height: 300px;
 }
 #projects {
     flex-direction: column;
@@ -157,12 +159,8 @@ main a {
     .projectContainer img {
         height: auto;
     }
-    main .screenshots {
-        flex-direction: column;
-    }
     main .screenshots img {
-        width: 100%;
-        margin: 1rem 0;
+        height: 200px;
     }
 }
 @media screen and (max-width:480px) {
@@ -174,7 +172,13 @@ main a {
     main h4 {
         font-size: 1.5rem;
     }
-    
+    main .screenshots {
+        flex-direction: column;
+    }
+    main .screenshots img {
+        width: 100%;
+        margin: 1rem 0;
+    }
     .projectCard {
         height: fit-content;
     }
