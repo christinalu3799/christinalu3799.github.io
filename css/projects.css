@@ -55,7 +55,7 @@ main .screenshots img  {
 .projectCard {
     display: flex;
     width: 275px;
-    height: 720px;
+    height: 650px;
     padding: 1rem;
     flex-direction: column;
     justify-content: flex-start;
@@ -80,7 +80,7 @@ main a {
 }
 .projectCard a {
     position: absolute;
-    bottom: 2rem;
+    bottom: 1rem;
 }
 .projectCard a:hover, .project-btns a:hover {
     transform: translateY(-4px);
