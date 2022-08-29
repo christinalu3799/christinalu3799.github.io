@@ -11,6 +11,7 @@ main {
 }
 main .project-page {
     margin: 1rem 0 1rem 0;
+    display: flex;
 }
 main ul {
     margin-left: 3rem;
@@ -30,6 +31,7 @@ main .screenshots img  {
     object-fit: contain;
     height: 250px;
 }
+
 #projects {
     flex-direction: column;
     justify-content: flex-start;
@@ -164,6 +166,7 @@ main a {
     }
 }
 @media screen and (max-width:480px) {
+    
     main h1 {
         font-size: 3rem;
         line-height: 1;
@@ -171,6 +174,12 @@ main a {
     }
     main h4 {
         font-size: 1.5rem;
+    }
+    main .project-page {
+        flex-direction: column;
+    }
+    main .project-page a {
+        margin: .5rem 0;
     }
     main .screenshots {
         flex-direction: column;
