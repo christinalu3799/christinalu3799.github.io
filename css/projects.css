@@ -7,7 +7,7 @@ main {
     min-height: 80vh;
     height: auto;
     max-width: 1200px;
-    padding: 0 10vw 20vh 10vw;
+    padding: 0 10vw 25vh 10vw;
 }
 main .project-page {
     margin: 1rem 0 1rem 0;
@@ -28,7 +28,7 @@ main .screenshots img  {
     width: 45%; 
     margin: 0.5rem;
     object-fit: contain;
-    height: 300px;
+    height: 250px;
 }
 #projects {
     flex-direction: column;
