@@ -13,8 +13,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 75vh;
-    min-height: 75vh;
+    height: 70vh;
+    max-height: 800px;
     background-color: var(--clr-primary-200);
 }
 #contact h3 {
