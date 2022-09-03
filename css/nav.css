@@ -58,6 +58,23 @@ nav .container ul li.active a {
     /* Hover button text color */
     color: white;
 }
+.toggle-button {
+    position: absolute; 
+    top: 4rem;
+    right: 3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 2px; 
+    width: 100%; 
+    background-color: var(--clr-primary-900);
+    border-radius: 10px;
+}
 /* .wave-nav {
     aspect-ratio: 900/300;
     filter: drop-shadow(0 -1px 15px var(--clr-primary-300));    
@@ -84,11 +101,31 @@ nav .container ul li.active a {
     
 }
 @media screen and (max-width:480px) {
-    nav .container {
-        margin: 0 2rem;
+    nav {
+        height: fit-content;
+        background-color: var(--clr-primary-200);
+        
     }
-    nav ul {
+    .toggle-button {
+        display: flex;
+    }
+    nav .container {
+        flex-direction: column-reverse;
+        margin: 2rem;
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+    nav .container .navbar-links {
+        height: 25vh;
+        margin: 1rem 0;
         display: none;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+    }
+    nav .container .navbar-links.active-nav {
+        display: flex;
     }
     .wave-nav {
         height: 20vh;

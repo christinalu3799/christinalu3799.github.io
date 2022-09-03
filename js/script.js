@@ -37,8 +37,6 @@ window.addEventListener('scroll', () => {
         if(pageYOffset >= (sectionTop - sectionHeight/2)) {
             current = section.getAttribute('id');
         }
-
-
     })
     navLi.forEach(li => {
         li.classList.remove('active');
@@ -69,3 +67,21 @@ const arrow = () => {
   },1000)
 }
 window.onload = arrow
+
+const toggleButton = document.querySelector('.toggle-button')
+const navbarLinks = document.querySelector('.navbar-links')
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active-nav')
+})
+
+const navbarLink = document.querySelectorAll('.navbar-link')
+navbarLink.forEach(link => {
+  link.addEventListener('click', () => {
+    console.log('clicked button')
+    if (navbarLinks.classList.contains('active-nav')) {
+      navbarLinks.classList.remove('active-nav')
+    }
+  })
+
+})
