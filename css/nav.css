@@ -69,7 +69,7 @@ nav .container ul li.active a {
     height: 21px;
 }
 
-.toggle-button .bar {
+.toggle-button span.bar {
     height: 2px; 
     width: 100%; 
     background-color: var(--clr-primary-900);
@@ -103,8 +103,7 @@ nav .container ul li.active a {
 @media screen and (max-width:480px) {
     nav {
         height: fit-content;
-        /* background-color: var(--clr-primary-200); */
-        
+        background-color: var(--clr-primary-200);
     }
     .toggle-button {
         display: flex;

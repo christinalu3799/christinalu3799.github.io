@@ -31,7 +31,7 @@
 /*                         TYPE SCALE                       */
 /* =========================================================*/
 
-p, span{
+p {
     margin-bottom: 1rem;
     line-height: 1.5;
     color: var(--clr-primary-400);
