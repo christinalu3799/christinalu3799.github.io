@@ -103,20 +103,20 @@ nav .container ul li.active a {
 @media screen and (max-width:480px) {
     nav {
         height: fit-content;
-        background-color: var(--clr-primary-200);
+        /* background-color: var(--clr-primary-200); */
         
     }
     .toggle-button {
         display: flex;
     }
     nav .container {
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin: 2rem;
         align-items: flex-start;
         justify-content: center;
-
     }
     nav .container .navbar-links {
+        background-color: var(--clr-primary-200);
         height: 25vh;
         margin: 1rem 0;
         display: none;

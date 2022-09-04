@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
 
 @font-face {
     font-family: 'Southam Demo';
@@ -30,7 +31,7 @@
 /*                         TYPE SCALE                       */
 /* =========================================================*/
 
-p {
+p, span{
     margin-bottom: 1rem;
     line-height: 1.5;
     color: var(--clr-primary-400);
@@ -50,11 +51,11 @@ li {
     list-style: circle;
 }
 .subheading {
-    font-family: 'Aboreto', cursive;
-    font-weight: lighter;
+    font-family: 'Knewave', cursive;
+    /* font-weight: lighter; */
     color: var(--clr-primary-400);
     line-height: 1.25;
-    margin: 0 0 1rem 0;
+    margin: 1rem 0;
 }
 h1 {
   font-size: 4.209rem;

@@ -69,12 +69,11 @@
 }
 .skills-list {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.skills-list h5 {
-    font-style:oblique;
-}
+
 /* ===================================================== */
 /* Wide Screen */
 @media screen and (min-width:1920px) {
@@ -94,12 +93,7 @@
     #about .subheading {
         margin: 0 0 1rem 0;
     }
-    .skills-container {
-        width: 100vw;
-    }
-    .skills-list div {
-        width: 30%;
-    }
+
 }
 @media screen and (max-width:480px) {
     #about {

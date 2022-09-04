@@ -30,6 +30,11 @@
         <nav>
             <!-- <div class="wave-nav"></div>             -->
             <div class="container">
+
+                <div class="logo">
+                    <img src="/images/cl2.svg">
+                </div>
+
                 <ul class="navbar-links">
                     <!-- Set home page to dafult active -->
                     <li class="home active"><a href="#home" class="navbar-link">home</a></li>
@@ -44,10 +49,6 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </a>
-
-                <div class="logo">
-                    <img src="/images/cl2.svg">
-                </div>
             </div>
         </nav> 
         <!-- HOME -->
@@ -116,14 +117,13 @@
                     <img src="/images/portfolio.gif" alt="Mockup of personal portfolio home page" class="portfolio-mockup"> 
                     
                     <h5 class="subheading">Personal Portfolio</h5>
-                    <div class="project-description">
-                        <p>I used HTML, CSS, and vanilla JavaScript to create this site from scratch, really pushing the limits of my frontend development and design skills.</p> 
-                
-                        <p>I will constantly be finetuning this site as I continue to learn new frameworks and libraries.</p>
-                        <p class="subheading"><em>Mobile | Tablet | Desktop</em></p>
-                        <br>
-                    </div>
-                    <a href="/portfolio.html">See More</a>
+                  
+                    <p>
+                        I used HTML, CSS, and vanilla JavaScript to create this site from scratch, really pushing the limits of my frontend development and design skills.
+                    </p> 
+                    
+                    <a href="/portfolio.html" class="see-more-btn">See More</a>
+                    <p class="subheading media"><em>Mobile | Tablet | Desktop</em></p>
                 </div>
 <!-- ============================================================= -->
                 <div class="projectCard reveal">
@@ -134,9 +134,9 @@
                     <p>
                         A full CRUD app created with Node.js, Mongoose, Express.js, and EJS. This app is designed for small business owners to better manager their store inventory. 
                     </p>
-                    <p class="subheading"><em>Desktop Only</em></p>
-                    <br>
-                    <a href="/inventoryapp.html">See More</a>
+
+                    <a href="/inventoryapp.html" class="see-more-btn">See More</a>
+                    <p class="subheading media"><em>Desktop Only</em></p>
                 </div>
 <!-- ============================================================= -->
                 <div class="projectCard reveal">
@@ -144,13 +144,12 @@
 
                     <h5 class="subheading">Race to the Krusty Krab</h5>
 
-                    <div class="project-description">
-                        <p>I created a simple 2-player racing game with HTML, CSS, and vanilla JavaScript. Users can move their boat mobiles using the keys on the keyboard. Avoid crashing the other boatmobiles before the timer hits 0!</p>
-                        <p class="subheading"><em>Desktop Only</em></p>
-                        <br>
-                    </div>
-                    <a href="/racingGame.html">See More</a>
-
+                    <p>
+                        I created a simple 2-player racing game with HTML, CSS, and vanilla JavaScript. Users can move their boat mobiles using the keys on the keyboard. Avoid crashing the other boatmobiles before the timer hits 0!
+                    </p>
+                    
+                    <a href="/racingGame.html" class="see-more-btn">See More</a>
+                    <p class="subheading media"><em>Desktop Only</em></p>
                 </div>      
 <!-- ============================================================= -->
                 <!-- <div class="projectCard reveal">
@@ -172,14 +171,11 @@
 
                     <h5 class="subheading">Personal Budget Tracker</h5>
                     <p>
-                        A full CRUD app created with Node.js, Mongoose, Express.js, and EJS to keep track of your personal monthly budget.
+                        A full CRUD app designed to track your monthly bills and other miscellaneous expenses. 
                     </p>
-                    <p>
-                        Use this handy app to track your monthly bills and other miscellaneous expenses. 
-                    </p>
-                    <p class="subheading"><em>Desktop Only</em></p>
-                    <br>
-                    <a>Coming Soon!</a>
+                    
+                    <a class="see-more-btn">Coming Soon!</a>
+                    <p class="subheading media"><em>Desktop Only</em></p>
                 </div>
             </div>
         </section>  
@@ -192,60 +188,33 @@
             <div class="aboutMeContent reveal">
                 <h4>Welcome to my page!</h4>
                 <p>My name is Christina, and I'm a full stack developer who enjoys creating beautiful and functional experiences from scratch.</p> 
-                <p>My passion for making apps and websites started when asked to maintain the website of a law firm I used to work at. Watching the ideas in my mind come to life in the browser is like magic to me - I never got sick of it.</p>
-                <br>
+
+                <h5>How I got here</h5>
+                <p>My passion for web dev started when I was asked to maintain the website of a law firm I used to work at. Watching the ideas in my mind come to life in the browser is like magic to me - I never got sick of it.</p>
+                <h5>What am I up to?</h5>
                 <p>I am currently a coding bootcamp student on track to graduate in November of 2022. By then, I will have accumulated over 450 hours of coding experience and knowledge on product development fundamentals, object-oriented programming, MVC frameworks, data modeling, and team collaboration strategies. </p>
 
-                <h4 class="subheading">Education</h4>
-                    <ul>
-                        <li><p>General Assembly Software Engineering Immersive Bootcamp | May-Nov 2022</p></li>
-                        <li><p>Georgia Institute of Technology | Dec 2020</h5></li>
-                    </ul>
                 <h4 class="subheading">Skills</h4>
                 <div class="skills-list">
                     <div>
-                        <h5>Programming Languages</h5>
-                            <ul>
-                                <li><p>JavaScript (ES6)</p></li>
-                                <li><p>HTML5</p></li>
-                                <li><p>CSS3</p></li>
-                                <li><p>Python</p></li>
-                                <li><p>MATLAB</p></li>
-                                <li><p>EJS</p></li>
-                            </ul>
+                        <h5 class="subheading">Programming Languages<h5>  
+                            <p style="font-size: 1rem">JavaScript | HTML | CSS | Python | MATLAB | EJS</p>
                     </div>
                     <div>
-                        <h5>Frameworks and Libraries</h5>
-                            <ul>
-                                <li><p>NPM</p></li>
-                                <li><p>Node.js</p></li>
-                                <li><p>Express.js</p></li>
-                                <li><p>Mongoose</p></li>
-                                <li><p>Bootstrap</p></li>
-                                <li><p>Flask</p></li>
-                            </ul>
+                        <h5 class="subheading">Libraries & Frameworks<h5>  
+                            <p style="font-size: 1rem">NPM | Node.js | Express | Mongoose | Bootrap | Flask</p>
                     </div>
                     <div>
-                        <h5>Technologies</h5>
-                            <ul>
-                                <li><p>MongoDB</p></li>
-                                <li><p>Git/GitHub</p></li>
-                                <li><p>DOM Manipulation</p></li>
-                                <li><p>SQL</p></li>
-                                <li><p>VS Code</p></li>
-                                <li><p>CodePen</p></li>
-                                <li><p>Chrome DevTools</p></li>
-                                <li><p>Heroku</p></li>
-                            </ul>
+                        <h5 class="subheading">Other Technologies<h5>                       
+                            <p style="font-size: 1rem">MongoDB | Git/Github | DOM Manipulation | MySQL | VS Code | CodePen | Chrome DevTools | Heroku | Figma | Canva</p>
                     </div>    
-                    <div>
-                        <h5>Programs and Tools</h5>
-                            <ul>
-                                <li><p>Figma</p></li>
-                                <li><p>Canva</p></li>
-                            </ul>
-                    </div>
                 </div>
+
+                <h4 class="subheading">Education</h4>
+                    <h5 style="margin: 0">May 2022 - Nov 2022 </h5>  
+                    <p>| General Assembly Software Engineering Immersive Bootcamp</p>
+                    <h5 style="margin: 0">Aug 2017 - Dec 2020 </h5>
+                    <p>| Georgia Institute of Technology</p>
             </div>
             <form method="get" action="resume.pdf" class="reveal">
             <button type="submit" class="seeMyWorkBtn">Download Full Resume</button>
@@ -257,7 +226,7 @@
         </div>
         <!-- CONTACTS   -->
         <section id="contact"> 
-            <h3 class="subheading">Send me a message!</h3>
+            <p class="subheading" style="font-size: 2rem">Send me a message!</p>
            
             <form action="https://formspree.io/f/moqrolzg" method="POST">
                 <label for="full-name">Full Name</label>
@@ -270,7 +239,7 @@
                 <textarea name="message" placeholder="Type message here!" required=""></textarea>
             
                 <!-- your other form fields go here -->
-                <button type="submit">Submit</button>
+                <button type="submit" style="margin:0">Submit</button>
             </form>
     
         </section>
