@@ -35,8 +35,10 @@ nav .container ul li {
     transition: all 0.2s ease-in-out;
 }
 nav .container ul li:hover {
-    background-color: var(--clr-primary-300);
-    border-radius: 3px;
+    /* background-color: var(--clr-primary-300);
+    border-radius: 3px; */
+    border-bottom: 1px solid var(--clr-primary-300);
+
 }
 nav .container ul li a {
     letter-spacing: 2px;
@@ -47,16 +49,18 @@ nav .container ul li a {
     width: fit-content;
 }
 nav .container ul li a:hover {
-    color: var(--clr-primary-200);
+    /* color: var(--clr-primary-200); */
 }
 nav .container ul li.active {
     /* Hover button */
-    background-color: var(--clr-primary-300); 
-    border-radius: 3px;
+    /* background-color: var(--clr-primary-300);  */
+    /* border-radius: 3px; */
+
 }
 nav .container ul li.active a {
     /* Hover button text color */
-    color: white;
+    /* color: white; */
+    border-bottom: 1px solid var(--clr-primary-300);
 }
 .toggle-button {
     position: absolute; 
