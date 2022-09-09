@@ -6,14 +6,16 @@
     flex-direction: column;
     background-color: var(--clr-primary-200);
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
     height: auto;  
+    padding: 0 20vw
 }
 #about .aboutMeContent{
     display: flex; 
     flex-direction: column;
     color: var(--clr-primary-900);
+    
 }
 #about img {
     width: 50%;
@@ -22,10 +24,11 @@
 #about h2.subheading {
     align-self: center;
 }
-#about h5.subheading,
-#about .skills-list p {
+/* #about h5.subheading,
+#about .skills-list p
+#about .aboutMeContent p {
     margin-left: 2rem;
-}
+} */
 #about h2,
 #about h1 {
     margin: 1rem 0;
